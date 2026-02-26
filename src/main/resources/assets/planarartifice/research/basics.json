@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "key": "PLANAR_ARTIFICE_BASE",
+      "name": "planarartifice.research.planar_artifice_base.title",
+      "icons": [
+        "planarartifice:textures/research/logo_icon.png"
+      ],
+      "category": "PLANAR_ARTIFICE",
+      "parents": ["~FIRSTSTEPS"],
+      "siblings": ["~FIRSTSTEPS"],
+      "meta": ["ROUND", "SPIKY", "HIDDEN"],
+      "location": [0, 0],
+      "stages": [
+        {
+          "text": "planarartifice.research.planar_artifice_base.stage.1"
+        }
+      ]
+    }
+  ]
+}

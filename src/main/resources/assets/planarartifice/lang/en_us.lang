@@ -1,1 +1,7 @@
 itemGroup.PlanarArtificeTab=Cursed Artifice
+
+# Research
+tc.research_category.PLANAR_ARTIFICE=Planar Artifice
+planarartifice.research.planar_artifice_base.title=Planar Artifice
+planarartifice.research.planar_artifice_base.title.subtitle=One with the planes
+planarartifice.research.planar_artifice_base.stage.1=[WIP]
