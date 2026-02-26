@@ -11,6 +11,8 @@ import org.jetbrains.annotations.NotNull;
 public class CreativeTabsPA extends CreativeTabs {
     public CreativeTabsPA(int length, String name) {
         super(length, name);
+        this.setBackgroundImageName("planar.png");
+        this.setNoTitle();
     }
 
     @SuppressWarnings("ConstantConditions")
@@ -18,5 +20,10 @@ public class CreativeTabsPA extends CreativeTabs {
     @Override
     public @NotNull ItemStack createIcon() {
         return new ItemStack(ItemsTC.casterBasic);
+    }
+
+    @Override
+    public boolean hasSearchBar() {
+        return true;
     }
 }
