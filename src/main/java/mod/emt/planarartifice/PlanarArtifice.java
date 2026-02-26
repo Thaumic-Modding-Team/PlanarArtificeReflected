@@ -1,7 +1,7 @@
 package mod.emt.planarartifice;
 
 import mod.emt.planarartifice.proxy.CommonProxy;
-import mod.emt.planarartifice.registry.CreativeTabsTH;
+import mod.emt.planarartifice.registry.CreativeTabsPA;
 import mod.emt.planarartifice.utils.helpers.LogHelper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
         version = PlanarArtifice.MOD_VERSION,
         dependencies = PlanarArtifice.DEPENDENCIES
 )
-public class ThaumicHorizons {
+public class PlanarArtifice {
     public static final String MOD_ID = Tags.MOD_ID;
     public static final String MOD_NAME = "Cursed Artifice";
     public static final String MOD_VERSION = Tags.VERSION;
