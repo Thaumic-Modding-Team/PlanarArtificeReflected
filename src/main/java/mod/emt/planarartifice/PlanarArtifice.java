@@ -22,8 +22,8 @@ public class PlanarArtifice {
     public static final String MOD_VERSION = Tags.VERSION;
     public static final String DEPENDENCIES = "required-after:thaumcraft";
 
-    public static final String CLIENT_PROXY = "planarartifice.proxy.ClientProxy";
-    public static final String COMMON_PROXY = "planarartifice.proxy.CommonProxy";
+    public static final String CLIENT_PROXY = "mod.emt.planarartifice.proxy.ClientProxy";
+    public static final String COMMON_PROXY = "mod.emt.planarartifice.proxy.CommonProxy";
 
     public static final CreativeTabs tabPA = new CreativeTabsPA(CreativeTabs.CREATIVE_TAB_ARRAY.length, "PlanarArtificeTab");
 
