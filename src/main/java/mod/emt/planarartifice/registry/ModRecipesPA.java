@@ -35,7 +35,7 @@ public class ModRecipesPA {
                 new AspectList().add(Aspect.TRAP, 10)));
         ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "RT_BLAZE_POWDER"), new CrucibleRecipe(
                 "PA_REAGENT_TRANSMUTATION@2",
-                new ItemStack(Items.BLAZE_POWDER, 2),
+                new ItemStack(Items.BLAZE_POWDER),
                 new ItemStack(Items.GUNPOWDER),
                 new AspectList().add(Aspect.MAGIC, 5).add(Aspect.FIRE, 14)));
         ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "RT_ENDER_EYE"), new CrucibleRecipe(

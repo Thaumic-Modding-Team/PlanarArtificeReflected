@@ -4,7 +4,7 @@
       "key": "PLANAR_ARTIFICE_BASE",
       "name": "planarartifice.research.planar_artifice_base.title",
       "icons": [
-        "planarartifice:textures/research/logo_icon.png"
+        "planarartifice:planar_orb"
       ],
       "category": "PLANAR_ARTIFICE",
       "parents": ["~FIRSTSTEPS"],

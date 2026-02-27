@@ -27,6 +27,9 @@ import javax.annotation.Nonnull;
 @GameRegistry.ObjectHolder(PlanarArtifice.MOD_ID)
 public class ModItemsPA {
     public static final BaseItemPA BISMUTH_INGOT = null;
+    public static final BaseItemPA BISMUTH_NUGGET = null;
+    public static final BaseItemPA BISMUTH_PLATE = null;
+    public static final BaseItemPA PLANAR_ORB = null;
 
     @SubscribeEvent
     public static void registerItems(@Nonnull final RegistryEvent.Register<Item> event) {
@@ -35,7 +38,11 @@ public class ModItemsPA {
         final IForgeRegistry<Item> registry = event.getRegistry();
 
         registry.registerAll(
-                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_ingot")
+                ModRegistryPA.setup(new BaseItemPA(EnumRarity.EPIC), "planar_orb"),
+                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_ingot"),
+                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_nugget"),
+                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_plate")
+
         );
 
         // Item Blocks

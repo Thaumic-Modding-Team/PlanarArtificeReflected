@@ -39,6 +39,35 @@
       ]
     },
     {
+      "key": "PA_ESSENTIA_MANIPULATION",
+      "name": "planarartifice.research.essentia_manipulation.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "thaumcraft:salis_mundus"
+      ],
+      "parents": [
+        "PA_REAGENT_TRANSMUTATION"
+      ],
+      "location": [
+        1,
+        -3
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.essentia_manipulation.stage.1",
+          "required_knowledge": [
+            "THEORY;ALCHEMY;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.essentia_manipulation.stage.2",
+          "recipes": [
+            "planarartifice:em_salis_mundus"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_REAGENT_TRANSMUTATION",
       "name": "planarartifice.research.reagent_transmutation.title",
       "category": "PLANAR_ARTIFICE",
