@@ -1,7 +1,22 @@
 itemGroup.PlanarArtificeTab=Cursed Artifice
 
+# Items
+item.planarartifice.bismuth_ingot.name=Bismuth Ingot
+
 # Research
 tc.research_category.PLANAR_ARTIFICE=Planar Artifice
 planarartifice.research.planar_artifice_base.title=Planar Artifice
 planarartifice.research.planar_artifice_base.title.subtitle=One with the planes
 planarartifice.research.planar_artifice_base.stage.1=[WIP]
+
+# -- BISMUTH
+planarartifice.research.bismuth.title=Bismuth
+planarartifice.research.bismuth.stage.1=When looking closely at aura - and it's reactions and interactions with portals - I can deduce, without a doubt, that aura is an interdimensional energy; that is to say, the vast majority of it doesn't exist within this dimension, or any other I can visit; rather, it slowly leaks in from seemingly random points. Neither do I know how, nor do I know why, but one thing I do know is that aura is 'attracted' to these points. <BR>By creating a material that mimics their aura attracting effects, I can create things far more useful than anything I have currently available. I call this material "Bismuth".
+planarartifice.research.bismuth.stage.2=Bismuth is a material far more well-attuned to aura than any other item I have access to, by a long shot. It has much potential. <PAGE>The Aura Meter can tell me the current vis, anywhere, from anywhere in my inventory, unlike the Thaumometer, which has to be held to function.<BR>A sword fashioned from bismuth deals bonus damage in areas where the aura is much above its baseline.
+
+# -- BISMUTH: Reagent Transmutation
+planarartifice.research.reagent_transmutation.title=Reagent Transmutation
+planarartifice.research.reagent_transmutation.stage.1=There are still many items that are difficult or troublesome to obtain, and there are some items similar enough that I should be able to apply some simple alchemy to change between them.
+planarartifice.research.reagent_transmutation.stage.2=The alchemy surely wasn't "simple", but the hunger for knowledge always finds a way. I have managed to convert a common eye into one of the otherworldly beings, and extract the essence of gunpowders - creating a powder full of energy. That does not mean there is more I can do to this concept.
+planarartifice.research.reagent_transmutation.stage.3=Gotcha - in additions to the previous recipes, I have managed to create a way to forge the hellish rod from mundane items and a nice stew of essentia. Although I'll have to find another way to turn it back to the rod forms, as it can only create powders. Although this research has lead me into an interesting direction - The rare ores of the world. The link between them are thin, I acknowledge that I am reaching for the stars here. But... could it be done?
+planarartifice.research.reagent_transmutation.stage.4=The answer was right in front of me all along. Now I have the ability to transmute between amber and quicksilver - unifying them into a singular matter.

@@ -1,0 +1,99 @@
+{
+  "entries": [
+    {
+      "key": "PA_BISMUTH",
+      "name": "planarartifice.research.bismuth.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:bismuth_ingot"
+      ],
+      "parents": [
+        "PA_REAGENT_TRANSMUTATION"
+      ],
+      "location": [
+        0,
+        -4
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.bismuth.stage.1",
+          "required_knowledge": [
+            "THEORY;INFUSION;1",
+            "THEORY;AUROMANCY;1",
+            "OBSERVATION;AUROMANCY;1"
+          ],
+          "recipes": [
+            "planarartifice:bismuth_ingot"
+          ],
+          "required_craft": [
+            "planarartifice:bismuth_ingot"
+          ]
+        },
+        {
+          "text": "planarartifice.research.bismuth.stage.2",
+          "recipes": [
+            "planarartifice:bismuth_ingot"
+          ],
+          "warp": 2
+        }
+      ]
+    },
+    {
+      "key": "PA_REAGENT_TRANSMUTATION",
+      "name": "planarartifice.research.reagent_transmutation.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "minecraft:ender_eye"
+      ],
+      "parents": [
+        "PLANAR_ARTIFICE_BASE",
+        "HEDGEALCHEMY"
+      ],
+      "location": [
+        0,
+        -2
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.reagent_transmutation.stage.1",
+          "required_knowledge": [
+            "THEORY;ALCHEMY;2",
+            "THEORY;ARTIFICE;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.reagent_transmutation.stage.2",
+          "required_item": [
+            "minecraft:blaze_rod;2"
+          ],
+          "recipes": [
+            "planarartifice:rt_ender_eye",
+            "planarartifice:rt_redstone"
+          ]
+        },
+        {
+          "text": "planarartifice.research.reagent_transmutation.stage.3",
+          "required_item": [
+            "thaumcraft:amber;2",
+            "thaumcraft:quicksilver;2"
+          ],
+          "recipes": [
+            "planarartifice:rt_ender_eye",
+            "planarartifice:rt_redstone",
+            "planarartifice:rt_blaze_powder"
+          ]
+        },
+        {
+          "text": "planarartifice.research.reagent_transmutation.stage.4",
+          "recipes": [
+            "planarartifice:rt_ender_eye",
+            "planarartifice:rt_redstone",
+            "planarartifice:rt_blaze_powder",
+            "planarartifice:rt_amber",
+            "planarartifice:rt_quicksilver"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 package mod.emt.planarartifice.proxy;
 
 import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.registry.ModRecipesPA;
 import net.minecraft.util.ResourceLocation;
 import thaumcraft.Thaumcraft;
 import thaumcraft.api.ThaumcraftApi;
@@ -13,6 +14,7 @@ public class CommonProxy {
 
     public void init() {
         this.registerResearch();
+        ModRecipesPA.registerRecipes();
     }
 
     public void postInit() {
@@ -26,5 +28,6 @@ public class CommonProxy {
                 new ResourceLocation(Thaumcraft.MODID, "textures/gui/gui_research_back_over.png"));
 
         ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/basics"));
+        ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/bismuth"));
     }
 }
