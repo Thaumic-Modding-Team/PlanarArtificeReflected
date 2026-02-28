@@ -1,7 +1,8 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.items.BaseItemPA;
+import mod.emt.planarartifice.item.BaseItemPA;
+import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
 import mod.emt.planarartifice.utils.helpers.LogHelper;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.block.BlockSlab;
@@ -26,6 +27,7 @@ import javax.annotation.Nonnull;
 @Mod.EventBusSubscriber(modid = PlanarArtifice.MOD_ID)
 @GameRegistry.ObjectHolder(PlanarArtifice.MOD_ID)
 public class ModItemsPA {
+    public static final PAItemAuraMeter AURA_METER = null;
     public static final BaseItemPA BISMUTH_INGOT = null;
     public static final BaseItemPA BISMUTH_NUGGET = null;
     public static final BaseItemPA BISMUTH_PLATE = null;
@@ -41,7 +43,8 @@ public class ModItemsPA {
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.EPIC), "planar_orb"),
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_ingot"),
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_nugget"),
-                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_plate")
+                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_plate"),
+                ModRegistryPA.setup(new PAItemAuraMeter(), "aura_meter")
 
         );
 

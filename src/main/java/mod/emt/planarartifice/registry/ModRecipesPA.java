@@ -8,13 +8,29 @@ import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.crafting.CrucibleRecipe;
+import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
 
 public class ModRecipesPA {
     private static ResourceLocation defaultGroup = new ResourceLocation("");
 
     public static void registerRecipes() {
+        registerArcaneCraftingRecipes();
         registerCrucibleRecipes();
+    }
+
+    public static void registerArcaneCraftingRecipes() {
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "aura_meter"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_BISMUTH",
+                25,
+                new AspectList().add(Aspect.AIR, 1).add(Aspect.EARTH, 1).add(Aspect.ENTROPY, 1).add(Aspect.FIRE, 1).add(Aspect.ORDER, 1).add(Aspect.WATER, 1),
+                ModItemsPA.AURA_METER,
+                "B",
+                "M",
+                "B",
+                'B', new ItemStack(ModItemsPA.BISMUTH_PLATE),
+                'M', new ItemStack(ItemsTC.mirroredGlass)));
     }
 
     public static void registerCrucibleRecipes() {

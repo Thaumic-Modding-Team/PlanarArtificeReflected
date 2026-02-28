@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.items;
+package mod.emt.planarartifice.item;
 
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;

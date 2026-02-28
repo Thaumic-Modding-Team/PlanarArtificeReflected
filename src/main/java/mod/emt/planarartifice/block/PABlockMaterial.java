@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.blocks;
+package mod.emt.planarartifice.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;

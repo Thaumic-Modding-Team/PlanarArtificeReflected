@@ -1,7 +1,7 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.blocks.PABlockMaterial;
+import mod.emt.planarartifice.block.PABlockMaterial;
 import mod.emt.planarartifice.utils.helpers.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;

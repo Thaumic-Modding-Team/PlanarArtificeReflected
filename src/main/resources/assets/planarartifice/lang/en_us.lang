@@ -4,6 +4,7 @@ itemGroup.PlanarArtificeTab=Cursed Artifice
 tile.planarartifice.bismuth_block.name=Bismuth Block
 
 # Items
+item.planarartifice.aura_meter.name=Aura Meter
 item.planarartifice.bismuth_ingot.name=Bismuth Ingot
 item.planarartifice.bismuth_nugget.name=Bismuth Nugget
 item.planarartifice.bismuth_plate.name=Bismuth Plate
@@ -18,7 +19,7 @@ planarartifice.research.planar_artifice_base.stage.1=[WIP]
 # -- BISMUTH
 planarartifice.research.bismuth.title=Bismuth
 planarartifice.research.bismuth.stage.1=When looking closely at aura - and it's reactions and interactions with portals - I can deduce, without a doubt, that aura is an interdimensional energy; that is to say, the vast majority of it doesn't exist within this dimension, or any other I can visit; rather, it slowly leaks in from seemingly random points. Neither do I know how, nor do I know why, but one thing I do know is that aura is 'attracted' to these points. <BR>By creating a material that mimics their aura attracting effects, I can create things far more useful than anything I have currently available. I call this material "Bismuth".
-planarartifice.research.bismuth.stage.2=Bismuth is a material far more well-attuned to aura than any other item I have access to, by a long shot. It has much potential. <PAGE>The Aura Meter can tell me the current vis, anywhere, from anywhere in my inventory, unlike the Thaumometer, which has to be held to function.<BR>A sword fashioned from bismuth deals bonus damage in areas where the aura is much above its baseline.
+planarartifice.research.bismuth.stage.2=Bismuth is a material far more well-attuned to aura than any other item I have access to, by a long shot. It has much potential.<PAGE>§lAura Meter§r<DIV>The Aura Meter can tell me the current vis from anywhere in my inventory or when equipped, unlike the Thaumometer, which has to be held to function.
 
 # -- BISMUTH: Essentia Manipulation
 planarartifice.research.essentia_manipulation.title=Essentia Manipulation

@@ -33,7 +33,8 @@
           "text": "planarartifice.research.bismuth.stage.2",
           "recipes": [
             "planarartifice:bismuth_ingot",
-            "planarartifice:bismuth_stuff"
+            "planarartifice:bismuth_stuff",
+            "planarartifice:aura_meter"
           ],
           "warp": 2
         }
