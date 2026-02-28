@@ -39,6 +39,21 @@ public class ModRecipesPA {
                 new ItemStack(ModItemsPA.BISMUTH_INGOT),
                 new ItemStack(ItemsTC.ingots, 1, 0),
                 new AspectList().add(Aspect.AURA, 20).add(Aspect.ENERGY, 20)));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "BISMUTH_TO_GOLD"), new CrucibleRecipe(
+                "PA_METAL_TRANSMUTATION",
+                new ItemStack(Items.GOLD_INGOT),
+                new ItemStack(ModItemsPA.BISMUTH_INGOT),
+                new AspectList().add(Aspect.DESIRE, 10)));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "BISMUTH_TO_IRON"), new CrucibleRecipe(
+                "PA_METAL_TRANSMUTATION",
+                new ItemStack(Items.IRON_INGOT),
+                new ItemStack(ModItemsPA.BISMUTH_INGOT),
+                new AspectList().add(Aspect.METAL, 10)));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "BISMUTH_TO_QUICKSILVER"), new CrucibleRecipe(
+                "PA_METAL_TRANSMUTATION",
+                new ItemStack(ItemsTC.quicksilver),
+                new ItemStack(ModItemsPA.BISMUTH_INGOT),
+                new AspectList().add(Aspect.ALCHEMY, 10)));
         ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "EM_SALIS_MUNDUS"), new CrucibleRecipe(
                 "PA_ESSENTIA_MANIPULATION",
                 new ItemStack(ItemsTC.salisMundus),

@@ -70,6 +70,43 @@
       ]
     },
     {
+      "key": "PA_METAL_TRANSMUTATION",
+      "name": "planarartifice.research.metal_transmutation.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "minecraft:iron_ingot",
+        "minecraft:gold_ingot",
+        "thaumcraft:quicksilver"
+      ],
+      "parents": [
+        "PA_BISMUTH"
+      ],
+      "location": [
+        -1,
+        -3
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.metal_transmutation.stage.1",
+          "required_item": [
+            "planarartifice:bismuth_ingot",
+            "thaumcraft:quicksilver"
+          ],
+          "required_knowledge": [
+            "THEORY;ALCHEMY;2"
+          ]
+        },
+        {
+          "text": "planarartifice.research.metal_transmutation.stage.2",
+          "recipes": [
+            "planarartifice:bismuth_to_iron",
+            "planarartifice:bismuth_to_gold",
+            "planarartifice:bismuth_to_quicksilver"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_REAGENT_TRANSMUTATION",
       "name": "planarartifice.research.reagent_transmutation.title",
       "category": "PLANAR_ARTIFICE",
