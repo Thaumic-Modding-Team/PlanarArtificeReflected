@@ -1,11 +1,14 @@
 package mod.emt.planarartifice.proxy;
 
 import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.compat.PACompatHandler;
+import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
 import mod.emt.planarartifice.registry.ModRecipesPA;
 import net.minecraft.util.ResourceLocation;
 import thaumcraft.Thaumcraft;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.items.ItemsTC;
 import thaumcraft.api.research.ResearchCategories;
 
 public class CommonProxy {
@@ -15,6 +18,10 @@ public class CommonProxy {
     public void init() {
         this.registerResearch();
         ModRecipesPA.registerRecipes();
+        PACompatHandler.init();
+
+        PAItemAuraMeter.GUI_ITEMS.add(ItemsTC.sanityChecker);
+        PAItemAuraMeter.GUI_ITEMS.add(ItemsTC.thaumometer);
     }
 
     public void postInit() {

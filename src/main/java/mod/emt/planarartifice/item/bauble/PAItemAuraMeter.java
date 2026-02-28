@@ -10,17 +10,22 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.EnumRarity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import thaumcraft.api.casters.ICaster;
-import thaumcraft.api.items.ItemsTC;
 import thaumcraft.common.lib.network.PacketHandler;
 import thaumcraft.common.lib.network.misc.PacketAuraToClient;
 import thaumcraft.common.world.aura.AuraChunk;
 import thaumcraft.common.world.aura.AuraHandler;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class PAItemAuraMeter extends BaseItemPA implements IBauble {
+    public static Set<Item> GUI_ITEMS = new HashSet();
+
     public PAItemAuraMeter() {
         super(EnumRarity.RARE);
         this.setMaxStackSize(1);
@@ -48,13 +53,10 @@ public class PAItemAuraMeter extends BaseItemPA implements IBauble {
             PacketHandler.INSTANCE.sendTo((IMessage) new PacketAuraToClient(ac), player);
     }
 
-    // TODO: Definitely should improve how these are checked to account for addons (e.g. Thaumic Wonders Unofficial)
     public static boolean shouldRenderHud(EntityPlayer player) {
-        if (player.getHeldItemMainhand().getItem() == ItemsTC.thaumometer || player.getHeldItemOffhand().getItem() == ItemsTC.thaumometer)
+        if (GUI_ITEMS.contains(player.getHeldItemMainhand().getItem()) || GUI_ITEMS.contains(player.getHeldItemOffhand().getItem())) {
             return false;
-
-        if (player.getHeldItemMainhand().getItem() == ItemsTC.sanityChecker || player.getHeldItemOffhand().getItem() == ItemsTC.sanityChecker)
-            return false;
+        }
 
         if (player.getHeldItemMainhand().getItem() instanceof ICaster || player.getHeldItemOffhand().getItem() instanceof ICaster)
             return false;
@@ -70,6 +72,5 @@ public class PAItemAuraMeter extends BaseItemPA implements IBauble {
         }
 
         return false;
-
     }
 }
