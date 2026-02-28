@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "planarartifice:bismuth_nugget"
+    }
+  },
+  "result": {
+    "item": "planarartifice:bismuth_ingot"
+  }
+}

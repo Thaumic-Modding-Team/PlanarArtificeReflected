@@ -1,5 +1,8 @@
 itemGroup.PlanarArtificeTab=Cursed Artifice
 
+# Blocks
+tile.planarartifice.bismuth_block.name=Bismuth Block
+
 # Items
 item.planarartifice.bismuth_ingot.name=Bismuth Ingot
 item.planarartifice.bismuth_nugget.name=Bismuth Nugget
