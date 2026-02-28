@@ -1,0 +1,13 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "planarartifice:bismuth_stuff",
+  "ingredients": [
+    {
+      "item": "planarartifice:bismuth_block"
+    }
+  ],
+  "result": {
+    "item": "planarartifice:bismuth_ingot",
+    "count": 9
+  }
+}

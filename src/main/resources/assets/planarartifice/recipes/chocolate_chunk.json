@@ -1,0 +1,11 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "thaumichorizons:chocolate_milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "thaumichorizons:chocolate_chunk"
+  }
+}

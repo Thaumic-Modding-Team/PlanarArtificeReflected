@@ -11,10 +11,16 @@ import mod.emt.planarartifice.PlanarArtifice;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 import thaumcraft.common.lib.events.PlayerEvents;
 
+@Mod.EventBusSubscriber(modid = PlanarArtifice.MOD_ID)
 public class ModRegistryPA {
     private static Field lastChargeField;
 
@@ -49,5 +55,14 @@ public class ModRegistryPA {
         } catch (Exception ignored) {
             return 0;
         }
+    }
+
+    @SubscribeEvent
+    public static void registerRecipes(@Nonnull final RegistryEvent.Register<IRecipe> event) {
+        OreDictionary.registerOre("blockBismuth", ModBlocksPA.BISMUTH_BLOCK);
+
+        OreDictionary.registerOre("ingotBismuth", ModItemsPA.BISMUTH_INGOT);
+        OreDictionary.registerOre("nuggetBismuth", ModItemsPA.BISMUTH_NUGGET);
+        OreDictionary.registerOre("plateBismuth", ModItemsPA.BISMUTH_PLATE);
     }
 }
