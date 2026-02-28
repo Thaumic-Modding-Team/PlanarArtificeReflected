@@ -8,6 +8,7 @@ item.planarartifice.aura_meter.name=Aura Meter
 item.planarartifice.bismuth_ingot.name=Bismuth Ingot
 item.planarartifice.bismuth_nugget.name=Bismuth Nugget
 item.planarartifice.bismuth_plate.name=Bismuth Plate
+item.planarartifice.mirromirous_headband.name=Mirromirous Headband
 item.planarartifice.planar_orb.name=Planar Orb
 
 # Research
@@ -25,6 +26,11 @@ planarartifice.research.bismuth.stage.2=Bismuth is a material far more well-attu
 planarartifice.research.essentia_manipulation.title=Essentia Manipulation
 planarartifice.research.essentia_manipulation.stage.1=[WIP]
 planarartifice.research.essentia_manipulation.stage.2=Eureka! I am finally free from the cumbersome method of individually crushing up Vis Crystals. by infusing a piece of Redstone Dust with arcane energy, I now have an easier way of making salis mundus.
+
+# -- BISMUTH: Mirromirous Headband
+planarartifice.research.mirromirous_headband.title=Mirromirous Headband
+planarartifice.research.mirromirous_headband.stage.1=The original headband of curiosity has about run its course. As my knowledge continues to expand, the hunger for it grows as well.
+planarartifice.research.mirromirous_headband.stage.2=Using some of my new materials, I have managed to build an upgraded version of the headband. It draws twice as more experience and is also twice as effective.
 
 # -- BISMUTH: Reagent Transmutation
 planarartifice.research.reagent_transmutation.title=Reagent Transmutation

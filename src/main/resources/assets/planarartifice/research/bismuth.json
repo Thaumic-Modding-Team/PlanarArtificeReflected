@@ -107,6 +107,40 @@
       ]
     },
     {
+      "key": "PA_MIRROMIROUS_HEADBAND",
+      "name": "planarartifice.research.mirromirous_headband.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:mirromirous_headband"
+      ],
+      "parents": [
+        "PA_BISMUTH",
+        "CURIOSITYBAND"
+      ],
+      "location": [
+        -1,
+        -6
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.mirromirous_headband.stage.1",
+          "required_item": [
+            "thaumcraft:curio;1;1"
+          ],
+          "required_knowledge": [
+            "THEORY;ARTIFICE;2",
+            "THEORY;INFUSION;2"
+          ]
+        },
+        {
+          "text": "planarartifice.research.mirromirous_headband.stage.2",
+          "recipes": [
+            "planarartifice:mirromirous_headband"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_REAGENT_TRANSMUTATION",
       "name": "planarartifice.research.reagent_transmutation.title",
       "category": "PLANAR_ARTIFICE",

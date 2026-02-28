@@ -3,6 +3,7 @@ package mod.emt.planarartifice.registry;
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.item.BaseItemPA;
 import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
+import mod.emt.planarartifice.item.bauble.PAItemMirroredHeadband;
 import mod.emt.planarartifice.utils.helpers.LogHelper;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.block.BlockSlab;
@@ -31,6 +32,7 @@ public class ModItemsPA {
     public static final BaseItemPA BISMUTH_INGOT = null;
     public static final BaseItemPA BISMUTH_NUGGET = null;
     public static final BaseItemPA BISMUTH_PLATE = null;
+    public static final PAItemMirroredHeadband MIRROMIROUS_HEADBAND = null;
     public static final BaseItemPA PLANAR_ORB = null;
 
     @SubscribeEvent
@@ -44,7 +46,8 @@ public class ModItemsPA {
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_ingot"),
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_nugget"),
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_plate"),
-                ModRegistryPA.setup(new PAItemAuraMeter(), "aura_meter")
+                ModRegistryPA.setup(new PAItemAuraMeter(), "aura_meter"),
+                ModRegistryPA.setup(new PAItemMirroredHeadband(), "mirromirous_headband")
 
         );
 

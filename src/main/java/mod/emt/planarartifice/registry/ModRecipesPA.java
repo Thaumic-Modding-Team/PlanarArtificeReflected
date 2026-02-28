@@ -8,6 +8,7 @@ import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.crafting.CrucibleRecipe;
+import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
 
@@ -17,6 +18,7 @@ public class ModRecipesPA {
     public static void registerRecipes() {
         registerArcaneCraftingRecipes();
         registerCrucibleRecipes();
+        registerInfusionRecipes();
     }
 
     public static void registerArcaneCraftingRecipes() {
@@ -84,5 +86,20 @@ public class ModRecipesPA {
                 new ItemStack(Items.REDSTONE),
                 new ItemStack(Items.GUNPOWDER),
                 new AspectList().add(Aspect.ENERGY, 5)));
+    }
+
+    public static void registerInfusionRecipes() {
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirromirous_headband"),
+                new InfusionRecipe("PA_MIRROMIROUS_HEADBAND", new ItemStack(ModItemsPA.MIRROMIROUS_HEADBAND), 7,
+                        new AspectList().add(Aspect.MIND, 175).add(Aspect.CRYSTAL, 100).add(Aspect.TRAP, 125),
+                        new ItemStack(ItemsTC.bandCuriosity),
+                        "plateBismuth",
+                        new ItemStack(Items.ENCHANTED_BOOK),
+                        "plateBismuth",
+                        new ItemStack(Items.ENCHANTED_BOOK),
+                        "plateBismuth",
+                        new ItemStack(Items.ENCHANTED_BOOK),
+                        "plateBismuth",
+                        new ItemStack(Items.ENCHANTED_BOOK)));
     }
 }
