@@ -1,8 +1,8 @@
-itemGroup.PlanarArtificeTab=Cursed Artifice
+itemGroup.PlanarArtificeTab=Planar Artifice: Mirrored
 
 # Blocks
-tile.planarartifice.alkimium_block.name=Alkimium Block
-tile.planarartifice.bismuth_block.name=Bismuth Block
+tile.planarartifice.alkimium_block.name=Block of Alkimium
+tile.planarartifice.bismuth_block.name=Block of Bismuth
 
 # Items
 item.planarartifice.alkimium_ingot.name=Alkimium Ingot

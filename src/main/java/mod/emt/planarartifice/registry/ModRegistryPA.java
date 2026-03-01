@@ -59,8 +59,12 @@ public class ModRegistryPA {
 
     @SubscribeEvent
     public static void registerRecipes(@Nonnull final RegistryEvent.Register<IRecipe> event) {
+        OreDictionary.registerOre("blockAlkimium", ModBlocksPA.ALKIMIUM_BLOCK);
         OreDictionary.registerOre("blockBismuth", ModBlocksPA.BISMUTH_BLOCK);
 
+        OreDictionary.registerOre("ingotAlkimium", ModItemsPA.ALKIMIUM_INGOT);
+        OreDictionary.registerOre("nuggetAlkimium", ModItemsPA.ALKIMIUM_NUGGET);
+        OreDictionary.registerOre("plateAlkimium", ModItemsPA.ALKIMIUM_PLATE);
         OreDictionary.registerOre("ingotBismuth", ModItemsPA.BISMUTH_INGOT);
         OreDictionary.registerOre("nuggetBismuth", ModItemsPA.BISMUTH_NUGGET);
         OreDictionary.registerOre("plateBismuth", ModItemsPA.BISMUTH_PLATE);
