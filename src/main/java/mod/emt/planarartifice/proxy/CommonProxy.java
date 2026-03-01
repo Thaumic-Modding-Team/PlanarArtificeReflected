@@ -34,6 +34,7 @@ public class CommonProxy {
                 new ResourceLocation(PlanarArtifice.MOD_ID, "textures/gui/research_background.jpg"),
                 new ResourceLocation(Thaumcraft.MODID, "textures/gui/gui_research_back_over.png"));
 
+        ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/alkimium"));
         ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/basics"));
         ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/bismuth"));
     }

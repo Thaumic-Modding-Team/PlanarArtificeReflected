@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shaped",
+  "group": "planarartifice:alkimium_stuff",
+  "pattern": [
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "planarartifice:alkimium_ingot"
+    }
+  },
+  "result": {
+    "item": "planarartifice:alkimium_plate",
+    "count": 3
+  }
+}

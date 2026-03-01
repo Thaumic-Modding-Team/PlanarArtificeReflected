@@ -36,6 +36,11 @@ public class ModRecipesPA {
     }
 
     public static void registerCrucibleRecipes() {
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "ALKIMIUM_INGOT"), new CrucibleRecipe(
+                "PA_ALKIMIUM@1",
+                new ItemStack(ModItemsPA.ALKIMIUM_INGOT),
+                "ingotBrass",
+                new AspectList().add(Aspect.ALCHEMY, 10).add(Aspect.ORDER, 10)));
         ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "BISMUTH_INGOT"), new CrucibleRecipe(
                 "PA_BISMUTH@1",
                 new ItemStack(ModItemsPA.BISMUTH_INGOT),

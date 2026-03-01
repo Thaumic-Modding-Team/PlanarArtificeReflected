@@ -28,6 +28,9 @@ import javax.annotation.Nonnull;
 @Mod.EventBusSubscriber(modid = PlanarArtifice.MOD_ID)
 @GameRegistry.ObjectHolder(PlanarArtifice.MOD_ID)
 public class ModItemsPA {
+    public static final BaseItemPA ALKIMIUM_INGOT = null;
+    public static final BaseItemPA ALKIMIUM_NUGGET = null;
+    public static final BaseItemPA ALKIMIUM_PLATE = null;
     public static final PAItemAuraMeter AURA_METER = null;
     public static final BaseItemPA BISMUTH_INGOT = null;
     public static final BaseItemPA BISMUTH_NUGGET = null;
@@ -43,6 +46,9 @@ public class ModItemsPA {
 
         registry.registerAll(
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.EPIC), "planar_orb"),
+                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "alkimium_ingot"),
+                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "alkimium_nugget"),
+                ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "alkimium_plate"),
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_ingot"),
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_nugget"),
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_plate"),

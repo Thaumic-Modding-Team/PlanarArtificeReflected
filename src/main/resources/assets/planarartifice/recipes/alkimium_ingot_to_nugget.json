@@ -1,0 +1,12 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "planarartifice:alkimium_ingot"
+    }
+  ],
+  "result": {
+    "item": "planarartifice:alkimium_nugget",
+    "count": 9
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "entries": [
+    {
+      "key": "PA_ALKIMIUM",
+      "name": "planarartifice.research.alkimium.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:alkimium_ingot"
+      ],
+      "parents": [
+        "PLANAR_ARTIFICE_BASE",
+        "METALLURGY@2"
+      ],
+      "location": [
+        -2,
+        0
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.alkimium.stage.1",
+          "required_knowledge": [
+            "OBSERVATION;ALCHEMY;1",
+            "OBSERVATION;INFUSION;2"
+          ],
+          "recipes": [
+            "planarartifice:alkimium_ingot"
+          ],
+          "required_craft": [
+            "planarartifice:alkimium_ingot"
+          ]
+        },
+        {
+          "text": "planarartifice.research.alkimium.stage.2",
+          "recipes": [
+            "planarartifice:alkimium_ingot",
+            "planarartifice:alkimium_stuff"
+          ]
+        }
+      ]
+    }
+  ]
+}
