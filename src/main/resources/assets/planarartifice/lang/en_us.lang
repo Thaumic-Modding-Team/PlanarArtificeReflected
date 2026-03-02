@@ -1,7 +1,9 @@
 itemGroup.PlanarArtificeTab=Planar Artifice: Mirrored
 
 # Blocks
+tile.planarartifice.alkimic_construct.name=Alkimic Construct
 tile.planarartifice.alkimium_block.name=Block of Alkimium
+tile.planarartifice.alkimium_smeltery.name=Alkimium Essentia Smeltery
 tile.planarartifice.bismuth_block.name=Block of Bismuth
 
 # Items

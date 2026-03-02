@@ -2,7 +2,7 @@ package mod.emt.planarartifice;
 
 import mod.emt.planarartifice.proxy.CommonProxy;
 import mod.emt.planarartifice.registry.CreativeTabsPA;
-import mod.emt.planarartifice.utils.helpers.LogHelper;
+import mod.emt.planarartifice.utils.helper.LogHelper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;

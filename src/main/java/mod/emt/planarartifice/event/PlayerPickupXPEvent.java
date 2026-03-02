@@ -3,7 +3,7 @@ package mod.emt.planarartifice.event;
 import baubles.api.BaublesApi;
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.registry.ModItemsPA;
-import mod.emt.planarartifice.utils.helpers.ResearchHelper;
+import mod.emt.planarartifice.utils.helper.ResearchHelper;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraftforge.event.entity.player.PlayerPickupXpEvent;
 import net.minecraftforge.fml.common.Mod;

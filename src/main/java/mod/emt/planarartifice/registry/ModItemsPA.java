@@ -4,7 +4,7 @@ import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.item.BaseItemPA;
 import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
 import mod.emt.planarartifice.item.bauble.PAItemMirroredHeadband;
-import mod.emt.planarartifice.utils.helpers.LogHelper;
+import mod.emt.planarartifice.utils.helper.LogHelper;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;

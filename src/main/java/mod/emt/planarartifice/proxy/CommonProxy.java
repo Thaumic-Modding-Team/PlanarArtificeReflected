@@ -3,8 +3,10 @@ package mod.emt.planarartifice.proxy;
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.compat.PACompatHandler;
 import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
+import mod.emt.planarartifice.registry.ModGuiHandlerPA;
 import mod.emt.planarartifice.registry.ModRecipesPA;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import thaumcraft.Thaumcraft;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.AspectList;
@@ -25,6 +27,7 @@ public class CommonProxy {
     }
 
     public void postInit() {
+        NetworkRegistry.INSTANCE.registerGuiHandler(PlanarArtifice.instance, new ModGuiHandlerPA());
     }
 
     private void registerResearch() {

@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.utils.helpers;
+package mod.emt.planarartifice.utils.helper;
 
 import net.minecraftforge.fml.common.Loader;
 import thaumcraft.api.research.ResearchCategories;

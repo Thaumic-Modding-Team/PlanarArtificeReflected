@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.utils.helpers;
+package mod.emt.planarartifice.utils.helper;
 
 import mod.emt.planarartifice.PlanarArtifice;
 import org.apache.logging.log4j.LogManager;
