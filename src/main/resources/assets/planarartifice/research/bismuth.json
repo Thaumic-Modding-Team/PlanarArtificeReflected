@@ -196,6 +196,40 @@
           ]
         }
       ]
+    },
+    {
+      "key": "PA_THAUMIC_APPLE",
+      "name": "planarartifice.research.thaumic_apple.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:thaumaturges_fruit"
+      ],
+      "parents": [
+        "PA_BISMUTH",
+        "METALLURGY@3"
+      ],
+      "location": [
+        0,
+        -7
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.thaumic_apple.stage.1",
+          "required_item": [
+            "minecraft:golden_apple;1;0"
+          ],
+          "required_knowledge": [
+            "OBSERVATION;ALCHEMY;1",
+            "THEORY;ALCHEMY;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.thaumic_apple.stage.2",
+          "recipes": [
+            "planarartifice:thaumic_apple"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -16,6 +16,7 @@ item.planarartifice.bismuth_nugget.name=Bismuth Nugget
 item.planarartifice.bismuth_plate.name=Bismuth Plate
 item.planarartifice.mirromirous_headband.name=Mirromirous Headband
 item.planarartifice.planar_orb.name=Planar Orb
+item.planarartifice.thaumaturges_fruit.name=Thaumaturge's Fruit
 
 # Research
 tc.research_category.PLANAR_ARTIFICE=Planar Artifice
@@ -57,5 +58,5 @@ planarartifice.research.reagent_transmutation.stage.4=The answer was right in fr
 
 # -- BISMUTH: Thaumaturge's Fruit
 planarartifice.research.thaumic_apple.title=Thaumaturge's Fruit
-planarartifice.research.thaumic_apple.stage.1=I've created plans for an item to thaumaturgically emulate the effects of a golden apple. It should be easy enough to create via the crucible; I simply have to test it's usefulness.
-planarartifice.research.thaumic_apple.stage.2=Not only does it work, but it outdoes even the enchanted golden apple by quite a bit. It carries all the regular enchanted apple effects over, and also applies an additional saturation effect for quite a while.
+planarartifice.research.thaumic_apple.stage.1=I've created plans to thaumaturgically attempt to empower the effects of a golden apple. It should be easy enough to create via the crucible; I simply have to test its usefulness.
+planarartifice.research.thaumic_apple.stage.2=Not only does it work, but it is close to the same strength as an enchanted golden apple. It may not be as strong as the enchanted variety, but it is a good substitute that I can create myself at anytime.

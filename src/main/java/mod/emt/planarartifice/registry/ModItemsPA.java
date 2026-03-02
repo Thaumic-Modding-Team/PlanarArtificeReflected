@@ -1,6 +1,7 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.item.BaseFoodItemPA;
 import mod.emt.planarartifice.item.BaseItemPA;
 import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
 import mod.emt.planarartifice.item.bauble.PAItemMirroredHeadband;
@@ -37,6 +38,7 @@ public class ModItemsPA {
     public static final BaseItemPA BISMUTH_PLATE = null;
     public static final PAItemMirroredHeadband MIRROMIROUS_HEADBAND = null;
     public static final BaseItemPA PLANAR_ORB = null;
+    public static final BaseFoodItemPA THAUMATURGES_FRUIT = null;
 
     @SubscribeEvent
     public static void registerItems(@Nonnull final RegistryEvent.Register<Item> event) {
@@ -53,7 +55,8 @@ public class ModItemsPA {
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_nugget"),
                 ModRegistryPA.setup(new BaseItemPA(EnumRarity.RARE), "bismuth_plate"),
                 ModRegistryPA.setup(new PAItemAuraMeter(), "aura_meter"),
-                ModRegistryPA.setup(new PAItemMirroredHeadband(), "mirromirous_headband")
+                ModRegistryPA.setup(new PAItemMirroredHeadband(), "mirromirous_headband"),
+                ModRegistryPA.setup(new BaseFoodItemPA(6, 1.4F, false), "thaumaturges_fruit")
 
         );
 

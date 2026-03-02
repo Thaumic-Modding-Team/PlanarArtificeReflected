@@ -91,6 +91,11 @@ public class ModRecipesPA {
                 new ItemStack(Items.REDSTONE),
                 new ItemStack(Items.GUNPOWDER),
                 new AspectList().add(Aspect.ENERGY, 5)));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "THAUMIC_APPLE"), new CrucibleRecipe(
+                "PA_THAUMIC_APPLE",
+                new ItemStack(ModItemsPA.THAUMATURGES_FRUIT),
+                new ItemStack(Items.GOLDEN_APPLE, 1, 0),
+                new AspectList().add(Aspect.MAGIC, 75).add(Aspect.LIFE, 75).add(Aspect.BEAST, 50).add(Aspect.EARTH, 50)));
     }
 
     public static void registerInfusionRecipes() {
