@@ -78,7 +78,13 @@ public class InfusionEnchantMirrored {
                 if(!isLinked(heldStack)) {
                     setLink(heldStack, tile.getWorld().provider.getDimension(), tile.getPos());
                 } else {
-                    removeLink(heldStack);
+                    int dimId = getLinkedDimension(heldStack);
+                    BlockPos pos = getLinkedPosition(heldStack);
+                    if (dimId != world.provider.getDimension() || !pos.equals(tile.getPos())) {
+                        setLink(heldStack, tile.getWorld().provider.getDimension(), tile.getPos());
+                    } else {
+                        removeLink(heldStack);
+                    }
                 }
                 event.setUseItem(Event.Result.DENY);
                 event.setUseBlock(Event.Result.DENY);
