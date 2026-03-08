@@ -3,12 +3,14 @@ package mod.emt.planarartifice.registry;
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.enchants.InfusionEnchantMirrored;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.blocks.BlocksTC;
 import thaumcraft.api.crafting.CrucibleRecipe;
 import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.crafting.IngredientNBTTC;
@@ -116,14 +118,23 @@ public class ModRecipesPA {
                         "plateBismuth",
                         new ItemStack(Items.ENCHANTED_BOOK)));
 
-        //TODO: Add fake recipe.
         InfusionEnchantmentRecipe mirroredInfusion = new InfusionEnchantmentRecipe(
-                InfusionEnchantMirrored.MIRRORED,
+                ModEnchantsPA.MIRRORED,
                 new AspectList().add(Aspect.MOTION, 80).add(Aspect.TOOL, 150),
                 new IngredientNBTTC(new ItemStack(Items.ENCHANTED_BOOK)),
                 Ingredient.fromItem(ItemsTC.handMirror));
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_infusion"), mirroredInfusion);
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_infusion_fake1"), new InfusionEnchantmentRecipe(mirroredInfusion, new ItemStack(Items.WOODEN_SWORD)));
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_infusion_fake2"), new InfusionEnchantmentRecipe(mirroredInfusion, new ItemStack(Items.WOODEN_PICKAXE)));
+
+        InfusionEnchantmentRecipe metaphizeInfusion = new InfusionEnchantmentRecipe(
+                ModEnchantsPA.METAPHIZE,
+                new AspectList().add(Aspect.AURA, 50).add(Aspect.ENERGY, 80),
+                new IngredientNBTTC(new ItemStack(Items.ENCHANTED_BOOK)),
+                Ingredient.fromItem(Item.getItemFromBlock(BlocksTC.jarBrain)),
+                Ingredient.fromItem(ItemsTC.visResonator)
+        );
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "metaphize_infusion"), metaphizeInfusion);
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "metaphize_infusion_fake"), new InfusionEnchantmentRecipe(metaphizeInfusion, new ItemStack(Items.WOODEN_SWORD)));
     }
 }

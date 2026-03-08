@@ -1,7 +1,7 @@
 package mod.emt.planarartifice.enchants;
 
-import com.invadermonky.thaumicapi.api.ThaumicAPI;
 import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.registry.ModEnchantsPA;
 import mod.emt.planarartifice.utils.helper.StringHelper;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
@@ -32,10 +32,6 @@ import java.util.List;
 
 @Mod.EventBusSubscriber(modid = PlanarArtifice.MOD_ID)
 public class InfusionEnchantMirrored {
-    //TODO: Change required research.
-    public static EnumInfusionEnchantment MIRRORED = ThaumicAPI.registerInfusionEnchantment(
-            "MIRRORED", 1, "INFUSIONENCHANTMENT", "weapon", "pickaxe", "shovel", "hoe", "axe");
-
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public static void onTooltip(ItemTooltipEvent event) {
@@ -128,7 +124,7 @@ public class InfusionEnchantMirrored {
     }
 
     public static boolean hasMirroredInfusion(ItemStack stack) {
-        return EnumInfusionEnchantment.getInfusionEnchantmentLevel(stack, MIRRORED) > 0;
+        return EnumInfusionEnchantment.getInfusionEnchantmentLevel(stack, ModEnchantsPA.MIRRORED) > 0;
     }
 
     public static boolean isLinked(ItemStack stack) {
