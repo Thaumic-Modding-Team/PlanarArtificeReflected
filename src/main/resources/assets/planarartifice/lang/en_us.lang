@@ -18,6 +18,12 @@ item.planarartifice.mirromirous_headband.name=Mirromirous Headband
 item.planarartifice.planar_orb.name=Planar Orb
 item.planarartifice.thaumaturges_fruit.name=Thaumaturge's Fruit
 
+# Infusion Enchantments
+enchantment.infusion.MIRRORED.linked=§6Mirrored §f(§bLinked§f)
+enchantment.infusion.MIRRORED.linked.dim=Dim: %s
+enchantment.infusion.MIRRORED.linked.pos=Pos: x:%d, y:%d, z:%d
+enchantment.infusion.MIRRORED.unlinked=§6Mirrored §f(§7Unlinked§f)
+
 # Research
 tc.research_category.PLANAR_ARTIFICE=Planar Artifice
 planarartifice.research.planar_artifice_base.title=Planar Artifice
