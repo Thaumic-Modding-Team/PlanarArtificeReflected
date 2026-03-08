@@ -175,9 +175,9 @@ public class InfusionEnchantMirrored {
             BlockPos pos = getLinkedPosition(toolStack);
             TileEntity tile = targetWorld.getTileEntity(pos);
             if(tile instanceof TileMirror) {
-                for(ItemStack transerStack : transferStacks) {
-                    if(!transerStack.isEmpty()) {
-                        ((TileMirror) tile).addStack(transerStack.copy());
+                for(ItemStack transferStack : transferStacks) {
+                    if(!transferStack.isEmpty()) {
+                        ((TileMirror) tile).addStack(transferStack.copy());
                     }
                 }
                 return true;
