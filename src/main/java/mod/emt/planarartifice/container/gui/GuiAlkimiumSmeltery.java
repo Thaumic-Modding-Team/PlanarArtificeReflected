@@ -1,6 +1,6 @@
 package mod.emt.planarartifice.container.gui;
 
-import mod.emt.planarartifice.tile.PATileAlkimiumSmeltery;
+import mod.emt.planarartifice.tile.TileAlkimiumSmelterPA;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -11,9 +11,9 @@ import thaumcraft.common.container.ContainerSmelter;
 public class GuiAlkimiumSmeltery extends GuiContainer {
     ResourceLocation tex = new ResourceLocation(Thaumcraft.MODID, "textures/gui/gui_smelter.png");
 
-    PATileAlkimiumSmeltery furnaceInventory;
+    TileAlkimiumSmelterPA furnaceInventory;
 
-    public GuiAlkimiumSmeltery(InventoryPlayer par1InventoryPlayer, PATileAlkimiumSmeltery par2TileEntityFurnace){
+    public GuiAlkimiumSmeltery(InventoryPlayer par1InventoryPlayer, TileAlkimiumSmelterPA par2TileEntityFurnace){
         super(new ContainerSmelter(par1InventoryPlayer, par2TileEntityFurnace));
         this.furnaceInventory = par2TileEntityFurnace;
     }

@@ -2,7 +2,7 @@ package mod.emt.planarartifice.tile;
 
 import com.invadermonky.thaumicapi.api.block.ISmelterAuxiliary;
 import com.invadermonky.thaumicapi.api.block.ISmelterVent;
-import mod.emt.planarartifice.block.PABlockAlkimiumSmeltery;
+import mod.emt.planarartifice.block.BlockAlkimiumSmelteryPA;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
@@ -23,7 +23,7 @@ import thaumcraft.common.tiles.essentia.TileSmelter;
 
 import java.lang.reflect.Method;
 
-public class PATileAlkimiumSmeltery extends TileSmelter {
+public class TileAlkimiumSmelterPA extends TileSmelter {
     boolean speedBoost = false;
     int count = 0;
     int bellows = -1;
@@ -191,17 +191,17 @@ public class PATileAlkimiumSmeltery extends TileSmelter {
 
     public int getSpeed() {
         Block b = world.getBlockState(getPos()).getBlock();
-        return b instanceof PABlockAlkimiumSmeltery ? ((PABlockAlkimiumSmeltery) b).getSpeed() : 20;
+        return b instanceof BlockAlkimiumSmelteryPA ? ((BlockAlkimiumSmelteryPA) b).getSpeed() : 20;
     }
 
     public float getEfficiency() {
         Block b = world.getBlockState(getPos()).getBlock();
-        return b instanceof PABlockAlkimiumSmeltery ? ((PABlockAlkimiumSmeltery) b).getEfficiency() : 20;
+        return b instanceof BlockAlkimiumSmelteryPA ? ((BlockAlkimiumSmelteryPA) b).getEfficiency() : 20;
     }
 
     public int getCapacity() {
         Block b = world.getBlockState(getPos()).getBlock();
-        return b instanceof PABlockAlkimiumSmeltery ? ((PABlockAlkimiumSmeltery) b).getCapacity() : 375;
+        return b instanceof BlockAlkimiumSmelteryPA ? ((BlockAlkimiumSmelteryPA) b).getCapacity() : 375;
     }
 
     @Override

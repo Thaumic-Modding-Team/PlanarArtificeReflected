@@ -7,10 +7,10 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class PABlockMaterial extends Block {
+public class BlockMaterialPA extends Block {
     boolean beaconBlock;
 
-    public PABlockMaterial(Material material, MapColor mapColor, float hardness, float resistance, SoundType soundType, boolean beaconBlock) {
+    public BlockMaterialPA(Material material, MapColor mapColor, float hardness, float resistance, SoundType soundType, boolean beaconBlock) {
         super(material, mapColor);
         this.setHardness(hardness);
         this.setResistance(resistance);
@@ -18,7 +18,7 @@ public class PABlockMaterial extends Block {
         this.beaconBlock = beaconBlock;
     }
 
-    public PABlockMaterial(Material material, MapColor mapColor, float hardness, SoundType soundType) {
+    public BlockMaterialPA(Material material, MapColor mapColor, float hardness, SoundType soundType) {
         super(material, mapColor);
         this.setHardness(hardness);
         this.setSoundType(soundType);

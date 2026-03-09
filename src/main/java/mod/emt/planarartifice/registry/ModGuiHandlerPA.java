@@ -1,7 +1,7 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.container.gui.GuiAlkimiumSmeltery;
-import mod.emt.planarartifice.tile.PATileAlkimiumSmeltery;
+import mod.emt.planarartifice.tile.TileAlkimiumSmelterPA;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -16,7 +16,7 @@ public class ModGuiHandlerPA implements IGuiHandler {
 
         switch(ID) {
             case ID_ALKIMIUM_SMELTERY:
-                return new ContainerSmelter(player.inventory, (PATileAlkimiumSmeltery) world.getTileEntity(new BlockPos(x, y, z)));
+                return new ContainerSmelter(player.inventory, (TileAlkimiumSmelterPA) world.getTileEntity(new BlockPos(x, y, z)));
         }
 
         return null;
@@ -28,7 +28,7 @@ public class ModGuiHandlerPA implements IGuiHandler {
 
         switch(ID) {
             case ID_ALKIMIUM_SMELTERY:
-                return new GuiAlkimiumSmeltery(player.inventory, (PATileAlkimiumSmeltery) world.getTileEntity(new BlockPos(x, y, z)));
+                return new GuiAlkimiumSmeltery(player.inventory, (TileAlkimiumSmelterPA) world.getTileEntity(new BlockPos(x, y, z)));
         }
 
         return null;

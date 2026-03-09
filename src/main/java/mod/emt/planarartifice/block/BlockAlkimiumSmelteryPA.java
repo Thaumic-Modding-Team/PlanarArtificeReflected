@@ -2,7 +2,7 @@ package mod.emt.planarartifice.block;
 
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.registry.ModGuiHandlerPA;
-import mod.emt.planarartifice.tile.PATileAlkimiumSmeltery;
+import mod.emt.planarartifice.tile.TileAlkimiumSmelterPA;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -31,7 +31,7 @@ import thaumcraft.common.tiles.essentia.TileSmelter;
 
 import java.util.Random;
 
-public class PABlockAlkimiumSmeltery extends PABlockMaterial implements IBlockEnabled, IBlockFacingHorizontal {
+public class BlockAlkimiumSmelteryPA extends BlockMaterialPA implements IBlockEnabled, IBlockFacingHorizontal {
     protected static boolean keepInventory = false;
     protected static boolean spillEssentia = true;
 
@@ -39,7 +39,7 @@ public class PABlockAlkimiumSmeltery extends PABlockMaterial implements IBlockEn
     private final float efficiency;
     private final int capacity;
 
-    public PABlockAlkimiumSmeltery(int speed, float efficiency, int capacity) {
+    public BlockAlkimiumSmelteryPA(int speed, float efficiency, int capacity) {
         super(Material.IRON, MapColor.GREEN, 4.0F, 6.0F, SoundType.METAL, false);
         this.speed = speed;
         this.efficiency = efficiency;
@@ -51,7 +51,7 @@ public class PABlockAlkimiumSmeltery extends PABlockMaterial implements IBlockEn
             return true;
         }
         TileEntity te = world.getTileEntity(pos);
-        if (!(te instanceof PATileAlkimiumSmeltery)) {
+        if (!(te instanceof TileAlkimiumSmelterPA)) {
             return false;
         }
         player.openGui(PlanarArtifice.instance, ModGuiHandlerPA.ID_ALKIMIUM_SMELTERY, world, pos.getX(), pos.getY(),
@@ -65,7 +65,7 @@ public class PABlockAlkimiumSmeltery extends PABlockMaterial implements IBlockEn
 
     @Override
     public TileEntity createTileEntity(World world, IBlockState state) {
-        return new PATileAlkimiumSmeltery();
+        return new TileAlkimiumSmelterPA();
     }
 
     @Override
