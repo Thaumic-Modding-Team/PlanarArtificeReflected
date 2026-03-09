@@ -1,12 +1,6 @@
 package mod.emt.planarartifice.registry;
 
-import java.lang.reflect.Field;
-import java.util.HashMap;
-
-import javax.annotation.Nonnull;
-
 import com.google.common.base.Preconditions;
-
 import mod.emt.planarartifice.PlanarArtifice;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -19,6 +13,10 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 import thaumcraft.common.lib.events.PlayerEvents;
+
+import javax.annotation.Nonnull;
+import java.lang.reflect.Field;
+import java.util.HashMap;
 
 @Mod.EventBusSubscriber(modid = PlanarArtifice.MOD_ID)
 public class ModRegistryPA {

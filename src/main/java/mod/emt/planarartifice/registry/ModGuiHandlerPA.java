@@ -1,12 +1,12 @@
 package mod.emt.planarartifice.registry;
 
-import mod.emt.planarartifice.container.gui.GuiAlkimiumSmeltery;
-import mod.emt.planarartifice.tile.TileAlkimiumSmelterPA;
+import mod.emt.planarartifice.client.gui.GuiSmelterPA;
+import mod.emt.planarartifice.inventory.containers.ContainerSmelterPA;
+import mod.emt.planarartifice.tile.TileSmelterPA;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;
-import thaumcraft.common.container.ContainerSmelter;
 
 public class ModGuiHandlerPA implements IGuiHandler {
     public static final int ID_ALKIMIUM_SMELTERY = 0;
@@ -16,7 +16,7 @@ public class ModGuiHandlerPA implements IGuiHandler {
 
         switch(ID) {
             case ID_ALKIMIUM_SMELTERY:
-                return new ContainerSmelter(player.inventory, (TileAlkimiumSmelterPA) world.getTileEntity(new BlockPos(x, y, z)));
+                return new ContainerSmelterPA(player, (TileSmelterPA) world.getTileEntity(new BlockPos(x, y, z)));
         }
 
         return null;
@@ -28,7 +28,7 @@ public class ModGuiHandlerPA implements IGuiHandler {
 
         switch(ID) {
             case ID_ALKIMIUM_SMELTERY:
-                return new GuiAlkimiumSmeltery(player.inventory, (TileAlkimiumSmelterPA) world.getTileEntity(new BlockPos(x, y, z)));
+                return new GuiSmelterPA(player, (TileSmelterPA) world.getTileEntity(new BlockPos(x, y, z)));
         }
 
         return null;

@@ -1,9 +1,9 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.block.BlockAlkimiumSmelteryPA;
 import mod.emt.planarartifice.block.BlockMaterialPA;
-import mod.emt.planarartifice.tile.TileAlkimiumSmelterPA;
+import mod.emt.planarartifice.block.BlockSmelterPA;
+import mod.emt.planarartifice.tile.TileSmelterPA;
 import mod.emt.planarartifice.utils.helper.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -23,7 +23,7 @@ import javax.annotation.Nonnull;
 public class ModBlocksPA {
     public static final BlockMaterialPA ALKIMIC_CONSTRUCT = null;
     public static final BlockMaterialPA ALKIMIUM_BLOCK = null;
-    public static final BlockAlkimiumSmelteryPA ALKIMIUM_SMELTERY = null;
+    public static final BlockSmelterPA ALKIMIUM_SMELTERY = null;
     public static final BlockMaterialPA BISMUTH_BLOCK = null;
 
     @SubscribeEvent
@@ -36,9 +36,9 @@ public class ModBlocksPA {
                 ModRegistryPA.setup(new BlockMaterialPA(Material.IRON, MapColor.LIME, 5.0F, 15.0F, SoundType.METAL, true), "alkimium_block"),
                 ModRegistryPA.setup(new BlockMaterialPA(Material.IRON, MapColor.SILVER, 5.0F, 15.0F, SoundType.METAL, true), "bismuth_block"),
                 ModRegistryPA.setup(new BlockMaterialPA(Material.IRON, MapColor.LIME, 5.0F, 15.0F, SoundType.METAL, false), "alkimic_construct"),
-                ModRegistryPA.setup(new BlockAlkimiumSmelteryPA(14, 0.85F, 375), "alkimium_smeltery")
+                ModRegistryPA.setup(new BlockSmelterPA(14, 0.85F, 375), "alkimium_smeltery")
         );
 
-        GameRegistry.registerTileEntity(TileAlkimiumSmelterPA.class, new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery"));
+        GameRegistry.registerTileEntity(TileSmelterPA.class, new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery"));
     }
 }

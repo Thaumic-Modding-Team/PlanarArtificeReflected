@@ -1,7 +1,6 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.enchants.InfusionEnchantMirrored;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

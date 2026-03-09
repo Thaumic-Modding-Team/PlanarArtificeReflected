@@ -13,11 +13,11 @@ import thaumcraft.client.lib.events.HudHandler;
 import java.awt.*;
 import java.text.DecimalFormat;
 
-public class PAGuiAuraMeterHud extends Gui {
+public class GuiAuraMeterHudPA extends Gui {
     private static final ResourceLocation texture = new ResourceLocation(PlanarArtifice.MOD_ID, "textures/gui/hud_aura_meter.png");
     DecimalFormat secondsFormatter = new DecimalFormat("#######.#");
 
-    public PAGuiAuraMeterHud(Minecraft mc, float partialTicks, EntityPlayer player) {
+    public GuiAuraMeterHudPA(Minecraft mc, float partialTicks, EntityPlayer player) {
         mc.getTextureManager().bindTexture(texture);
 
         float base = MathHelper.clamp(HudHandler.currentAura.getBase() / 525.0F, 0.0F, 1.0F);
