@@ -140,16 +140,22 @@ public class ContainerSmelterPA extends Container {
     public void updateProgressBar(int id, int data) {
         switch (id) {
             case 0:
-                this.smelter.burnTime = data;
+                this.burnTime = data;
                 break;
             case 1:
-                this.smelter.burnTimeMax = data;
+                this.burnTimeMax = data;
                 break;
             case 2:
-                this.smelter.progress = data;
+                this.progress = data;
                 break;
             case 3:
-                this.smelter.progressMax = data;
+                this.progressMax = data;
+                break;
+            case 4:
+                this.essentiaAmount = data;
+                break;
+            case 5:
+                this.essentiaAmountMax = data;
         }
     }
 }

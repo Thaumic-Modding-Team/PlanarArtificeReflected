@@ -41,21 +41,21 @@ public class GuiSmelterPA extends GuiContainer {
     }
 
     protected void renderBurnTime(int k, int l) {
-        int burnTimeMax = this.getContainer().smelter.burnTimeMax;
-        int burnTimeScaled = this.getContainer().smelter.burnTime * 20 / (burnTimeMax == 0 ? 200 : burnTimeMax);
+        int burnTimeMax = this.getContainer().burnTimeMax;
+        int burnTimeScaled = this.getContainer().burnTime * 20 / (burnTimeMax == 0 ? 200 : burnTimeMax);
         if(burnTimeScaled > 0) {
             this.drawTexturedModalRect(k + 80, l + 26 + 20 - burnTimeScaled, 176, 20 - burnTimeScaled, 16, burnTimeScaled);
         }
     }
 
     protected void renderProgress(int k, int l) {
-        int progressMax = this.getContainer().smelter.progressMax;
-        int progressScaled = this.getContainer().smelter.progress * 46 / (progressMax == 0 ? 200 : progressMax);
+        int progressMax = this.getContainer().progressMax;
+        int progressScaled = this.getContainer().progress * 46 / (progressMax == 0 ? 200 : progressMax);
         this.drawTexturedModalRect(k + 106, l + 13 + 46 - progressScaled, 216, 46 - progressScaled, 9, progressScaled);    }
 
     protected void renderEssentiaAmount(int k, int l) {
-        int essentiaMax = this.getContainer().smelter.getMaxEssentiaCapacity();
-        int essentiaScaled = this.getContainer().smelter.getCurrentEssentiaTotal() * 48 / (essentiaMax == 0 ? 200 : essentiaMax);
+        int essentiaMax = this.getContainer().essentiaAmountMax;
+        int essentiaScaled = this.getContainer().essentiaAmount * 48 / (essentiaMax == 0 ? 200 : essentiaMax);
         this.drawTexturedModalRect(k + 61, l + 12 + 48 - essentiaScaled, 200, 48 - essentiaScaled, 8, essentiaScaled);
         this.drawTexturedModalRect(k + 60, l + 8, 232, 0, 10, 55);
     }
