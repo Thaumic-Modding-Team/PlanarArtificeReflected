@@ -11,7 +11,7 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter {
     @Override
     public int getMaxEssentiaCapacity() {
         Block block = this.world.getBlockState(this.pos).getBlock();
-        return block instanceof BlockSmelterPA ? ((BlockSmelterPA) block).getEssentiaCapacity() : 300;
+        return block instanceof BlockSmelterPA ? ((BlockSmelterPA) block).getEssentiaCapacity() : 256;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter {
     @Override
     public float getBaseEfficiency() {
         Block block = this.world.getBlockState(this.pos).getBlock();
-        return block instanceof BlockSmelterPA ? ((BlockSmelterPA) block).getEfficiency() : 0.85f;
+        return block instanceof BlockSmelterPA ? ((BlockSmelterPA) block).getEfficiency() : 0.8f;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter {
     }
 
     @Override
-    public void setBlockActive(boolean isActive) {
+    public void setBlockEnabledState(boolean isActive) {
         TileEntity tile = this.world.getTileEntity(this.pos);
         IBlockState state = this.world.getBlockState(this.pos);
         if(state.getValue(BlockSmelterPA.ENABLED) != isActive) {
@@ -42,5 +42,10 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter {
                 this.world.setTileEntity(this.pos, tile);
             }
         }
+    }
+
+    @Override
+    public int getBaseFluxProduced(int itemEssentia, int producedEssentia) {
+        return Math.max(0, itemEssentia - producedEssentia);
     }
 }
