@@ -19,7 +19,7 @@ public class CommonProxy {
 
     public void init() {
         this.registerResearch();
-        ModRecipesPA.registerRecipes();
+        ModRecipesPA.registerOreDicts();
         CompatHandlerPA.init();
 
         PAItemAuraMeter.GUI_ITEMS.add(ItemsTC.sanityChecker);

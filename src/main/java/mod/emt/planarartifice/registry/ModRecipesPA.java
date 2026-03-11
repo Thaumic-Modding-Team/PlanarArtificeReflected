@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.oredict.OreDictionary;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -17,6 +18,7 @@ import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
 import thaumcraft.common.lib.crafting.InfusionEnchantmentRecipe;
 
+@SuppressWarnings("ConstantConditions")
 public class ModRecipesPA {
     private static ResourceLocation defaultGroup = new ResourceLocation("");
 
@@ -26,7 +28,19 @@ public class ModRecipesPA {
         registerInfusionRecipes();
     }
 
-    public static void registerArcaneCraftingRecipes() {
+    public static void registerOreDicts() {
+        OreDictionary.registerOre("blockAlkimium", ModBlocksPA.ALKIMIUM_BLOCK);
+        OreDictionary.registerOre("blockBismuth", ModBlocksPA.BISMUTH_BLOCK);
+
+        OreDictionary.registerOre("ingotAlkimium", ModItemsPA.ALKIMIUM_INGOT);
+        OreDictionary.registerOre("nuggetAlkimium", ModItemsPA.ALKIMIUM_NUGGET);
+        OreDictionary.registerOre("plateAlkimium", ModItemsPA.ALKIMIUM_PLATE);
+        OreDictionary.registerOre("ingotBismuth", ModItemsPA.BISMUTH_INGOT);
+        OreDictionary.registerOre("nuggetBismuth", ModItemsPA.BISMUTH_NUGGET);
+        OreDictionary.registerOre("plateBismuth", ModItemsPA.BISMUTH_PLATE);
+    }
+
+    private static void registerArcaneCraftingRecipes() {
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "aura_meter"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_BISMUTH",
@@ -40,7 +54,7 @@ public class ModRecipesPA {
                 'M', new ItemStack(ItemsTC.mirroredGlass)));
     }
 
-    public static void registerCrucibleRecipes() {
+    private static void registerCrucibleRecipes() {
         ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "ALKIMIUM_INGOT"), new CrucibleRecipe(
                 "PA_ALKIMIUM@1",
                 new ItemStack(ModItemsPA.ALKIMIUM_INGOT),
@@ -103,7 +117,7 @@ public class ModRecipesPA {
                 new AspectList().add(Aspect.MAGIC, 75).add(Aspect.LIFE, 75).add(Aspect.BEAST, 50).add(Aspect.EARTH, 50)));
     }
 
-    public static void registerInfusionRecipes() {
+    private static void registerInfusionRecipes() {
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirromirous_headband"),
                 new InfusionRecipe("PA_MIRROMIROUS_HEADBAND", new ItemStack(ModItemsPA.MIRROMIROUS_HEADBAND), 7,
                         new AspectList().add(Aspect.MIND, 175).add(Aspect.CRYSTAL, 100).add(Aspect.TRAP, 125),

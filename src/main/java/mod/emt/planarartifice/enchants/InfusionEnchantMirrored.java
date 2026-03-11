@@ -3,6 +3,7 @@ package mod.emt.planarartifice.enchants;
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.registry.ModEnchantsPA;
 import mod.emt.planarartifice.utils.helper.StringHelper;
+import mod.emt.planarartifice.utils.helper.WorldHelper;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.item.EntityItem;
@@ -14,7 +15,6 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -162,11 +162,7 @@ public class InfusionEnchantMirrored {
 
     public static boolean attemptTransfer(ItemStack toolStack, NonNullList<ItemStack> transferStacks) {
         int dimId = getLinkedDimension(toolStack);
-        World targetWorld = DimensionManager.getWorld(dimId);
-        if(targetWorld == null) {
-            DimensionManager.initDimension(dimId);
-            targetWorld = DimensionManager.getWorld(dimId);
-        }
+        World targetWorld = WorldHelper.getWorldFromId(dimId, true);
         if(targetWorld != null) {
             BlockPos pos = getLinkedPosition(toolStack);
             TileEntity tile = targetWorld.getTileEntity(pos);

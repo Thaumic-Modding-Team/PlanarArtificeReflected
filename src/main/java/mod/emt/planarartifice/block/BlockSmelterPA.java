@@ -2,10 +2,10 @@ package mod.emt.planarartifice.block;
 
 import com.invadermonky.thaumicapi.api.tile.AbstractTileEssentiaSmelter;
 import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.block.base.BlockContainerPA;
 import mod.emt.planarartifice.registry.ModGuiHandlerPA;
 import mod.emt.planarartifice.tile.TileSmelterPA;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -30,7 +30,7 @@ import thaumcraft.api.aura.AuraHelper;
 
 import java.util.Random;
 
-public class BlockSmelterPA extends BlockContainer {
+public class BlockSmelterPA extends BlockContainerPA {
     public static PropertyDirection FACING = BlockHorizontal.FACING;
     public static PropertyBool ENABLED = PropertyBool.create("enabled");
 
@@ -38,8 +38,8 @@ public class BlockSmelterPA extends BlockContainer {
     private final float efficiency;
     private final int essentiaCapacity;
 
-    public BlockSmelterPA(int transferSpeed, float efficiency, int essentiaCapacity) {
-        super(Material.IRON, MapColor.GREEN);
+    public BlockSmelterPA(String name, int transferSpeed, float efficiency, int essentiaCapacity) {
+        super(name, Material.IRON, MapColor.GREEN);
         this.setHardness(4.0f);
         this.setResistance(6.0f);
         this.setSoundType(SoundType.METAL);

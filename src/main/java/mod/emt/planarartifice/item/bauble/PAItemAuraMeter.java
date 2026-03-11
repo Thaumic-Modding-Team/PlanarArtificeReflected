@@ -14,6 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import org.jetbrains.annotations.NotNull;
 import thaumcraft.api.casters.ICaster;
 import thaumcraft.common.lib.network.PacketHandler;
 import thaumcraft.common.lib.network.misc.PacketAuraToClient;
@@ -24,10 +25,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class PAItemAuraMeter extends BaseItemPA implements IBauble {
-    public static Set<Item> GUI_ITEMS = new HashSet();
+    public static Set<Item> GUI_ITEMS = new HashSet<>();
 
     public PAItemAuraMeter() {
-        super(EnumRarity.RARE);
+        super("aura_meter", EnumRarity.RARE);
         this.setMaxStackSize(1);
     }
 
@@ -37,7 +38,7 @@ public class PAItemAuraMeter extends BaseItemPA implements IBauble {
     }
 
     @Override
-    public void onUpdate(ItemStack stack, World world, Entity entity, int itemSlot, boolean isSelected) {
+    public void onUpdate(@NotNull ItemStack stack, World world, @NotNull Entity entity, int itemSlot, boolean isSelected) {
         if (!world.isRemote && entity.ticksExisted % 20 == 0 && entity instanceof EntityPlayerMP)
             updateAura(stack, world, (EntityPlayerMP) entity);
     }

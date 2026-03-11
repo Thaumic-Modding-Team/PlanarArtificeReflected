@@ -21,7 +21,7 @@ public class PAItemMirroredHeadband extends BaseItemPA implements IBauble, IRend
     ResourceLocation texture = new ResourceLocation(PlanarArtifice.MOD_ID, "textures/items/mirromirous_headband_worn.png");
 
     public PAItemMirroredHeadband() {
-        super(EnumRarity.EPIC);
+        super("mirromirous_headband", EnumRarity.EPIC);
         this.setMaxDamage(0);
         this.setMaxStackSize(1);
         this.canRepair = false;

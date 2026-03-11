@@ -27,6 +27,11 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter {
     }
 
     @Override
+    public int getBaseFluxProduced(int itemEssentia, int producedEssentia) {
+        return Math.max(0, itemEssentia - producedEssentia);
+    }
+
+    @Override
     public EnumFacing getMachineFront() {
         return this.world.getBlockState(this.pos).getValue(BlockSmelterPA.FACING);
     }
@@ -42,10 +47,5 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter {
                 this.world.setTileEntity(this.pos, tile);
             }
         }
-    }
-
-    @Override
-    public int getBaseFluxProduced(int itemEssentia, int producedEssentia) {
-        return Math.max(0, itemEssentia - producedEssentia);
     }
 }

@@ -1,22 +1,25 @@
 itemGroup.PlanarArtificeTab=Planar Artifice: Mirrored
 
 # Blocks
-tile.planarartifice.alkimic_construct.name=Alkimic Construct
-tile.planarartifice.alkimium_block.name=Block of Alkimium
-tile.planarartifice.alkimium_smeltery.name=Alkimium Essentia Smeltery
-tile.planarartifice.bismuth_block.name=Block of Bismuth
+tile.planarartifice:alkimic_construct.name=Alkimic Construct
+tile.planarartifice:alkimium_block.name=Block of Alkimium
+tile.planarartifice:alkimium_smeltery.name=Alkimium Essentia Smeltery
+tile.planarartifice:bismuth_block.name=Block of Bismuth
 
 # Items
-item.planarartifice.alkimium_ingot.name=Alkimium Ingot
-item.planarartifice.alkimium_nugget.name=Alkimium Nugget
-item.planarartifice.alkimium_plate.name=Alkimium Plate
-item.planarartifice.aura_meter.name=Aura Meter
-item.planarartifice.bismuth_ingot.name=Bismuth Ingot
-item.planarartifice.bismuth_nugget.name=Bismuth Nugget
-item.planarartifice.bismuth_plate.name=Bismuth Plate
-item.planarartifice.mirromirous_headband.name=Mirromirous Headband
-item.planarartifice.planar_orb.name=Planar Orb
-item.planarartifice.thaumaturges_fruit.name=Thaumaturge's Fruit
+item.planarartifice:alkimium_ingot.name=Alkimium Ingot
+item.planarartifice:alkimium_nugget.name=Alkimium Nugget
+item.planarartifice:alkimium_plate.name=Alkimium Plate
+item.planarartifice:aura_meter.name=Aura Meter
+item.planarartifice:bismuth_ingot.name=Bismuth Ingot
+item.planarartifice:bismuth_nugget.name=Bismuth Nugget
+item.planarartifice:bismuth_plate.name=Bismuth Plate
+item.planarartifice:mirromirous_headband.name=Mirromirous Headband
+item.planarartifice:planar_orb.name=Planar Orb
+item.planarartifice:thaumaturges_fruit.name=Thaumaturge's Fruit
+
+# Chat
+chat.planarartifice.mirror.already_linked=That mirror is already linked to a valid destination.
 
 # Infusion Enchantments
 enchantment.infusion.MIRRORED.linked=§6Mirrored §f(§bLinked§f)
