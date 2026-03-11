@@ -22,8 +22,8 @@ public class ModRegistryPA {
 
     @SubscribeEvent
     public static void registerItems(@Nonnull final RegistryEvent.Register<Item> event) {
-        ModItemsPA.registerItems(event);
         ModBlocksPA.registerBlockItems(event);
+        ModItemsPA.registerItems(event);
     }
 
     @SubscribeEvent
