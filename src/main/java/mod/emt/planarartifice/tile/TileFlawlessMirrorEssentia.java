@@ -1,23 +1,20 @@
 package mod.emt.planarartifice.tile;
 
+import mod.emt.planarartifice.config.ConfigHandlerPA;
 import thaumcraft.api.aura.AuraHelper;
 import thaumcraft.common.tiles.devices.TileMirrorEssentia;
 
 public class TileFlawlessMirrorEssentia extends TileMirrorEssentia {
-    //The ticks for each stabilization operation. Default Thaumcraft is 100.
-    public int ticksToStabilize = 20;
-    //The amount of essentia transferred before 1 flux is generated. Thaumcraft default is 64.
-    public int instabilityThreshold = 512;
-
     @Override
     public void checkInstability() {
-        if (this.instability > this.instabilityThreshold) {
+        int threshold = ConfigHandlerPA.flawlessMirrorEssentia.instabilityThreshold;
+        if (threshold > 0 && this.instability > threshold) {
             AuraHelper.polluteAura(this.world, this.pos, 1.0F, true);
-            this.instability -= this.instabilityThreshold;
+            this.instability -= threshold;
             this.markDirty();
         }
 
-        if (this.instability > 0 && this.world.getTotalWorldTime() % (long) this.ticksToStabilize == 0) {
+        if (this.instability > 0 && this.world.getTotalWorldTime() % (long) ConfigHandlerPA.flawlessMirrorEssentia.stabilizesTicks == 0) {
             --this.instability;
         }
     }
