@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.item;
+package mod.emt.planarartifice.item.blocks;
 
 import mod.emt.planarartifice.registry.ModBlocksPA;
 import mod.emt.planarartifice.tile.TileFlawlessMirror;

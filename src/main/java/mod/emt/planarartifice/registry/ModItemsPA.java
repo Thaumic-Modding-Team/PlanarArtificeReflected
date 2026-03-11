@@ -1,13 +1,14 @@
 package mod.emt.planarartifice.registry;
 
-import mod.emt.planarartifice.item.BaseFoodItemPA;
 import mod.emt.planarartifice.item.BaseItemPA;
-import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
-import mod.emt.planarartifice.item.bauble.PAItemMirroredHeadband;
+import mod.emt.planarartifice.item.bauble.ItemAuraMeter;
+import mod.emt.planarartifice.item.bauble.ItemMirroredHeadband;
+import mod.emt.planarartifice.item.food.ItemAppleThaumaturge;
 import mod.emt.planarartifice.utils.helper.LogHelper;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
@@ -21,13 +22,14 @@ public class ModItemsPA {
     public static BaseItemPA ALKIMIUM_INGOT;
     public static BaseItemPA ALKIMIUM_NUGGET;
     public static BaseItemPA ALKIMIUM_PLATE;
-    public static PAItemAuraMeter AURA_METER;
+    public static ItemAuraMeter AURA_METER;
     public static BaseItemPA BISMUTH_INGOT;
     public static BaseItemPA BISMUTH_NUGGET;
     public static BaseItemPA BISMUTH_PLATE;
-    public static PAItemMirroredHeadband MIRROMIROUS_HEADBAND;
+    public static ItemMirroredHeadband MIRROMIROUS_HEADBAND;
     public static BaseItemPA PLANAR_ORB;
-    public static BaseFoodItemPA THAUMATURGES_FRUIT;
+    public static ItemFood THAUMATURGES_FRUIT;
+    public static ItemFood THAUMATURGES_FRUIT_ENCHANTED;
 
     public static void registerItems(@Nonnull final RegistryEvent.Register<Item> event) {
         LogHelper.info("Registering items...");
@@ -42,9 +44,10 @@ public class ModItemsPA {
                 BISMUTH_INGOT = new BaseItemPA("bismuth_ingot", EnumRarity.RARE),
                 BISMUTH_NUGGET = new BaseItemPA("bismuth_nugget", EnumRarity.RARE),
                 BISMUTH_PLATE = new BaseItemPA("bismuth_plate", EnumRarity.RARE),
-                AURA_METER = new PAItemAuraMeter(),
-                MIRROMIROUS_HEADBAND = new PAItemMirroredHeadband(),
-                THAUMATURGES_FRUIT = new BaseFoodItemPA("thaumaturges_fruit", 6, 1.4F, false)
+                AURA_METER = new ItemAuraMeter(),
+                MIRROMIROUS_HEADBAND = new ItemMirroredHeadband(),
+                THAUMATURGES_FRUIT = new ItemAppleThaumaturge("thaumaturges_fruit", 6, 1.4F, false),
+                THAUMATURGES_FRUIT_ENCHANTED = new ItemAppleThaumaturge("thaumaturges_fruit_enchanted", 6, 1.4F, true)
         );
     }
 
@@ -62,6 +65,7 @@ public class ModItemsPA {
         registerItemModel(MIRROMIROUS_HEADBAND);
         registerItemModel(PLANAR_ORB);
         registerItemModel(THAUMATURGES_FRUIT);
+        registerItemModel(THAUMATURGES_FRUIT_ENCHANTED);
     }
 
     @SuppressWarnings("ConstantConditions")

@@ -2,7 +2,7 @@ package mod.emt.planarartifice.event;
 
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.client.gui.GuiAuraMeterHudPA;
-import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
+import mod.emt.planarartifice.item.bauble.ItemAuraMeter;
 import mod.emt.planarartifice.proxy.ClientProxy;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.Side;
 public class HudHandlerEvent {
     @SubscribeEvent
     public static void onRenderLast(RenderGameOverlayEvent.Post event) {
-        if (event.getType() == RenderGameOverlayEvent.ElementType.EXPERIENCE && PAItemAuraMeter.shouldRenderHud(ClientProxy.getClientPlayer())) {
+        if (event.getType() == RenderGameOverlayEvent.ElementType.EXPERIENCE && ItemAuraMeter.shouldRenderHud(ClientProxy.getClientPlayer())) {
             new GuiAuraMeterHudPA(Minecraft.getMinecraft(), event.getPartialTicks(), ClientProxy.getClientPlayer());
         }
     }

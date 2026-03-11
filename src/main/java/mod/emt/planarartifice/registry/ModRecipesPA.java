@@ -114,6 +114,11 @@ public class ModRecipesPA {
                 "PA_THAUMIC_APPLE",
                 new ItemStack(ModItemsPA.THAUMATURGES_FRUIT),
                 new ItemStack(Items.GOLDEN_APPLE, 1, 0),
+                new AspectList().add(Aspect.MAGIC, 30).add(Aspect.LIFE, 30).add(Aspect.BEAST, 20).add(Aspect.EARTH, 20)));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "THAUMIC_APPLE_ENCHANTED"), new CrucibleRecipe(
+                "PA_THAUMIC_APPLE",
+                new ItemStack(ModItemsPA.THAUMATURGES_FRUIT_ENCHANTED),
+                new ItemStack(Items.GOLDEN_APPLE, 1, 1),
                 new AspectList().add(Aspect.MAGIC, 75).add(Aspect.LIFE, 75).add(Aspect.BEAST, 50).add(Aspect.EARTH, 50)));
     }
 

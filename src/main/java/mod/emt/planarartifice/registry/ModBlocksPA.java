@@ -5,7 +5,7 @@ import mod.emt.planarartifice.block.BlockFlawlessMirror;
 import mod.emt.planarartifice.block.BlockMaterialPA;
 import mod.emt.planarartifice.block.BlockSmelterPA;
 import mod.emt.planarartifice.client.renderers.tile.TileFlawlessMirrorTESR;
-import mod.emt.planarartifice.item.ItemBlockFlawlessMirror;
+import mod.emt.planarartifice.item.blocks.ItemBlockFlawlessMirror;
 import mod.emt.planarartifice.tile.TileFlawlessMirror;
 import mod.emt.planarartifice.tile.TileFlawlessMirrorEssentia;
 import mod.emt.planarartifice.tile.TileSmelterPA;

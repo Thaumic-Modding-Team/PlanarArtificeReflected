@@ -1,10 +1,8 @@
 package mod.emt.planarartifice.item.bauble;
 
 import baubles.api.BaubleType;
-import baubles.api.IBauble;
 import baubles.api.render.IRenderBauble;
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.item.BaseItemPA;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,10 +15,10 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import thaumcraft.api.items.IVisDiscountGear;
 import thaumcraft.client.lib.UtilsFX;
 
-public class PAItemMirroredHeadband extends BaseItemPA implements IBauble, IRenderBauble, IVisDiscountGear {
+public class ItemMirroredHeadband extends AbstractBaublePA implements IRenderBauble, IVisDiscountGear {
     ResourceLocation texture = new ResourceLocation(PlanarArtifice.MOD_ID, "textures/items/mirromirous_headband_worn.png");
 
-    public PAItemMirroredHeadband() {
+    public ItemMirroredHeadband() {
         super("mirromirous_headband", EnumRarity.EPIC);
         this.setMaxDamage(0);
         this.setMaxStackSize(1);

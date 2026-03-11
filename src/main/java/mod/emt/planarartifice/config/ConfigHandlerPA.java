@@ -28,7 +28,7 @@ public class ConfigHandlerPA {
         @Config.Comment({
                 "The amount of instability required for this mirror to produce 1 flux. This value is equal to the",
                 "number of items or amount of essentia ejected from the mirror. Default Thaumcraft mirrors use values",
-                "of 128 (items) and 64 (essentia)."
+                "of 128 (items) and 64 (essentia). Setting this value to 0 will disable flux pollution."
         })
         public int instabilityThreshold = 512;
     }

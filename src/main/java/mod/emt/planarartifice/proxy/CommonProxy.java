@@ -2,7 +2,7 @@ package mod.emt.planarartifice.proxy;
 
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.compat.CompatHandlerPA;
-import mod.emt.planarartifice.item.bauble.PAItemAuraMeter;
+import mod.emt.planarartifice.item.bauble.ItemAuraMeter;
 import mod.emt.planarartifice.registry.ModGuiHandlerPA;
 import mod.emt.planarartifice.registry.ModRecipesPA;
 import net.minecraft.util.ResourceLocation;
@@ -22,8 +22,8 @@ public class CommonProxy {
         ModRecipesPA.registerOreDicts();
         CompatHandlerPA.init();
 
-        PAItemAuraMeter.GUI_ITEMS.add(ItemsTC.sanityChecker);
-        PAItemAuraMeter.GUI_ITEMS.add(ItemsTC.thaumometer);
+        ItemAuraMeter.GUI_ITEMS.add(ItemsTC.sanityChecker);
+        ItemAuraMeter.GUI_ITEMS.add(ItemsTC.thaumometer);
     }
 
     public void postInit() {

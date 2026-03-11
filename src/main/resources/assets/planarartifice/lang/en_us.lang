@@ -19,6 +19,7 @@ item.planarartifice:bismuth_plate.name=Bismuth Plate
 item.planarartifice:mirromirous_headband.name=Mirromirous Headband
 item.planarartifice:planar_orb.name=Planar Orb
 item.planarartifice:thaumaturges_fruit.name=Thaumaturge's Fruit
+item.planarartifice:thaumaturges_fruit_enchanted.name=Enchanted Thaumaturge's Fruit
 
 # Chat
 chat.planarartifice.mirror.already_linked=That mirror is already linked to a valid destination.

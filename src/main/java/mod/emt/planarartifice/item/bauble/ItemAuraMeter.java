@@ -3,7 +3,6 @@ package mod.emt.planarartifice.item.bauble;
 import baubles.api.BaubleType;
 import baubles.api.BaublesApi;
 import baubles.api.IBauble;
-import mod.emt.planarartifice.item.BaseItemPA;
 import mod.emt.planarartifice.registry.ModItemsPA;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -13,7 +12,6 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import org.jetbrains.annotations.NotNull;
 import thaumcraft.api.casters.ICaster;
 import thaumcraft.common.lib.network.PacketHandler;
@@ -24,10 +22,10 @@ import thaumcraft.common.world.aura.AuraHandler;
 import java.util.HashSet;
 import java.util.Set;
 
-public class PAItemAuraMeter extends BaseItemPA implements IBauble {
+public class ItemAuraMeter extends AbstractBaublePA implements IBauble {
     public static Set<Item> GUI_ITEMS = new HashSet<>();
 
-    public PAItemAuraMeter() {
+    public ItemAuraMeter() {
         super("aura_meter", EnumRarity.RARE);
         this.setMaxStackSize(1);
     }
@@ -51,7 +49,7 @@ public class PAItemAuraMeter extends BaseItemPA implements IBauble {
     private void updateAura(ItemStack stack, World world, EntityPlayerMP player) {
         AuraChunk ac = AuraHandler.getAuraChunk(world.provider.getDimension(), player.getPosition().getX() >> 4, player.getPosition().getZ() >> 4);
         if (ac != null)
-            PacketHandler.INSTANCE.sendTo((IMessage) new PacketAuraToClient(ac), player);
+            PacketHandler.INSTANCE.sendTo(new PacketAuraToClient(ac), player);
     }
 
     public static boolean shouldRenderHud(EntityPlayer player) {
