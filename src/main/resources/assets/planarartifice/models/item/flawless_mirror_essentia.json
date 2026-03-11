@@ -1,0 +1,15 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "planarartifice:blocks/flawless_mirror_essentia_frame",
+    "layer1": "thaumcraft:blocks/mirrorpane"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "linked": 1
+      },
+      "model": "planarartifice:item/flawless_mirror_essentia_linked"
+    }
+  ]
+}
