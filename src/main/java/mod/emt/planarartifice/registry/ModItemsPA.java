@@ -2,6 +2,7 @@ package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.item.BaseItemPA;
 import mod.emt.planarartifice.item.bauble.ItemAuraMeter;
+import mod.emt.planarartifice.item.bauble.ItemMirroredAmulet;
 import mod.emt.planarartifice.item.bauble.ItemMirroredHeadband;
 import mod.emt.planarartifice.item.food.ItemAppleThaumaturge;
 import mod.emt.planarartifice.utils.helper.LogHelper;
@@ -27,6 +28,7 @@ public class ModItemsPA {
     public static BaseItemPA BISMUTH_NUGGET;
     public static BaseItemPA BISMUTH_PLATE;
     public static ItemMirroredHeadband MIRROMIROUS_HEADBAND;
+    public static ItemMirroredAmulet MIRRORED_AMULET;
     public static BaseItemPA PLANAR_ORB;
     public static ItemFood THAUMATURGES_FRUIT;
     public static ItemFood THAUMATURGES_FRUIT_ENCHANTED;
@@ -36,19 +38,18 @@ public class ModItemsPA {
 
         final IForgeRegistry<Item> registry = event.getRegistry();
 
-        registry.registerAll(
-                PLANAR_ORB = new BaseItemPA("planar_orb", EnumRarity.EPIC),
-                ALKIMIUM_INGOT = new BaseItemPA("alkimium_ingot", EnumRarity.RARE),
-                ALKIMIUM_NUGGET = new BaseItemPA("alkimium_nugget", EnumRarity.RARE),
-                ALKIMIUM_PLATE = new BaseItemPA("alkimium_plate", EnumRarity.RARE),
-                BISMUTH_INGOT = new BaseItemPA("bismuth_ingot", EnumRarity.RARE),
-                BISMUTH_NUGGET = new BaseItemPA("bismuth_nugget", EnumRarity.RARE),
-                BISMUTH_PLATE = new BaseItemPA("bismuth_plate", EnumRarity.RARE),
-                AURA_METER = new ItemAuraMeter(),
-                MIRROMIROUS_HEADBAND = new ItemMirroredHeadband(),
-                THAUMATURGES_FRUIT = new ItemAppleThaumaturge("thaumaturges_fruit", 6, 1.4F, false),
-                THAUMATURGES_FRUIT_ENCHANTED = new ItemAppleThaumaturge("thaumaturges_fruit_enchanted", 6, 1.4F, true)
-        );
+        registry.register(PLANAR_ORB = new BaseItemPA("planar_orb", EnumRarity.EPIC));
+        registry.register(ALKIMIUM_INGOT = new BaseItemPA("alkimium_ingot", EnumRarity.RARE));
+        registry.register(ALKIMIUM_NUGGET = new BaseItemPA("alkimium_nugget", EnumRarity.RARE));
+        registry.register(ALKIMIUM_PLATE = new BaseItemPA("alkimium_plate", EnumRarity.RARE));
+        registry.register(BISMUTH_INGOT = new BaseItemPA("bismuth_ingot", EnumRarity.RARE));
+        registry.register(BISMUTH_NUGGET = new BaseItemPA("bismuth_nugget", EnumRarity.RARE));
+        registry.register(BISMUTH_PLATE = new BaseItemPA("bismuth_plate", EnumRarity.RARE));
+        registry.register(AURA_METER = new ItemAuraMeter());
+        registry.register(MIRROMIROUS_HEADBAND = new ItemMirroredHeadband());
+        registry.register(MIRRORED_AMULET = new ItemMirroredAmulet());
+        registry.register(THAUMATURGES_FRUIT = new ItemAppleThaumaturge("thaumaturges_fruit", 6, 1.4F, false));
+        registry.register(THAUMATURGES_FRUIT_ENCHANTED = new ItemAppleThaumaturge("thaumaturges_fruit_enchanted", 6, 1.4F, true));
     }
 
     @SuppressWarnings("ConstantConditions")
@@ -63,6 +64,7 @@ public class ModItemsPA {
         registerItemModel(BISMUTH_NUGGET);
         registerItemModel(BISMUTH_PLATE);
         registerItemModel(MIRROMIROUS_HEADBAND);
+        registerItemModel(MIRRORED_AMULET);
         registerItemModel(PLANAR_ORB);
         registerItemModel(THAUMATURGES_FRUIT);
         registerItemModel(THAUMATURGES_FRUIT_ENCHANTED);
