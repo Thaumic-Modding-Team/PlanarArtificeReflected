@@ -101,6 +101,7 @@ public class CommonEventHandler {
         }
     }
 
+    //TODO: Need to check and make sure this is working with gravestone mods.
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void onPlayerDrops(PlayerDropsEvent event) {
         EntityPlayer player = event.getEntityPlayer();
