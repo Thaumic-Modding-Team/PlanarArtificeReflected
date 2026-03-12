@@ -3,6 +3,8 @@ itemGroup.PlanarArtificeTab=Planar Artifice: Mirrored
 # Blocks
 tile.planarartifice:alkimic_construct.name=Alkimic Construct
 tile.planarartifice:alkimium_block.name=Block of Alkimium
+tile.planarartifice:alkimium_smelter_aux.name=Alkimium Auxiliary Slurry Pump
+tile.planarartifice:alkimium_smelter_vent.name=Alkimium Auxiliary Venting Port
 tile.planarartifice:alkimium_smeltery.name=Alkimium Essentia Smeltery
 tile.planarartifice:alkimium_smeltery_adaminite.name=Alkimium Adaminite Essentia Smeltery
 tile.planarartifice:alkimium_smeltery_mithminite.name=Alkimium Mithminite Essentia Smeltery
