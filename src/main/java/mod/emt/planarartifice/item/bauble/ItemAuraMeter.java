@@ -32,7 +32,7 @@ public class ItemAuraMeter extends AbstractBaublePA implements IBauble {
 
     @Override
     public BaubleType getBaubleType(ItemStack stack) {
-        return BaubleType.BODY;
+        return BaubleType.TRINKET;
     }
 
     @Override
