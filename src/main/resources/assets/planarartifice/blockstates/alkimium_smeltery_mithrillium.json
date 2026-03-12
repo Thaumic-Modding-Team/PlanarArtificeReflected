@@ -1,0 +1,44 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "planarartifice:smelter/alkimium_smeltery_mithrillium"
+  },
+  "variants": {
+    "normal": [
+      {}
+    ],
+    "inventory": [
+      {}
+    ],
+    "enabled=false,facing=north": {
+      "model": "planarartifice:smeltery/alkimium_smeltery_mithrillium"
+    },
+    "enabled=true,facing=north": {
+      "model": "planarartifice:smeltery/alkimium_smeltery_mithrillium_on"
+    },
+    "enabled=false,facing=south": {
+      "model": "planarartifice:smeltery/alkimium_smeltery_mithrillium",
+      "y": 180
+    },
+    "enabled=true,facing=south": {
+      "model": "planarartifice:smeltery/alkimium_smeltery_mithrillium_on",
+      "y": 180
+    },
+    "enabled=false,facing=east": {
+      "model": "planarartifice:smeltery/alkimium_smeltery_mithrillium",
+      "y": 90
+    },
+    "enabled=true,facing=east": {
+      "model": "planarartifice:smeltery/alkimium_smeltery_mithrillium_on",
+      "y": 90
+    },
+    "enabled=false,facing=west": {
+      "model": "planarartifice:smeltery/alkimium_smeltery_mithrillium",
+      "y": 270
+    },
+    "enabled=true,facing=west": {
+      "model": "planarartifice:smeltery/alkimium_smeltery_mithrillium_on",
+      "y": 270
+    }
+  }
+}

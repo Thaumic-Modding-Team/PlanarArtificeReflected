@@ -9,7 +9,6 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagInt;
@@ -21,7 +20,6 @@ import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.common.DimensionManager;
-import net.minecraftforge.common.IRarity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.jetbrains.annotations.NotNull;
@@ -29,14 +27,10 @@ import org.jetbrains.annotations.Nullable;
 import thaumcraft.common.lib.SoundsTC;
 
 import java.util.List;
-import java.util.Objects;
 
-public class ItemBlockFlawlessMirror extends ItemBlock {
+public class ItemBlockFlawlessMirror extends ItemBlockPA {
     public ItemBlockFlawlessMirror(Block block) {
-        super(block);
-        this.setRegistryName(Objects.requireNonNull(block.getRegistryName()));
-        this.setTranslationKey(block.getTranslationKey());
-        this.setCreativeTab(block.getCreativeTab());
+        super(block, EnumRarity.RARE);
         this.addPropertyOverride(new ResourceLocation("linked"), ((stack, worldIn, entityIn) -> hasLinkTagInfo(stack) ? 1 : 0));
     }
 
@@ -112,11 +106,6 @@ public class ItemBlockFlawlessMirror extends ItemBlock {
             }
         }
         return flag;
-    }
-
-    @Override
-    public @NotNull IRarity getForgeRarity(@NotNull ItemStack stack) {
-        return EnumRarity.RARE;
     }
 
     @SideOnly(Side.CLIENT)

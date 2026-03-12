@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "planarartifice:blocks/smeltery/alkimium_smeltery_mithminite_front",
+    "down": "planarartifice:blocks/smeltery/alkimium_smeltery_mithminite_side",
+    "up": "planarartifice:blocks/smeltery/alkimium_smeltery_top",
+    "east": "planarartifice:blocks/smeltery/alkimium_smeltery_mithminite_side",
+    "west": "planarartifice:blocks/smeltery/alkimium_smeltery_mithminite_side",
+    "north": "planarartifice:blocks/smeltery/alkimium_smeltery_mithminite_front",
+    "south": "planarartifice:blocks/smeltery/alkimium_smeltery_mithminite_side"
+  }
+}
