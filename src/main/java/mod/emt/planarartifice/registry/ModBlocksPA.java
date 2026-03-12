@@ -1,9 +1,7 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.block.BlockFlawlessMirror;
-import mod.emt.planarartifice.block.BlockMaterialPA;
-import mod.emt.planarartifice.block.BlockSmelterPA;
+import mod.emt.planarartifice.block.*;
 import mod.emt.planarartifice.client.renderers.tile.TileFlawlessMirrorTESR;
 import mod.emt.planarartifice.item.blocks.ItemBlockFlawlessMirror;
 import mod.emt.planarartifice.item.blocks.ItemBlockPA;
@@ -33,15 +31,19 @@ import javax.annotation.Nonnull;
 public class ModBlocksPA {
     public static BlockMaterialPA ALKIMIC_CONSTRUCT;
     public static BlockMaterialPA ALKIMIUM_BLOCK;
+    public static BlockSmelterVentPA ALKIMIUM_SMELTER_VENT;
+    public static BlockSmelterAuxiliaryPA ALKIMIUM_SMELTER_AUX;
     public static BlockSmelterPA ALKIMIUM_SMELTERY;
     public static BlockSmelterPA ALKIMIUM_SMELTERY_THAUMIUM;
     public static BlockSmelterPA ALKIMIUM_SMELTERY_VOID;
-    public static BlockSmelterPA ALKIMIUM_SMELTERY_MITHRILLIUM;
-    public static BlockSmelterPA ALKIMIUM_SMELTERY_ADAMINITE;
-    public static BlockSmelterPA ALKIMIUM_SMELTERY_MITHMINITE;
     public static BlockMaterialPA BISMUTH_BLOCK;
     public static BlockFlawlessMirror FLAWLESS_MIRROR;
     public static BlockFlawlessMirror FLAWLESS_MIRROR_ESSENTIA;
+
+    //Thaumic Additions
+    public static BlockSmelterPA ALKIMIUM_SMELTERY_ADAMINITE;
+    public static BlockSmelterPA ALKIMIUM_SMELTERY_MITHMINITE;
+    public static BlockSmelterPA ALKIMIUM_SMELTERY_MITHRILLIUM;
 
     public static void registerBlocks(@Nonnull final RegistryEvent.Register<Block> event) {
         LogHelper.info("Registering blocks...");
@@ -60,6 +62,8 @@ public class ModBlocksPA {
 //        registry.register(ALKIMIUM_SMELTERY_ADAMINITE = new BlockSmelterPA("alkimium_smeltery_adaminite", 10, 1.25f, 2000));
 //        registry.register(ALKIMIUM_SMELTERY_MITHMINITE = new BlockSmelterPA("alkimium_smeltery_mithminite", 3, 1.5f, 4000));
 
+        registry.register(ALKIMIUM_SMELTER_AUX = new BlockSmelterAuxiliaryPA("alkimium_smelter_aux", 2));
+        registry.register(ALKIMIUM_SMELTER_VENT = new BlockSmelterVentPA("alkimium_smelter_vent", 0.5f));
         registry.register(FLAWLESS_MIRROR = new BlockFlawlessMirror(TileFlawlessMirror.class, "flawless_mirror"));
         registry.register(FLAWLESS_MIRROR_ESSENTIA = new BlockFlawlessMirror(TileFlawlessMirrorEssentia.class, "flawless_mirror_essentia"));
 
@@ -89,7 +93,8 @@ public class ModBlocksPA {
 //        registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_ADAMINITE, EnumRarity.RARE));
 //        registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_MITHMINITE, EnumRarity.RARE));
 
-
+        registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_AUX));
+        registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_VENT));
         registry.register(new ItemBlockFlawlessMirror(FLAWLESS_MIRROR));
         registry.register(new ItemBlockFlawlessMirror(FLAWLESS_MIRROR_ESSENTIA));
     }
@@ -99,6 +104,8 @@ public class ModBlocksPA {
         registerItemModel(ALKIMIUM_BLOCK);
         registerItemModel(BISMUTH_BLOCK);
         registerItemModel(ALKIMIC_CONSTRUCT);
+        registerItemModel(ALKIMIUM_SMELTER_AUX);
+        registerItemModel(ALKIMIUM_SMELTER_VENT);
         registerItemModel(ALKIMIUM_SMELTERY);
         registerItemModel(ALKIMIUM_SMELTERY_THAUMIUM);
         registerItemModel(ALKIMIUM_SMELTERY_VOID);

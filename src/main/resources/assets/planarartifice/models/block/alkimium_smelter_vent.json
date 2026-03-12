@@ -1,0 +1,7 @@
+{
+  "parent": "thaumcraft:block/smelter_vent",
+  "textures": {
+    "particle": "planarartifice:blocks/alkimium_smelter_vent",
+    "side": "planarartifice:blocks/alkimium_smelter_vent"
+  }
+}

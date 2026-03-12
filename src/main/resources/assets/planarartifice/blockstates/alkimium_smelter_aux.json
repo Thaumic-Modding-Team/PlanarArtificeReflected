@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "inventory":    {"model": "planarartifice:alkimium_smelter_aux", "transform": "forge:default-block"},
+    "facing=north": { "model": "planarartifice:alkimium_smelter_aux" },
+    "facing=south": { "model": "planarartifice:alkimium_smelter_aux", "y": 180 },
+    "facing=east":  { "model": "planarartifice:alkimium_smelter_aux", "y": 90 },
+    "facing=west":  { "model": "planarartifice:alkimium_smelter_aux", "y": 270 }
+  }
+}
