@@ -1,0 +1,6 @@
+{
+  "parent": "thaumcraft:block/centrifuge",
+  "textures": {
+    "side": "planarartifice:blocks/alkimium_centrifuge"
+  }
+}

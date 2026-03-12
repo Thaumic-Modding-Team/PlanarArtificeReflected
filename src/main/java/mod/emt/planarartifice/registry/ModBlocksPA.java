@@ -2,9 +2,11 @@ package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.block.*;
+import mod.emt.planarartifice.client.renderers.tile.TileCentrifugeRendererPA;
 import mod.emt.planarartifice.client.renderers.tile.TileFlawlessMirrorTESR;
 import mod.emt.planarartifice.item.blocks.ItemBlockFlawlessMirror;
 import mod.emt.planarartifice.item.blocks.ItemBlockPA;
+import mod.emt.planarartifice.tile.TileCentrifiguePA;
 import mod.emt.planarartifice.tile.TileFlawlessMirror;
 import mod.emt.planarartifice.tile.TileFlawlessMirrorEssentia;
 import mod.emt.planarartifice.tile.TileSmelterPA;
@@ -29,16 +31,17 @@ import net.minecraftforge.registries.IForgeRegistry;
 import javax.annotation.Nonnull;
 
 public class ModBlocksPA {
-    public static BlockMaterialPA ALKIMIC_CONSTRUCT;
-    public static BlockMaterialPA ALKIMIUM_BLOCK;
-    public static BlockSmelterVentPA ALKIMIUM_SMELTER_VENT;
-    public static BlockSmelterAuxiliaryPA ALKIMIUM_SMELTER_AUX;
-    public static BlockSmelterPA ALKIMIUM_SMELTERY;
-    public static BlockSmelterPA ALKIMIUM_SMELTERY_THAUMIUM;
-    public static BlockSmelterPA ALKIMIUM_SMELTERY_VOID;
-    public static BlockMaterialPA BISMUTH_BLOCK;
-    public static BlockFlawlessMirror FLAWLESS_MIRROR;
-    public static BlockFlawlessMirror FLAWLESS_MIRROR_ESSENTIA;
+    public static Block ALKIMIC_CONSTRUCT;
+    public static Block ALKIMIUM_BLOCK;
+    public static Block ALKIMIUM_CENTRIFUGE;
+    public static Block ALKIMIUM_SMELTER_VENT;
+    public static Block ALKIMIUM_SMELTER_AUX;
+    public static Block ALKIMIUM_SMELTERY;
+    public static Block ALKIMIUM_SMELTERY_THAUMIUM;
+    public static Block ALKIMIUM_SMELTERY_VOID;
+    public static Block BISMUTH_BLOCK;
+    public static Block FLAWLESS_MIRROR;
+    public static Block FLAWLESS_MIRROR_ESSENTIA;
 
     //Thaumic Additions
     public static BlockSmelterPA ALKIMIUM_SMELTERY_ADAMINITE;
@@ -62,6 +65,7 @@ public class ModBlocksPA {
 //        registry.register(ALKIMIUM_SMELTERY_ADAMINITE = new BlockSmelterPA("alkimium_smeltery_adaminite", 10, 1.25f, 2000));
 //        registry.register(ALKIMIUM_SMELTERY_MITHMINITE = new BlockSmelterPA("alkimium_smeltery_mithminite", 3, 1.5f, 4000));
 
+        registry.register(ALKIMIUM_CENTRIFUGE = new BlockCentrifugePA("alkimium_centrifuge"));
         registry.register(ALKIMIUM_SMELTER_AUX = new BlockSmelterAuxiliaryPA("alkimium_smelter_aux", 2));
         registry.register(ALKIMIUM_SMELTER_VENT = new BlockSmelterVentPA("alkimium_smelter_vent", 0.5f));
         registry.register(FLAWLESS_MIRROR = new BlockFlawlessMirror(TileFlawlessMirror.class, "flawless_mirror"));
@@ -73,9 +77,10 @@ public class ModBlocksPA {
     }
 
     public static void registerTileEntities() {
-        GameRegistry.registerTileEntity(TileSmelterPA.class, new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery"));
+        GameRegistry.registerTileEntity(TileCentrifiguePA.class, new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_centrifuge"));
         GameRegistry.registerTileEntity(TileFlawlessMirror.class, new ResourceLocation(PlanarArtifice.MOD_ID, "flawless_mirror"));
         GameRegistry.registerTileEntity(TileFlawlessMirrorEssentia.class, new ResourceLocation(PlanarArtifice.MOD_ID, "flawless_mirror_essentia"));
+        GameRegistry.registerTileEntity(TileSmelterPA.class, new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery"));
     }
 
     public static void registerBlockItems(RegistryEvent.Register<Item> event) {
@@ -95,6 +100,7 @@ public class ModBlocksPA {
 
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_AUX, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_VENT, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(ALKIMIUM_CENTRIFUGE, EnumRarity.RARE));
         registry.register(new ItemBlockFlawlessMirror(FLAWLESS_MIRROR));
         registry.register(new ItemBlockFlawlessMirror(FLAWLESS_MIRROR_ESSENTIA));
     }
@@ -104,6 +110,7 @@ public class ModBlocksPA {
         registerItemModel(ALKIMIUM_BLOCK);
         registerItemModel(BISMUTH_BLOCK);
         registerItemModel(ALKIMIC_CONSTRUCT);
+        registerItemModel(ALKIMIUM_CENTRIFUGE);
         registerItemModel(ALKIMIUM_SMELTER_AUX);
         registerItemModel(ALKIMIUM_SMELTER_VENT);
         registerItemModel(ALKIMIUM_SMELTERY);
@@ -115,6 +122,7 @@ public class ModBlocksPA {
         registerItemModel(FLAWLESS_MIRROR);
         registerItemModel(FLAWLESS_MIRROR_ESSENTIA);
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileCentrifiguePA.class, new TileCentrifugeRendererPA());
         ClientRegistry.bindTileEntitySpecialRenderer(TileFlawlessMirror.class, new TileFlawlessMirrorTESR());
         ClientRegistry.bindTileEntitySpecialRenderer(TileFlawlessMirrorEssentia.class, new TileFlawlessMirrorTESR());
     }
