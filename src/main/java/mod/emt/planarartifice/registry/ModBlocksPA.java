@@ -81,9 +81,9 @@ public class ModBlocksPA {
     public static void registerBlockItems(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> registry = event.getRegistry();
 
-        registry.register(new ItemBlockPA(ALKIMIUM_BLOCK));
-        registry.register(new ItemBlockPA(BISMUTH_BLOCK));
-        registry.register(new ItemBlockPA(ALKIMIC_CONSTRUCT));
+        registry.register(new ItemBlockPA(ALKIMIUM_BLOCK, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(BISMUTH_BLOCK, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(ALKIMIC_CONSTRUCT, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_THAUMIUM, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_VOID, EnumRarity.RARE));
@@ -93,8 +93,8 @@ public class ModBlocksPA {
 //        registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_ADAMINITE, EnumRarity.RARE));
 //        registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_MITHMINITE, EnumRarity.RARE));
 
-        registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_AUX));
-        registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_VENT));
+        registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_AUX, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_VENT, EnumRarity.RARE));
         registry.register(new ItemBlockFlawlessMirror(FLAWLESS_MIRROR));
         registry.register(new ItemBlockFlawlessMirror(FLAWLESS_MIRROR_ESSENTIA));
     }
