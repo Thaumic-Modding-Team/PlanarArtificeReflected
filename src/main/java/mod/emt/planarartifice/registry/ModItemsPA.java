@@ -6,6 +6,7 @@ import mod.emt.planarartifice.item.bauble.ItemMirroredAmulet;
 import mod.emt.planarartifice.item.bauble.ItemMirroredHeadband;
 import mod.emt.planarartifice.item.bauble.ItemSuspensionBelt;
 import mod.emt.planarartifice.item.food.ItemAppleThaumaturge;
+import mod.emt.planarartifice.item.tools.ItemCasterPA;
 import mod.emt.planarartifice.utils.helper.LogHelper;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.EnumRarity;
@@ -25,6 +26,7 @@ public class ModItemsPA {
     public static Item ALKIMIUM_NUGGET;
     public static Item ALKIMIUM_PLATE;
     public static ItemAuraMeter AURA_METER;
+    public static ItemCasterPA BISMUTH_CASTER;
     public static Item BISMUTH_INGOT;
     public static Item BISMUTH_NUGGET;
     public static Item BISMUTH_PLATE;
@@ -51,6 +53,7 @@ public class ModItemsPA {
         registry.register(MIRROMIROUS_HEADBAND = new ItemMirroredHeadband());
         registry.register(MIRRORED_AMULET = new ItemMirroredAmulet());
         registry.register(SUSPENSION_BELT = new ItemSuspensionBelt());
+        registry.register(BISMUTH_CASTER = new ItemCasterPA("bismuth_caster", 4, 2, 1.2f));
         registry.register(THAUMATURGES_FRUIT = new ItemAppleThaumaturge("thaumaturges_fruit", 6, 1.4F, false));
         registry.register(THAUMATURGES_FRUIT_ENCHANTED = new ItemAppleThaumaturge("thaumaturges_fruit_enchanted", 6, 1.4F, true));
     }
@@ -63,6 +66,7 @@ public class ModItemsPA {
         registerItemModel(ALKIMIUM_NUGGET);
         registerItemModel(ALKIMIUM_PLATE);
         registerItemModel(AURA_METER);
+        registerItemModel(BISMUTH_CASTER);
         registerItemModel(BISMUTH_INGOT);
         registerItemModel(BISMUTH_NUGGET);
         registerItemModel(BISMUTH_PLATE);

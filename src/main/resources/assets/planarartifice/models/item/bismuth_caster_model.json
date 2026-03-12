@@ -1,0 +1,6 @@
+{
+  "parent": "thaumcraft:item/caster_gauntlet",
+  "textures": {
+    "skin": "planarartifice:models/bismuth_caster"
+  }
+}
