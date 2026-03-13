@@ -8,9 +8,10 @@ import mod.emt.planarartifice.block.essentia.BlockCentrifugePA;
 import mod.emt.planarartifice.block.essentia.BlockSmelterAuxiliaryPA;
 import mod.emt.planarartifice.block.essentia.BlockSmelterPA;
 import mod.emt.planarartifice.block.essentia.BlockSmelterVentPA;
-import mod.emt.planarartifice.client.renderers.tile.TileStarvingChestTESR;
 import mod.emt.planarartifice.client.renderers.tile.TileCentrifugeRendererPA;
 import mod.emt.planarartifice.client.renderers.tile.TileFlawlessMirrorTESR;
+import mod.emt.planarartifice.client.renderers.tile.TileStarvingChestTESR;
+import mod.emt.planarartifice.compat.CompatHandlerPA;
 import mod.emt.planarartifice.item.blocks.ItemBlockFlawlessMirror;
 import mod.emt.planarartifice.item.blocks.ItemBlockPA;
 import mod.emt.planarartifice.tile.*;
@@ -72,10 +73,11 @@ public class ModBlocksPA {
         registry.register(ALKIMIUM_SMELTERY_THAUMIUM = new BlockSmelterPA("alkimium_smeltery_thaumium", 5, 0.90f, 375));
         registry.register(ALKIMIUM_SMELTERY_VOID = new BlockSmelterPA("alkimium_smeltery_void", 10, 0.95f, 375));
 
-        //TODO: Register these blocks at this point if Thaumic Additions is loaded so they are grouped with the other smelters
-//        registry.register(ALKIMIUM_SMELTERY_MITHRILLIUM = new BlockSmelterPA("alkimium_smeltery_mithrillium", 15, 1.0f, 1000));
-//        registry.register(ALKIMIUM_SMELTERY_ADAMINITE = new BlockSmelterPA("alkimium_smeltery_adaminite", 10, 1.25f, 2000));
-//        registry.register(ALKIMIUM_SMELTERY_MITHMINITE = new BlockSmelterPA("alkimium_smeltery_mithminite", 3, 1.5f, 4000));
+        if(CompatHandlerPA.isThaumicAdditionsLoaded) {
+            registry.register(ALKIMIUM_SMELTERY_MITHRILLIUM = new BlockSmelterPA("alkimium_smeltery_mithrillium", 15, 1.0f, 1000));
+            registry.register(ALKIMIUM_SMELTERY_ADAMINITE = new BlockSmelterPA("alkimium_smeltery_adaminite", 10, 1.25f, 2000));
+            registry.register(ALKIMIUM_SMELTERY_MITHMINITE = new BlockSmelterPA("alkimium_smeltery_mithminite", 3, 1.5f, 4000));
+        }
 
         registry.register(ALKIMIUM_CENTRIFUGE = new BlockCentrifugePA("alkimium_centrifuge"));
         registry.register(ALKIMIUM_SMELTER_AUX = new BlockSmelterAuxiliaryPA("alkimium_smelter_aux", 2));
@@ -110,10 +112,11 @@ public class ModBlocksPA {
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_THAUMIUM, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_VOID, EnumRarity.RARE));
 
-        //TODO: Register these items at this point if Thaumic Additions is loaded so they are grouped with the other smelters
-//        registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_MITHRILLIUM, EnumRarity.RARE));
-//        registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_ADAMINITE, EnumRarity.RARE));
-//        registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_MITHMINITE, EnumRarity.RARE));
+        if(CompatHandlerPA.isThaumicAdditionsLoaded) {
+            registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_MITHRILLIUM, EnumRarity.RARE));
+            registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_ADAMINITE, EnumRarity.RARE));
+            registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_MITHMINITE, EnumRarity.RARE));
+        }
 
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_AUX, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTER_VENT, EnumRarity.RARE));

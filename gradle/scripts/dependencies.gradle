@@ -45,6 +45,9 @@ dependencies {
     implementation rfg.deobf(files('libs/thaumicapi-1.0.0.jar'))
     implementation rfg.deobf('curse.maven:thaumic-wonders-unofficial-1307741:7646734')
 
+    //implementation rfg.deobf('curse.maven:thaumic-additions-232564:5394706')
+    //implementation rfg.deobf("curse.maven:hammer-lib-247401:6348753")
+
     // Example - Dependency descriptor:
     // 'com.google.code.gson:gson:2.8.6' << group: com.google.code.gson, name:gson, version:2.8.6
     // 'group:name:version:classifier' where classifier is optional
