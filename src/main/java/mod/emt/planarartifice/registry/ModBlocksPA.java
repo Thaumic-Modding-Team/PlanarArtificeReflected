@@ -8,7 +8,7 @@ import mod.emt.planarartifice.block.essentia.BlockCentrifugePA;
 import mod.emt.planarartifice.block.essentia.BlockSmelterAuxiliaryPA;
 import mod.emt.planarartifice.block.essentia.BlockSmelterPA;
 import mod.emt.planarartifice.block.essentia.BlockSmelterVentPA;
-import mod.emt.planarartifice.client.renderers.tile.StarvingChestTESR;
+import mod.emt.planarartifice.client.renderers.tile.TileStarvingChestTESR;
 import mod.emt.planarartifice.client.renderers.tile.TileCentrifugeRendererPA;
 import mod.emt.planarartifice.client.renderers.tile.TileFlawlessMirrorTESR;
 import mod.emt.planarartifice.item.blocks.ItemBlockFlawlessMirror;
@@ -146,7 +146,7 @@ public class ModBlocksPA {
         ClientRegistry.bindTileEntitySpecialRenderer(TileCentrifiguePA.class, new TileCentrifugeRendererPA());
         ClientRegistry.bindTileEntitySpecialRenderer(TileFlawlessMirror.class, new TileFlawlessMirrorTESR());
         ClientRegistry.bindTileEntitySpecialRenderer(TileFlawlessMirrorEssentia.class, new TileFlawlessMirrorTESR());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileStarvingChest.class, new StarvingChestTESR());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStarvingChest.class, new TileStarvingChestTESR());
     }
 
     @SuppressWarnings("ConstantConditions")

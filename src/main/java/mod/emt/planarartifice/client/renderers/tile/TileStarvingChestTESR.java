@@ -8,7 +8,7 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.util.EnumFacing;
 
-public class StarvingChestTESR extends TileEntitySpecialRenderer<TileStarvingChest> {
+public class TileStarvingChestTESR extends TileEntitySpecialRenderer<TileStarvingChest> {
     private ModelChest chestModel = new ModelChest();
 
     @Override
