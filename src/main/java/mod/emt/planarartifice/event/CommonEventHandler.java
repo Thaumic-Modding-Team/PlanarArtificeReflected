@@ -101,8 +101,7 @@ public class CommonEventHandler {
         }
     }
 
-    //TODO: Need to check and make sure this is working with gravestone mods.
-    @SubscribeEvent(priority = EventPriority.LOWEST)
+    @SubscribeEvent(priority = EventPriority.HIGH)
     public static void onPlayerDrops(PlayerDropsEvent event) {
         EntityPlayer player = event.getEntityPlayer();
         ItemStack amulet = PLAYER_AMULETS.getOrDefault(player.getPersistentID(), ItemStack.EMPTY);
