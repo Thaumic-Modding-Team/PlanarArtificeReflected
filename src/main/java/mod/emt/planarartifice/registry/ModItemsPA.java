@@ -1,16 +1,14 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.item.BaseItemPA;
-import mod.emt.planarartifice.item.bauble.ItemAuraMeter;
-import mod.emt.planarartifice.item.bauble.ItemMirroredAmulet;
-import mod.emt.planarartifice.item.bauble.ItemMirroredHeadband;
-import mod.emt.planarartifice.item.bauble.ItemSuspensionBelt;
+import mod.emt.planarartifice.item.bauble.*;
 import mod.emt.planarartifice.item.food.ItemAppleThaumaturge;
 import mod.emt.planarartifice.item.tools.ItemCasterPA;
 import mod.emt.planarartifice.utils.helper.LogHelper;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemFood;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -22,6 +20,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 import javax.annotation.Nonnull;
 
 public class ModItemsPA {
+    public static ItemArmor ALKIMIUM_GOGGLES;
     public static Item ALKIMIUM_INGOT;
     public static Item ALKIMIUM_NUGGET;
     public static Item ALKIMIUM_PLATE;
@@ -49,6 +48,7 @@ public class ModItemsPA {
         registry.register(BISMUTH_INGOT = new BaseItemPA("bismuth_ingot", EnumRarity.RARE));
         registry.register(BISMUTH_NUGGET = new BaseItemPA("bismuth_nugget", EnumRarity.RARE));
         registry.register(BISMUTH_PLATE = new BaseItemPA("bismuth_plate", EnumRarity.RARE));
+        registry.register(ALKIMIUM_GOGGLES = new ItemAlkimiumGoggles());
         registry.register(AURA_METER = new ItemAuraMeter());
         registry.register(MIRROMIROUS_HEADBAND = new ItemMirroredHeadband());
         registry.register(MIRRORED_AMULET = new ItemMirroredAmulet());
@@ -62,6 +62,7 @@ public class ModItemsPA {
     @SideOnly(Side.CLIENT)
     public static void registerItemModels(@Nonnull final ModelRegistryEvent event) {
         // Item Models
+        registerItemModel(ALKIMIUM_GOGGLES);
         registerItemModel(ALKIMIUM_INGOT);
         registerItemModel(ALKIMIUM_NUGGET);
         registerItemModel(ALKIMIUM_PLATE);

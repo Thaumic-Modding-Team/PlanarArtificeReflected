@@ -1,10 +1,10 @@
 package mod.emt.planarartifice.event;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.client.gui.GuiAuraMeterHudPA;
+import mod.emt.planarartifice.client.gui.GuiHudHandlerPA;
+import mod.emt.planarartifice.item.bauble.ItemAlkimiumGoggles;
 import mod.emt.planarartifice.item.bauble.ItemAuraMeter;
 import mod.emt.planarartifice.proxy.ClientProxy;
-import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -15,7 +15,10 @@ public class HudHandlerEvent {
     @SubscribeEvent
     public static void onRenderLast(RenderGameOverlayEvent.Post event) {
         if (event.getType() == RenderGameOverlayEvent.ElementType.EXPERIENCE && ItemAuraMeter.shouldRenderHud(ClientProxy.getClientPlayer())) {
-            new GuiAuraMeterHudPA(Minecraft.getMinecraft(), event.getPartialTicks(), ClientProxy.getClientPlayer());
+            GuiHudHandlerPA.getInstance().renderAuraMeterHud(event.getPartialTicks());
+        }
+        if(event.getType() == RenderGameOverlayEvent.ElementType.TEXT && ItemAlkimiumGoggles.shouldRenderHud(ClientProxy.getClientPlayer())) {
+            GuiHudHandlerPA.getInstance().renderGoggleHud(event.getPartialTicks());
         }
     }
 }
