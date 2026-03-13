@@ -18,8 +18,12 @@ public class BaseItemPA extends Item {
         this.rarity = rarity;
     }
 
+    public BaseItemPA(String name) {
+        this(name, null);
+    }
+
     @Override
     public @NotNull IRarity getForgeRarity(@NotNull ItemStack stack) {
-        return rarity;
+        return this.rarity != null ? this.rarity : super.getForgeRarity(stack);
     }
 }

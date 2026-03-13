@@ -35,7 +35,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class ItemAlkimiumGoggles extends ItemArmor implements IBauble, IRenderBauble, IGoggles, IVisDiscountGear {
-    public static final ResourceLocation GOGGLES_TEXTURE = new ResourceLocation(PlanarArtifice.MOD_ID, "textures/models/baubles/alkimium_goggles_bauble.png");
+    public static final ResourceLocation GOGGLES_TEXTURE = new ResourceLocation(PlanarArtifice.MOD_ID, "textures/models/baubles/alkimium_goggles_worn.png");
     public static ArmorMaterial ALKIMIUM_MATERIAL = EnumHelper.addArmorMaterial("ALKIMIUM", "ALKIMIUM", 25, new int[]{3, 7, 5, 3}, 20, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2);
 
     public ItemAlkimiumGoggles() {

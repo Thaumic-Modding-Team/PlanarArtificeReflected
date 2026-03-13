@@ -16,7 +16,7 @@ import thaumcraft.api.items.IVisDiscountGear;
 import thaumcraft.client.lib.UtilsFX;
 
 public class ItemMirroredHeadband extends AbstractBaublePA implements IRenderBauble, IVisDiscountGear {
-    ResourceLocation texture = new ResourceLocation(PlanarArtifice.MOD_ID, "textures/items/mirromirous_headband_worn.png");
+    ResourceLocation texture = new ResourceLocation(PlanarArtifice.MOD_ID, "textures/models/baubles/mirromirous_headband_worn.png");
 
     public ItemMirroredHeadband() {
         super("mirromirous_headband", EnumRarity.EPIC);

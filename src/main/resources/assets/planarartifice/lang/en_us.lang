@@ -16,6 +16,9 @@ tile.planarartifice:bismuth_block.name=Block of Bismuth
 tile.planarartifice:flawless_mirror.name=Flawless Magic Mirror
 tile.planarartifice:flawless_mirror_essentia.name=Flawless Essentia Mirror
 
+# Chat
+chat.planarartifice.mirror.already_linked=That mirror is already linked to a valid destination.
+
 # Items
 item.planarartifice:alkimium_goggles.name=Alkimium Goggles of Revealing
 item.planarartifice:alkimium_ingot.name=Alkimium Ingot
@@ -26,6 +29,8 @@ item.planarartifice:bismuth_caster.name=Bismuth Caster's Gauntlet
 item.planarartifice:bismuth_ingot.name=Bismuth Ingot
 item.planarartifice:bismuth_nugget.name=Bismuth Nugget
 item.planarartifice:bismuth_plate.name=Bismuth Plate
+item.planarartifice:glass_cutter.name=Glass Cutter
+item.planarartifice:glass_cutter_vis.name=Alchemical Glass Cutter
 item.planarartifice:mirromirous_headband.name=Mirromirous Headband
 item.planarartifice:mirrored_amulet.name=Mirrored Amulet
 item.planarartifice:planar_orb.name=Planar Orb
@@ -33,15 +38,15 @@ item.planarartifice:suspension_belt.name=Belt of Suspension
 item.planarartifice:thaumaturges_fruit.name=Thaumaturge's Fruit
 item.planarartifice:thaumaturges_fruit_enchanted.name=Enchanted Thaumaturge's Fruit
 
-# Chat
-chat.planarartifice.mirror.already_linked=That mirror is already linked to a valid destination.
-
 # Infusion Enchantments
 enchantment.infusion.MIRRORED.linked=§6Mirrored §f(§bLinked§f)
 enchantment.infusion.MIRRORED.linked.dim=Dim: %s
 enchantment.infusion.MIRRORED.linked.pos=Pos: x:%d, y:%d, z:%d
 enchantment.infusion.MIRRORED.unlinked=§6Mirrored §f(§7Unlinked§f)
 enchantment.infusion.METAPHIZE=Metaphize
+
+# Tooltips
+tooltip.planarartifice.glass_cutter.info=Right-click to instantly harvest glass blocks.
 
 # Research
 tc.research_category.PLANAR_ARTIFICE=Planar Artifice

@@ -1,7 +1,9 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.item.BaseItemPA;
 import net.minecraft.block.Block;
+import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -22,6 +24,8 @@ public class ModRegistryPA {
 
     @SubscribeEvent
     public static void registerItems(@Nonnull final RegistryEvent.Register<Item> event) {
+        //Planar Orb is a special sausage that gets to go before everyone else.
+        event.getRegistry().register(ModItemsPA.PLANAR_ORB = new BaseItemPA("planar_orb", EnumRarity.EPIC));
         ModBlocksPA.registerBlockItems(event);
         ModItemsPA.registerItems(event);
     }
