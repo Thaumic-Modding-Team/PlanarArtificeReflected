@@ -24,7 +24,7 @@ public abstract class BlockSmelterAddon extends BlockPA {
         this.setHardness(2.0f);
         this.setResistance(10.0f);
         this.setSoundType(SoundType.METAL);
-        this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
 
     @Override

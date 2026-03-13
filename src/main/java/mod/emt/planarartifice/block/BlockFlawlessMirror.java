@@ -45,7 +45,7 @@ public class BlockFlawlessMirror extends BlockContainerPA {
         this.setResistance(8.0f);
         this.setHardness(0.1f);
         this.setSoundType(SoundsTC.JAR);
-        this.blockState.getBaseState().withProperty(FACING, EnumFacing.UP);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.UP));
         this.tileClass = tileClass;
     }
 

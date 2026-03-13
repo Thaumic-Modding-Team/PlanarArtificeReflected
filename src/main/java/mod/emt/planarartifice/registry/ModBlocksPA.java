@@ -1,15 +1,19 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.block.*;
+import mod.emt.planarartifice.block.BlockFlawlessMirror;
+import mod.emt.planarartifice.block.BlockMaterialPA;
+import mod.emt.planarartifice.block.BlockStarvingChest;
+import mod.emt.planarartifice.block.essentia.BlockCentrifugePA;
+import mod.emt.planarartifice.block.essentia.BlockSmelterAuxiliaryPA;
+import mod.emt.planarartifice.block.essentia.BlockSmelterPA;
+import mod.emt.planarartifice.block.essentia.BlockSmelterVentPA;
+import mod.emt.planarartifice.client.renderers.tile.StarvingChestTESR;
 import mod.emt.planarartifice.client.renderers.tile.TileCentrifugeRendererPA;
 import mod.emt.planarartifice.client.renderers.tile.TileFlawlessMirrorTESR;
 import mod.emt.planarartifice.item.blocks.ItemBlockFlawlessMirror;
 import mod.emt.planarartifice.item.blocks.ItemBlockPA;
-import mod.emt.planarartifice.tile.TileCentrifiguePA;
-import mod.emt.planarartifice.tile.TileFlawlessMirror;
-import mod.emt.planarartifice.tile.TileFlawlessMirrorEssentia;
-import mod.emt.planarartifice.tile.TileSmelterPA;
+import mod.emt.planarartifice.tile.*;
 import mod.emt.planarartifice.utils.helper.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -42,6 +46,10 @@ public class ModBlocksPA {
     public static Block BISMUTH_BLOCK;
     public static Block FLAWLESS_MIRROR;
     public static Block FLAWLESS_MIRROR_ESSENTIA;
+    public static Block STARVING_CHEST_SMALL;
+    public static Block STARVING_CHEST_MEDIUM;
+    public static Block STARVING_CHEST_LARGE;
+    public static Block STARVING_CHEST_HUGE;
 
     //Thaumic Additions
     public static BlockSmelterPA ALKIMIUM_SMELTERY_ADAMINITE;
@@ -56,6 +64,10 @@ public class ModBlocksPA {
         registry.register(ALKIMIUM_BLOCK = new BlockMaterialPA("alkimium_block", Material.IRON, MapColor.LIME, 5.0F, 15.0F, SoundType.METAL, true));
         registry.register(BISMUTH_BLOCK = new BlockMaterialPA("bismuth_block", Material.IRON, MapColor.LIME, 5.0F, 15.0F, SoundType.METAL, true));
         registry.register(ALKIMIC_CONSTRUCT = new BlockMaterialPA("alkimic_construct", Material.IRON, MapColor.LIME, 5.0F, 15.0F, SoundType.METAL, false));
+        registry.register(STARVING_CHEST_SMALL = new BlockStarvingChest("starving_chest_small", 1));
+        registry.register(STARVING_CHEST_MEDIUM = new BlockStarvingChest("starving_chest_medium", 2));
+        registry.register(STARVING_CHEST_LARGE = new BlockStarvingChest("starving_chest_large", 3));
+        registry.register(STARVING_CHEST_HUGE = new BlockStarvingChest("starving_chest_huge", 4));
         registry.register(ALKIMIUM_SMELTERY = new BlockSmelterPA("alkimium_smeltery", 10, 0.85F, 375));
         registry.register(ALKIMIUM_SMELTERY_THAUMIUM = new BlockSmelterPA("alkimium_smeltery_thaumium", 5, 0.90f, 375));
         registry.register(ALKIMIUM_SMELTERY_VOID = new BlockSmelterPA("alkimium_smeltery_void", 10, 0.95f, 375));
@@ -81,6 +93,7 @@ public class ModBlocksPA {
         GameRegistry.registerTileEntity(TileFlawlessMirror.class, new ResourceLocation(PlanarArtifice.MOD_ID, "flawless_mirror"));
         GameRegistry.registerTileEntity(TileFlawlessMirrorEssentia.class, new ResourceLocation(PlanarArtifice.MOD_ID, "flawless_mirror_essentia"));
         GameRegistry.registerTileEntity(TileSmelterPA.class, new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery"));
+        GameRegistry.registerTileEntity(TileStarvingChest.class, new ResourceLocation(PlanarArtifice.MOD_ID, "starving_chest"));
     }
 
     public static void registerBlockItems(RegistryEvent.Register<Item> event) {
@@ -89,6 +102,10 @@ public class ModBlocksPA {
         registry.register(new ItemBlockPA(ALKIMIUM_BLOCK, EnumRarity.RARE));
         registry.register(new ItemBlockPA(BISMUTH_BLOCK, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIC_CONSTRUCT, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(STARVING_CHEST_SMALL));
+        registry.register(new ItemBlockPA(STARVING_CHEST_MEDIUM));
+        registry.register(new ItemBlockPA(STARVING_CHEST_LARGE));
+        registry.register(new ItemBlockPA(STARVING_CHEST_HUGE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_THAUMIUM, EnumRarity.RARE));
         registry.register(new ItemBlockPA(ALKIMIUM_SMELTERY_VOID, EnumRarity.RARE));
@@ -121,10 +138,15 @@ public class ModBlocksPA {
         registerItemModel(ALKIMIUM_SMELTERY_MITHRILLIUM);
         registerItemModel(FLAWLESS_MIRROR);
         registerItemModel(FLAWLESS_MIRROR_ESSENTIA);
+        registerItemModel(STARVING_CHEST_HUGE);
+        registerItemModel(STARVING_CHEST_LARGE);
+        registerItemModel(STARVING_CHEST_MEDIUM);
+        registerItemModel(STARVING_CHEST_SMALL);
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileCentrifiguePA.class, new TileCentrifugeRendererPA());
         ClientRegistry.bindTileEntitySpecialRenderer(TileFlawlessMirror.class, new TileFlawlessMirrorTESR());
         ClientRegistry.bindTileEntitySpecialRenderer(TileFlawlessMirrorEssentia.class, new TileFlawlessMirrorTESR());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStarvingChest.class, new StarvingChestTESR());
     }
 
     @SuppressWarnings("ConstantConditions")

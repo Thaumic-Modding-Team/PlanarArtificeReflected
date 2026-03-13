@@ -1,7 +1,7 @@
 package mod.emt.planarartifice.tile;
 
 import com.invadermonky.thaumicapi.api.tile.AbstractTileEssentiaSmelter;
-import mod.emt.planarartifice.block.BlockSmelterPA;
+import mod.emt.planarartifice.block.essentia.BlockSmelterPA;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.tileentity.TileEntity;

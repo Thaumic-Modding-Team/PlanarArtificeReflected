@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.block;
+package mod.emt.planarartifice.block.essentia;
 
 import com.invadermonky.thaumicapi.api.block.ISmelterAuxiliary;
 import mod.emt.planarartifice.block.base.BlockSmelterAddon;
@@ -9,6 +9,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class BlockSmelterAuxiliaryPA extends BlockSmelterAddon implements ISmelterAuxiliary {
@@ -25,8 +26,9 @@ public class BlockSmelterAuxiliaryPA extends BlockSmelterAddon implements ISmelt
         this.bonusOperations = bonusOperations;
     }
 
+    @SuppressWarnings("deprecation")
     @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+    public @NotNull AxisAlignedBB getBoundingBox(IBlockState state, @NotNull IBlockAccess source, @NotNull BlockPos pos) {
         return AUX_AABBS[state.getValue(FACING).getHorizontalIndex()];
     }
 

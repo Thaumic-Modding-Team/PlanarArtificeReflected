@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.block;
+package mod.emt.planarartifice.block.essentia;
 
 import com.invadermonky.thaumicapi.api.block.ISmelterVent;
 import mod.emt.planarartifice.block.base.BlockSmelterAddon;

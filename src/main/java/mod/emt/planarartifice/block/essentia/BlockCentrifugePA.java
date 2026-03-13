@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.block;
+package mod.emt.planarartifice.block.essentia;
 
 import mod.emt.planarartifice.block.base.BlockContainerPA;
 import mod.emt.planarartifice.tile.TileCentrifiguePA;
@@ -27,6 +27,7 @@ public class BlockCentrifugePA extends BlockContainerPA {
         this.setSoundType(SoundType.METAL);
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public @NotNull AxisAlignedBB getBoundingBox(@NotNull IBlockState state, @NotNull IBlockAccess source, @NotNull BlockPos pos) {
         return BLOCK_AABB;

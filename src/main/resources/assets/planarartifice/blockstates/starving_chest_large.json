@@ -1,0 +1,42 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "thaumcraft:chest",
+    "transform": "forge:default-block",
+    "textures": {
+      "particle": "planarartifice:models/starving_chest_large",
+      "texture": "planarartifice:models/starving_chest_large"
+    }
+  },
+  "variants": {
+    "inventory":[{}],
+    "facing=north": {
+      "model": "thaumcraft:chest",
+      "textures": {
+        "particle": "planarartifice:models/starving_chest_large",
+        "texture": "planarartifice:models/starving_chest_large"
+      }
+    },
+    "facing=south": {
+      "model": "thaumcraft:chest",
+      "textures": {
+        "particle": "planarartifice:models/starving_chest_large",
+        "texture": "planarartifice:models/starving_chest_large"
+      }
+    },
+    "facing=east": {
+      "model": "thaumcraft:chest",
+      "textures": {
+        "particle": "planarartifice:models/starving_chest_large",
+        "texture": "planarartifice:models/starving_chest_large"
+      }
+    },
+    "facing=west": {
+      "model": "thaumcraft:chest",
+      "textures": {
+        "particle": "planarartifice:models/starving_chest_large",
+        "texture": "planarartifice:models/starving_chest_large"
+      }
+    }
+  }
+}

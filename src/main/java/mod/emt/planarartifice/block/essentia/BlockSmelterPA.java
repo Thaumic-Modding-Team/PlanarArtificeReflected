@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.block;
+package mod.emt.planarartifice.block.essentia;
 
 import com.invadermonky.thaumicapi.api.tile.AbstractTileEssentiaSmelter;
 import mod.emt.planarartifice.PlanarArtifice;
@@ -43,7 +43,7 @@ public class BlockSmelterPA extends BlockContainerPA {
         this.setHardness(4.0f);
         this.setResistance(6.0f);
         this.setSoundType(SoundType.METAL);
-        this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(ENABLED, false);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(ENABLED, false));
         this.transferSpeed = transferSpeed;
         this.efficiency = efficiency;
         this.essentiaCapacity = essentiaCapacity;
