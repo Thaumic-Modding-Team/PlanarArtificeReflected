@@ -29,7 +29,7 @@ public abstract class BlockSmelterAddon extends BlockPA {
 
     @Override
     public @NotNull IBlockState getStateForPlacement(@NotNull World world, @NotNull BlockPos pos, @NotNull EnumFacing facing, float hitX, float hitY, float hitZ, int meta, @NotNull EntityLivingBase placer, @NotNull EnumHand hand) {
-        return this.getDefaultState().withProperty(FACING, facing.getOpposite());
+        return this.getDefaultState().withProperty(FACING, facing.getHorizontalIndex() >= 0 ? facing.getOpposite() : placer.getHorizontalFacing());
     }
 
     @SuppressWarnings("deprecation")
