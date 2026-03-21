@@ -70,8 +70,8 @@ public class ModBlocksPA {
         registry.register(STARVING_CHEST_LARGE = new BlockStarvingChest("starving_chest_large", 3));
         registry.register(STARVING_CHEST_HUGE = new BlockStarvingChest("starving_chest_huge", 4));
         registry.register(ALKIMIUM_SMELTERY = new BlockSmelterPA("alkimium_smeltery", 10, 0.85F, 375));
-        registry.register(ALKIMIUM_SMELTERY_THAUMIUM = new BlockSmelterPA("alkimium_smeltery_thaumium", 5, 0.90f, 375));
-        registry.register(ALKIMIUM_SMELTERY_VOID = new BlockSmelterPA("alkimium_smeltery_void", 10, 0.95f, 375));
+        registry.register(ALKIMIUM_SMELTERY_THAUMIUM = new BlockSmelterPA("alkimium_smeltery_thaumium", 5, 0.95f, 375));
+        registry.register(ALKIMIUM_SMELTERY_VOID = new BlockSmelterPA("alkimium_smeltery_void", 10, 1.0f, 375));
 
         if(CompatHandlerPA.isThaumicAdditionsLoaded) {
             registry.register(ALKIMIUM_SMELTERY_MITHRILLIUM = new BlockSmelterPA("alkimium_smeltery_mithrillium", 15, 1.0f, 1000));

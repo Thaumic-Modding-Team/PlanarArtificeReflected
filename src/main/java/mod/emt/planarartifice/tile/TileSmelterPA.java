@@ -28,7 +28,15 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter {
 
     @Override
     public int getBaseFluxProduced(int itemEssentia, int producedEssentia) {
-        return Math.max(0, itemEssentia - producedEssentia);
+        int fluxProduced = 0;
+        float efficiency = this.getBaseEfficiency() - 0.05f;
+        if(efficiency < 1.0f) {
+            fluxProduced = (int) (itemEssentia * efficiency);
+            if(fluxProduced % 2 == 1 && this.world.rand.nextFloat() <= efficiency) {
+                fluxProduced++;
+            }
+        }
+        return fluxProduced;
     }
 
     @Override
