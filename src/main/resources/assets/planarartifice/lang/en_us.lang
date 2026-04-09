@@ -63,10 +63,48 @@ planarartifice.research.alkimium.title=Alkimium
 planarartifice.research.alkimium.stage.1=After using Alchemical Brass for nearly the whole duration of my studies, I feel like I could step things up, especially now after having put it to so many practical applications.<BR>Looking through a wide variety of items, I've noticed that Potions and many Alchemical blocks and items contain a very peculiar aspect not mentioned in the old scrolls and books of olden thaumaturges. With Thaumium using Praecantatio and Terra to enhance Iron beyond any mundane state, why not use Alkimia to enhance Brass a step further?
 planarartifice.research.alkimium.stage.2=I have dubbed this new substance Alkimium, and it serves to be more suited for alchemical items than plain brass.
 
+# -- ALKIMIUM: Alkimium Applications
+planarartifice.research.alkimium_applications.title=Alkimium Applications
+planarartifice.research.alkimium_applications.stage.1=[WIP]
+planarartifice.research.alkimium_applications.stage.2=[WIP]
+
+# -- ALKIMIUM: Alkimium Applications - Distillation
+planarartifice.research.alkimium_applications_distillation.title=Alkimium Applications: Distillation
+planarartifice.research.alkimium_applications_distillation.stage.1=[WIP]
+planarartifice.research.alkimium_applications_distillation.stage.2=[WIP]
+planarartifice.research.alkimium_applications_distillation.stage.3=[WIP]
+
+# -- ALKIMIUM: Alkimium Applications - Goggles
+planarartifice.research.alkimium_applications_goggles.title=Alkimium Applications: Goggles
+planarartifice.research.alkimium_applications_goggles.stage.1=[WIP]
+planarartifice.research.alkimium_applications_goggles.stage.2=[WIP]
+
+# -- ALKIMIUM: Alkimium Applications - Thaumium
+planarartifice.research.alkimium_applications_thaumium.title=Alkimium Applications: Thaumium
+planarartifice.research.alkimium_applications_thaumium.stage.1=[WIP]
+planarartifice.research.alkimium_applications_thaumium.stage.2=[WIP]
+
+# -- ALKIMIUM: Alkimium Applications - Void Metal
+planarartifice.research.alkimium_applications_void.title=Alkimium Applications: Void Metal
+planarartifice.research.alkimium_applications_void.stage.1=[WIP]
+planarartifice.research.alkimium_applications_void.stage.2=[WIP]
+planarartifice.research.alkimium_applications_void.stage.3=[WIP]
+
+# -- ALKIMIUM: Material Studies - Alkimium
+planarartifice.research.golem_mat_alkimium.title=Material Studies: Alkimium
+planarartifice.research.golem_mat_alkimium.stage.1=[WIP]
+planarartifice.research.golem_mat_alkimium.stage.2=[WIP]
+
 # -- BISMUTH
 planarartifice.research.bismuth.title=Bismuth
 planarartifice.research.bismuth.stage.1=When looking closely at aura - and it's reactions and interactions with portals - I can deduce, without a doubt, that aura is an interdimensional energy; that is to say, the vast majority of it doesn't exist within this dimension, or any other I can visit; rather, it slowly leaks in from seemingly random points. Neither do I know how, nor do I know why, but one thing I do know is that aura is 'attracted' to these points. <BR>By creating a material that mimics their aura attracting effects, I can create things far more useful than anything I have currently available. I call this material "Bismuth".
 planarartifice.research.bismuth.stage.2=Bismuth is a material far more well-attuned to aura than any other item I have access to, by a long shot. It has much potential.<PAGE>§lAura Meter§r<DIV>The Aura Meter can tell me the current vis from anywhere in my inventory or when equipped, unlike the Thaumometer, which has to be held to function.
+
+# -- BISMUTH: Bismuth Caster's Gauntlet
+planarartifice.research.bismuth_caster.title=Bismuth Caster's Gauntlet
+planarartifice.research.bismuth_caster.stage.1=[WIP]
+planarartifice.research.bismuth_caster.stage.2=[WIP]
+planarartifice.research.bismuth_caster.stage.3=[WIP]
 
 # -- BISMUTH: Essentia Manipulation
 planarartifice.research.essentia_manipulation.title=Essentia Manipulation
@@ -78,11 +116,6 @@ planarartifice.research.metal_transmutation.title=Metal Transmutation
 planarartifice.research.metal_transmutation.stage.1=Bismuth is an interesting metal, It is malleable, inorganic, and seemingly unstable. I wonder if I could cause it to "crash" into other metals, such as gold...
 planarartifice.research.metal_transmutation.stage.2=This could revolutionize underground resources forever. I have figured out the way to "nudge" the bismuth into other metals using part of the corresponding metal's essences.<BR>I must take note that this process is rather expensive, but makes use of excess essentia.
 
-# -- BISMUTH: Mirromirous Headband
-planarartifice.research.mirromirous_headband.title=Mirromirous Headband
-planarartifice.research.mirromirous_headband.stage.1=The original headband of curiosity has about run its course. As my knowledge continues to expand, the hunger for it grows as well.
-planarartifice.research.mirromirous_headband.stage.2=Using some of my new materials, I have managed to build an upgraded version of the headband. It draws twice as more experience and is also twice as effective.
-
 # -- BISMUTH: Reagent Transmutation
 planarartifice.research.reagent_transmutation.title=Reagent Transmutation
 planarartifice.research.reagent_transmutation.stage.1=There are still many items that are difficult or troublesome to obtain, and there are some items similar enough that I should be able to apply some simple alchemy to change between them.
@@ -90,7 +123,42 @@ planarartifice.research.reagent_transmutation.stage.2=The alchemy surely wasn't 
 planarartifice.research.reagent_transmutation.stage.3=Gotcha - in additions to the previous recipes, I have managed to create a way to forge the hellish rod from mundane items and a nice stew of essentia. Although I'll have to find another way to turn it back to the rod forms, as it can only create powders. Although this research has lead me into an interesting direction - The rare ores of the world. The link between them are thin, I acknowledge that I am reaching for the stars here. But... could it be done?
 planarartifice.research.reagent_transmutation.stage.4=The answer was right in front of me all along. Now I have the ability to transmute between amber and quicksilver - unifying them into a singular matter.
 
+# -- BISMUTH: Starving Chest
+planarartifice.research.starving_chest.title=Starving Chest
+planarartifice.research.starving_chest.stage.1=[WIP]
+planarartifice.research.starving_chest.stage.2=[WIP]
+
 # -- BISMUTH: Thaumaturge's Fruit
 planarartifice.research.thaumic_apple.title=Thaumaturge's Fruit
 planarartifice.research.thaumic_apple.stage.1=I've created plans to thaumaturgically attempt to empower the effects of a golden apple. It should be easy enough to create via the crucible; I simply have to test its usefulness.
 planarartifice.research.thaumic_apple.stage.2=Not only does it work, but it is close to the same strength as an enchanted golden apple. It may not be as strong as the enchanted variety, but it is a good substitute that I can create myself at anytime.
+
+# -- GLASSWORK: Alchemical Glass Cutter
+planarartifice.research.alchemical_glass_cutter.title=Alchemical Glass Cutter
+planarartifice.research.alchemical_glass_cutter.stage.1=[WIP]
+planarartifice.research.alchemical_glass_cutter.stage.2=[WIP]
+
+# -- MIRROMIROUS: Belt of Suspension
+planarartifice.research.belt_of_suspension.title=Infusion Enchantment II
+planarartifice.research.belt_of_suspension.stage.1=[WIP]
+planarartifice.research.belt_of_suspension.stage.2=[WIP]
+
+# -- MIRROMIROUS: Flawless Mirrors
+planarartifice.research.flawless_mirrors.title=Flawless Mirrors
+planarartifice.research.flawless_mirrors.stage.1=[WIP]
+planarartifice.research.flawless_mirrors.stage.2=[WIP]
+
+# -- MIRROMIROUS: Infusion Enchantment II
+planarartifice.research.infusion_enchantment_2.title=Infusion Enchantment II
+planarartifice.research.infusion_enchantment_2.stage.1=[WIP]
+planarartifice.research.infusion_enchantment_2.stage.2=[WIP]
+
+# -- MIRROMIROUS: Mirromirous Headband
+planarartifice.research.mirromirous_headband.title=Mirromirous Headband
+planarartifice.research.mirromirous_headband.stage.1=The original headband of curiosity has about run its course. As my knowledge continues to expand, the hunger for it grows as well.
+planarartifice.research.mirromirous_headband.stage.2=Using some of my new materials, I have managed to build an upgraded version of the headband. It draws twice as more experience and is also twice as effective.
+
+# -- MIRROMIROUS: Mirrored Amulet
+planarartifice.research.mirrored_amulet.title=Mirrored Amulet
+planarartifice.research.mirrored_amulet.stage.1=[WIP]
+planarartifice.research.mirrored_amulet.stage.2=[WIP]
