@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "planarartifice:research/logo_icon_animated"
+    "layer0": "planarartifice:misc/logo_icon_animated"
   }
 }

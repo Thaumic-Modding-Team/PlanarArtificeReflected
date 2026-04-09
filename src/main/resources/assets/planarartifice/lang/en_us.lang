@@ -148,11 +148,6 @@ planarartifice.research.flawless_mirrors.title=Flawless Mirrors
 planarartifice.research.flawless_mirrors.stage.1=[WIP]
 planarartifice.research.flawless_mirrors.stage.2=[WIP]
 
-# -- MIRROMIROUS: Infusion Enchantment II
-planarartifice.research.infusion_enchantment_2.title=Infusion Enchantment II
-planarartifice.research.infusion_enchantment_2.stage.1=[WIP]
-planarartifice.research.infusion_enchantment_2.stage.2=[WIP]
-
 # -- MIRROMIROUS: Mirromirous Headband
 planarartifice.research.mirromirous_headband.title=Mirromirous Headband
 planarartifice.research.mirromirous_headband.stage.1=The original headband of curiosity has about run its course. As my knowledge continues to expand, the hunger for it grows as well.
@@ -162,3 +157,8 @@ planarartifice.research.mirromirous_headband.stage.2=Using some of my new materi
 planarartifice.research.mirrored_amulet.title=Mirrored Amulet
 planarartifice.research.mirrored_amulet.stage.1=[WIP]
 planarartifice.research.mirrored_amulet.stage.2=[WIP]
+
+# -- MIRROMIROUS: Planar Infusion Enchantment
+planarartifice.research.planar_infusion_enchantment.title=Planar Infusion Enchantment
+planarartifice.research.planar_infusion_enchantment.stage.1=My thaumaturgy has come a long way since I originally invented infusion enchantments, and I now have access to a wider variety of materials and expertise. Many interesting ideas and concepts have come to my mind, which should hopefully be useful to me.
+planarartifice.research.planar_infusion_enchantment.stage.2=I have created a few new infusion enchantments. Much like the original ones, some enchantments can be applied multiple times to the same item, but each rank has an increased essentia cost when crafted.<BR>Each different infusion enchantment on the item also increases the cost by 33% and has an increased chance of giving it the Warping property.<PAGE>§oMetaphize§r<DIV>A portion of experience dropped from slain creatures will instead be converted into aura vis, at a rate of 30% per level (90% at max level).<DIV>§oRanks§r: 1-3<BR>§oTarget§r: weapon<PAGE>§oMirrored§r<DIV>The tool can be linked to a magic mirror when I sneak and right-click it. All drops obtained with that tool (from breaking blocks or slaying creatures) are transported directly to the linked mirror.<BR>I can unlink the tool from the mirror if I sneak and right-click on it again.<DIV>§oRanks§r: none<BR>§oTarget§r: axe, hoe, shovel, pickaxe, weapon

@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "key": "PA_PLANAR_INFUSION_ENCHANTMENT",
+      "name": "planarartifice.research.planar_infusion_enchantment.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:textures/research/r_inf_enchant.png"
+      ],
+      "parents": [
+        "PLANAR_ARTIFICE_BASE",
+        "INFUSIONENCHANTMENT"
+      ],
+      "location": [
+        0,
+        2
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.planar_infusion_enchantment.stage.1",
+          "required_item": [
+            "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:16s,lvl:1s}]}",
+            "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:21s,lvl:1s}]}",
+            "planarartifice:alkimium_block"
+          ],
+          "required_knowledge": [
+            "THEORY;INFUSION;2"
+          ]
+        },
+        {
+          "text": "planarartifice.research.planar_infusion_enchantment.stage.2",
+          "recipes": [
+            "planarartifice:metaphize_infusion_fake",
+            "planarartifice:mirrored_infusion_fake1",
+            "planarartifice:mirrored_infusion_fake2"
+          ]
+        }
+      ]
+    }
+  ]
+}
