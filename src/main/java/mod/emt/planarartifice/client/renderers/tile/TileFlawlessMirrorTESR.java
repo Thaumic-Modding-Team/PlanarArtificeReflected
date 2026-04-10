@@ -1,6 +1,7 @@
 package mod.emt.planarartifice.client.renderers.tile;
 
 import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.registry.ModBlocksPA;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.tileentity.TileEntity;
@@ -8,7 +9,6 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import thaumcraft.Thaumcraft;
-import thaumcraft.api.blocks.BlocksTC;
 import thaumcraft.client.lib.UtilsFX;
 import thaumcraft.client.renderers.tile.TileMirrorRenderer;
 import thaumcraft.common.lib.utils.BlockStateUtils;
@@ -39,7 +39,7 @@ public class TileFlawlessMirrorTESR extends TileMirrorRenderer {
         GlStateManager.enableBlend();
         GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
         this.translateFromOrientationPA((float)x, (float)y, (float)z, dir.ordinal(), 0.01F);
-        UtilsFX.renderItemIn2D(tile.getBlockType() == BlocksTC.mirror ? flawlessMirrorFrame : flawlessMirrorEssentiaFrame, 0.0625F);
+        UtilsFX.renderItemIn2D(tile.getBlockType() == ModBlocksPA.FLAWLESS_MIRROR ? flawlessMirrorFrame : flawlessMirrorEssentiaFrame, 0.0625F);
         GlStateManager.disableBlend();
         GlStateManager.popMatrix();
         if (linked && FMLClientHandler.instance().getClient().player.getDistanceSqToCenter(tile.getPos()) < (double)1024.0F) {

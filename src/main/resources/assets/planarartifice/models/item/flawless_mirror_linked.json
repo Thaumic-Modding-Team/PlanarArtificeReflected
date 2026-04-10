@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "planarartifice:blocks/flawless_mirror_essentia_frame",
+    "layer0": "planarartifice:blocks/flawless_mirror_frame",
     "layer1": "thaumcraft:blocks/mirrorpaneopen"
   }
 }
