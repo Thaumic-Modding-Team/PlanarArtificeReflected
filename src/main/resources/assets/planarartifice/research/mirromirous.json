@@ -21,7 +21,7 @@
           "required_item": [
             "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:16s,lvl:1s}]}",
             "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:21s,lvl:1s}]}",
-            "planarartifice:alkimium_block"
+            "thaumcraft:hand_mirror"
           ],
           "required_knowledge": [
             "THEORY;INFUSION;2"
