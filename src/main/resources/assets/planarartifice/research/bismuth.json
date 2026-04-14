@@ -1,6 +1,52 @@
 {
   "entries": [
     {
+      "key": "PA_BISMUTH_CASTER",
+      "name": "planarartifice.research.bismuth_caster.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:bismuth_caster"
+      ],
+      "parents": [
+        "PA_BISMUTH",
+        "UNLOCKAUROMANCY",
+        "UNLOCKALCHEMY"
+      ],
+      "location": [
+        0,
+        -7
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.bismuth_caster.stage.1",
+          "required_item": [
+            "planarartifice:bismuth_ingot;2",
+            "thaumcraft:caster_basic"
+          ],
+          "required_knowledge": [
+            "THEORY;AUROMANCY;1",
+            "THEORY;ARTIFICE;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.bismuth_caster.stage.2",
+          "required_item": [
+            "thaumcraft:morphic_resonator",
+            "thaumcraft:filter"
+          ],
+          "required_knowledge": [
+            "THEORY;AUROMANCY;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.bismuth_caster.stage.3",
+          "recipes": [
+            "planarartifice:bismuth_caster"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_BISMUTH",
       "name": "planarartifice.research.bismuth.title",
       "category": "PLANAR_ARTIFICE",
@@ -209,8 +255,8 @@
         "METALLURGY@3"
       ],
       "location": [
-        0,
-        -7
+        1,
+        -6
       ],
       "stages": [
         {

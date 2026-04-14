@@ -102,9 +102,9 @@ planarartifice.research.bismuth.stage.2=Bismuth is a material far more well-attu
 
 # -- BISMUTH: Bismuth Caster's Gauntlet
 planarartifice.research.bismuth_caster.title=Bismuth Caster's Gauntlet
-planarartifice.research.bismuth_caster.stage.1=[WIP]
-planarartifice.research.bismuth_caster.stage.2=[WIP]
-planarartifice.research.bismuth_caster.stage.3=[WIP]
+planarartifice.research.bismuth_caster.stage.1=Bismuth's ability to pull in aura, seemingly without consequences, makes it useful for a huge variety of things. One obvious application is the Caster's Gauntlet; a higher affinity for aura means more effective foci.
+planarartifice.research.bismuth_caster.stage.2=Unfortunately, it would appear that Bismuth actually creates a small amount of instability whilst pulling in aura. My original model built up too much instability, and completely shattered. I'll need to find a way to remove this instability, potentially alongside the focus effect itself.
+planarartifice.research.bismuth_caster.stage.3=By venting the instability through the focus effect, I can use it to my advantage to increase the power of my effects. Bismuth's aura-pulling effect causes more aura to be consumed than necessary, increasing the cost alongside the power.
 
 # -- BISMUTH: Essentia Manipulation
 planarartifice.research.essentia_manipulation.title=Essentia Manipulation
@@ -151,7 +151,7 @@ planarartifice.research.flawless_mirrors.stage.2=[WIP]
 # -- MIRROMIROUS: Mirromirous Headband
 planarartifice.research.mirromirous_headband.title=Mirromirous Headband
 planarartifice.research.mirromirous_headband.stage.1=The original headband of curiosity has about run its course. As my knowledge continues to expand, the hunger for it grows as well.
-planarartifice.research.mirromirous_headband.stage.2=Using some of my new materials, I have managed to build an upgraded version of the headband. It draws twice as more experience and is also twice as effective.
+planarartifice.research.mirromirous_headband.stage.2=Using some of my new materials, I have managed to build an upgraded version of the headband. It is twice as effective, and is able to draw in even more experience.
 
 # -- MIRROMIROUS: Mirrored Amulet
 planarartifice.research.mirrored_amulet.title=Mirrored Amulet

@@ -52,6 +52,19 @@ public class ModRecipesPA {
                 "B",
                 'B', new ItemStack(ModItemsPA.BISMUTH_PLATE),
                 'M', new ItemStack(ItemsTC.mirroredGlass)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "bismuth_caster"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_BISMUTH_CASTER",
+                250,
+                new AspectList().add(Aspect.AIR, 2).add(Aspect.EARTH, 2).add(Aspect.ENTROPY, 2).add(Aspect.FIRE, 2).add(Aspect.ORDER, 2).add(Aspect.WATER, 2),
+                ModItemsPA.BISMUTH_CASTER,
+                "BBB",
+                "MFM",
+                "MRM",
+                'B', new ItemStack(ModItemsPA.BISMUTH_PLATE),
+                'M', new ItemStack(ItemsTC.fabric),
+                'F', new ItemStack(ItemsTC.filter),
+                'R', new ItemStack(ItemsTC.morphicResonator)));
     }
 
     private static void registerCrucibleRecipes() {
