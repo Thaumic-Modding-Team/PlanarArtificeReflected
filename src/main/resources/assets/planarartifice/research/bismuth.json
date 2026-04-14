@@ -153,40 +153,6 @@
       ]
     },
     {
-      "key": "PA_MIRROMIROUS_HEADBAND",
-      "name": "planarartifice.research.mirromirous_headband.title",
-      "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:mirromirous_headband"
-      ],
-      "parents": [
-        "PA_BISMUTH",
-        "CURIOSITYBAND"
-      ],
-      "location": [
-        -1,
-        -6
-      ],
-      "stages": [
-        {
-          "text": "planarartifice.research.mirromirous_headband.stage.1",
-          "required_item": [
-            "thaumcraft:curio;1;1"
-          ],
-          "required_knowledge": [
-            "THEORY;ARTIFICE;2",
-            "THEORY;INFUSION;2"
-          ]
-        },
-        {
-          "text": "planarartifice.research.mirromirous_headband.stage.2",
-          "recipes": [
-            "planarartifice:mirromirous_headband"
-          ]
-        }
-      ]
-    },
-    {
       "key": "PA_REAGENT_TRANSMUTATION",
       "name": "planarartifice.research.reagent_transmutation.title",
       "category": "PLANAR_ARTIFICE",
@@ -244,6 +210,47 @@
       ]
     },
     {
+      "key": "PA_STARVING_CHEST",
+      "name": "planarartifice.research.starving_chest.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:starving_chest_small",
+        "planarartifice:starving_chest_medium",
+        "planarartifice:starving_chest_large",
+        "planarartifice:starving_chest_huge"
+      ],
+      "parents": [
+        "PA_BISMUTH",
+        "~HUNGRYCHEST",
+        "~INFUSION"
+      ],
+      "location": [
+        -1,
+        -6
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.starving_chest.stage.1",
+          "required_craft": [
+            "thaumcraft:hungry_chest"
+          ],
+          "required_knowledge": [
+            "THEORY;ARTIFICE;1",
+            "THEORY;INFUSION;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.starving_chest.stage.2",
+          "recipes": [
+            "planarartifice:starving_chest_1",
+            "planarartifice:starving_chest_2",
+            "planarartifice:starving_chest_3",
+            "planarartifice:starving_chest_4"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_THAUMIC_APPLE",
       "name": "planarartifice.research.thaumic_apple.title",
       "category": "PLANAR_ARTIFICE",
@@ -272,7 +279,8 @@
         {
           "text": "planarartifice.research.thaumic_apple.stage.2",
           "recipes": [
-            "planarartifice:thaumic_apple"
+            "planarartifice:thaumic_apple",
+            "planarartifice:thaumic_apple_enchanted"
           ]
         }
       ]

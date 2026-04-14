@@ -1,6 +1,41 @@
 {
   "entries": [
     {
+      "key": "PA_MIRROMIROUS_HEADBAND",
+      "name": "planarartifice.research.mirromirous_headband.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:mirromirous_headband"
+      ],
+      "parents": [
+        "PA_PLANAR_INFUSION_ENCHANTMENT",
+        "~PA_BISMUTH",
+        "CURIOSITYBAND"
+      ],
+      "location": [
+        -1,
+        3
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.mirromirous_headband.stage.1",
+          "required_item": [
+            "thaumcraft:curio;1;1"
+          ],
+          "required_knowledge": [
+            "THEORY;ARTIFICE;2",
+            "THEORY;INFUSION;2"
+          ]
+        },
+        {
+          "text": "planarartifice.research.mirromirous_headband.stage.2",
+          "recipes": [
+            "planarartifice:mirromirous_headband"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_PLANAR_INFUSION_ENCHANTMENT",
       "name": "planarartifice.research.planar_infusion_enchantment.title",
       "category": "PLANAR_ARTIFICE",

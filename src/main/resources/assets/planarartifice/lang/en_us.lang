@@ -125,13 +125,13 @@ planarartifice.research.reagent_transmutation.stage.4=The answer was right in fr
 
 # -- BISMUTH: Starving Chest
 planarartifice.research.starving_chest.title=Starving Chest
-planarartifice.research.starving_chest.stage.1=[WIP]
-planarartifice.research.starving_chest.stage.2=[WIP]
+planarartifice.research.starving_chest.stage.1=The Hungry Chest has been doing me well with various automation needed to gather resources. However, losses were made due to it simply missing the items. Perhaps studying the elements would aid me in improving this conundrum...
+planarartifice.research.starving_chest.stage.2=Hunger consumes all. I've created a stronger version of the chest using the recently discovered elements capable of warping the dimensions, creating a vortex around the chest and amplifying its suction... The more I repeat the process, the larger its radius seems to become. However, It only was capable of sustaining a total of 4 iterations before the chest became too unstable and imploded upon itself.
 
 # -- BISMUTH: Thaumaturge's Fruit
 planarartifice.research.thaumic_apple.title=Thaumaturge's Fruit
 planarartifice.research.thaumic_apple.stage.1=I've created plans to thaumaturgically attempt to empower the effects of a golden apple. It should be easy enough to create via the crucible; I simply have to test its usefulness.
-planarartifice.research.thaumic_apple.stage.2=Not only does it work, but it is close to the same strength as an enchanted golden apple. It may not be as strong as the enchanted variety, but it is a good substitute that I can create myself at anytime.
+planarartifice.research.thaumic_apple.stage.2=Not only does it work, but I've also figured out how to enhance the very rare enchanted variety. Now whenever I get myself a golden apple, I can empower it with alchemy.
 
 # -- GLASSWORK: Alchemical Glass Cutter
 planarartifice.research.alchemical_glass_cutter.title=Alchemical Glass Cutter
