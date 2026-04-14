@@ -149,6 +149,12 @@ public class ModRecipesPA {
                         new ItemStack(Items.ENCHANTED_BOOK),
                         "plateBismuth",
                         new ItemStack(Items.ENCHANTED_BOOK)));
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_amulet"),
+                new InfusionRecipe("PA_MIRRORED_AMULET", new ItemStack(ModItemsPA.MIRRORED_AMULET), 6,
+                        new AspectList().add(Aspect.ELDRITCH, 40).add(Aspect.EXCHANGE, 40).add(Aspect.VOID, 40),
+                        new ItemStack(ItemsTC.baubles, 1, 4),
+                        new ItemStack(BlocksTC.mirror),
+                        "enderpearl"));
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "starving_chest_1"),
                 new InfusionRecipe("PA_STARVING_CHEST", new ItemStack(ModBlocksPA.STARVING_CHEST_SMALL), 3,
                         new AspectList().add(Aspect.MOTION, 25).add(Aspect.TRAP, 25).add(Aspect.VOID, 25),

@@ -36,6 +36,38 @@
       ]
     },
     {
+      "key": "PA_MIRRORED_AMULET",
+      "name": "planarartifice.research.mirrored_amulet.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:mirrored_amulet"
+      ],
+      "parents": [
+        "PA_PLANAR_INFUSION_ENCHANTMENT",
+        "~CRYSTALFARMER",
+        "~MIRROR"
+      ],
+      "location": [
+        0,
+        4
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.mirrored_amulet.stage.1",
+          "required_knowledge": [
+            "THEORY;ARTIFICE;2",
+            "THEORY;BASICS;2"
+          ]
+        },
+        {
+          "text": "planarartifice.research.mirrored_amulet.stage.2",
+          "recipes": [
+            "planarartifice:mirrored_amulet"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_PLANAR_INFUSION_ENCHANTMENT",
       "name": "planarartifice.research.planar_infusion_enchantment.title",
       "category": "PLANAR_ARTIFICE",
