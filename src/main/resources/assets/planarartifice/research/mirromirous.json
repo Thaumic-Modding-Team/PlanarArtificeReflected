@@ -71,6 +71,39 @@
           ]
         }
       ]
+    },
+    {
+      "key": "PA_SUSPENSION_BELT",
+      "name": "planarartifice.research.suspension_belt.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:suspension_belt"
+      ],
+      "parents": [
+        "PA_PLANAR_INFUSION_ENCHANTMENT",
+        "~CLOUDRING",
+        "~CRYSTALFARMER",
+        "~LEVITATOR"
+      ],
+      "location": [
+        1,
+        3
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.suspension_belt.stage.1",
+          "required_knowledge": [
+            "THEORY;ARTIFICE;1",
+            "THEORY;PLANARARTIFICE;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.suspension_belt.stage.2",
+          "recipes": [
+            "planarartifice:suspension_belt"
+          ]
+        }
+      ]
     }
   ]
 }

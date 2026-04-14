@@ -139,9 +139,9 @@ planarartifice.research.alchemical_glass_cutter.stage.1=[WIP]
 planarartifice.research.alchemical_glass_cutter.stage.2=[WIP]
 
 # -- MIRROMIROUS: Belt of Suspension
-planarartifice.research.belt_of_suspension.title=Belt of Suspension
-planarartifice.research.belt_of_suspension.stage.1=[WIP]
-planarartifice.research.belt_of_suspension.stage.2=[WIP]
+planarartifice.research.suspension_belt.title=Belt of Suspension
+planarartifice.research.suspension_belt.stage.1=The ability to fly is an incredible one. Whilst I have been able to reach significant heights with the Cloudstepper Ring, I'm still reliant on the ground for support. <BR>However, with my newfound knowledge of levitation, I may be able to enhance this to allow constant horizontal movement.
+planarartifice.research.suspension_belt.stage.2=The Belt of Suspension, when properly equipped, will allow me to disable downwards vertical movement simply by holding the jump button. All vertical movement can be stopped by holding the sneak key. While floating in this way, I can still move around horizontally. If I hold jump from the ground, I will end up floating one-and-a-quarter blocks above the ground. This is also compatible with the Boots of the Traveller and Cloudstepper Ring. Fall damage is also disabled whilst wearing this.
 
 # -- MIRROMIROUS: Flawless Mirrors
 planarartifice.research.flawless_mirrors.title=Flawless Mirrors

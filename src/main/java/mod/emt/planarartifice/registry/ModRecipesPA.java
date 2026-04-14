@@ -1,6 +1,7 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -50,7 +51,7 @@ public class ModRecipesPA {
                 "B",
                 "M",
                 "B",
-                'B', new ItemStack(ModItemsPA.BISMUTH_PLATE),
+                'B', "plateBismuth",
                 'M', new ItemStack(ItemsTC.mirroredGlass)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "bismuth_caster"), new ShapedArcaneRecipe(
                 defaultGroup,
@@ -61,7 +62,7 @@ public class ModRecipesPA {
                 "BBB",
                 "MFM",
                 "MRM",
-                'B', new ItemStack(ModItemsPA.BISMUTH_PLATE),
+                'B', "plateBismuth",
                 'M', new ItemStack(ItemsTC.fabric),
                 'F', new ItemStack(ItemsTC.filter),
                 'R', new ItemStack(ItemsTC.morphicResonator)));
@@ -148,6 +149,51 @@ public class ModRecipesPA {
                         new ItemStack(Items.ENCHANTED_BOOK),
                         "plateBismuth",
                         new ItemStack(Items.ENCHANTED_BOOK)));
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "starving_chest_1"),
+                new InfusionRecipe("PA_STARVING_CHEST", new ItemStack(ModBlocksPA.STARVING_CHEST_SMALL), 3,
+                        new AspectList().add(Aspect.MOTION, 25).add(Aspect.TRAP, 25).add(Aspect.VOID, 25),
+                        new ItemStack(BlocksTC.hungryChest),
+                        new ItemStack(ItemsTC.filter),
+                        "plateBismuth",
+                        new ItemStack(Blocks.HOPPER),
+                        "plateBismuth"));
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "starving_chest_2"),
+                new InfusionRecipe("PA_STARVING_CHEST", new ItemStack(ModBlocksPA.STARVING_CHEST_MEDIUM), 6,
+                        new AspectList().add(Aspect.MOTION, 50).add(Aspect.TRAP, 50).add(Aspect.VOID, 50),
+                        new ItemStack(ModBlocksPA.STARVING_CHEST_SMALL),
+                        new ItemStack(ItemsTC.filter),
+                        "plateBismuth",
+                        new ItemStack(Blocks.HOPPER),
+                        "plateBismuth"));
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "starving_chest_3"),
+                new InfusionRecipe("PA_STARVING_CHEST", new ItemStack(ModBlocksPA.STARVING_CHEST_LARGE), 9,
+                        new AspectList().add(Aspect.MOTION, 75).add(Aspect.TRAP, 75).add(Aspect.VOID, 75),
+                        new ItemStack(ModBlocksPA.STARVING_CHEST_MEDIUM),
+                        new ItemStack(ItemsTC.filter),
+                        "plateBismuth",
+                        new ItemStack(Blocks.HOPPER),
+                        "plateBismuth"));
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "starving_chest_4"),
+                new InfusionRecipe("PA_STARVING_CHEST", new ItemStack(ModBlocksPA.STARVING_CHEST_HUGE), 12,
+                        new AspectList().add(Aspect.MOTION, 100).add(Aspect.TRAP, 100).add(Aspect.VOID, 100),
+                        new ItemStack(ModBlocksPA.STARVING_CHEST_LARGE),
+                        new ItemStack(ItemsTC.filter),
+                        "plateBismuth",
+                        new ItemStack(Blocks.HOPPER),
+                        "plateBismuth"));
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "suspension_belt"),
+                new InfusionRecipe("PA_SUSPENSION_BELT", new ItemStack(ModItemsPA.SUSPENSION_BELT), 6,
+                        new AspectList().add(Aspect.AIR, 75).add(Aspect.AURA, 50).add(Aspect.ENERGY, 65)
+                                .add(Aspect.FLIGHT, 125).add(Aspect.MAGIC, 50).add(Aspect.MOTION, 75),
+                        new ItemStack(ItemsTC.baubles, 1, 6),
+                        "feather",
+                        new ItemStack(ItemsTC.ringCloud),
+                        new ItemStack(Items.SUGAR),
+                        new ItemStack(ItemsTC.alumentum),
+                        new ItemStack(BlocksTC.levitator),
+                        new ItemStack(BlocksTC.pavingStoneBarrier),
+                        new ItemStack(Blocks.PISTON),
+                        "oreCrystalAir"));
 
         InfusionEnchantmentRecipe mirroredInfusion = new InfusionEnchantmentRecipe(
                 ModEnchantsPA.MIRRORED,
@@ -165,6 +211,7 @@ public class ModRecipesPA {
                 Ingredient.fromItem(Item.getItemFromBlock(BlocksTC.jarBrain)),
                 Ingredient.fromItem(ItemsTC.visResonator)
         );
+
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "metaphize_infusion"), metaphizeInfusion);
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "metaphize_infusion_fake"), new InfusionEnchantmentRecipe(metaphizeInfusion, new ItemStack(Items.WOODEN_SWORD)));
     }
