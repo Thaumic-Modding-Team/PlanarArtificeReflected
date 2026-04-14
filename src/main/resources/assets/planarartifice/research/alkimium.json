@@ -1,6 +1,51 @@
 {
   "entries": [
     {
+      "key": "PA_ALKIMIUM_APPLICATIONS",
+      "name": "planarartifice.research.alkimium_applications.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:alkimium_smeltery",
+        "planarartifice:alkimic_construct",
+        "planarartifice:alkimium_centrifuge"
+      ],
+      "parents": [
+        "PA_ALKIMIUM",
+        "ESSENTIASMELTER"
+      ],
+      "location": [
+        4,
+        0
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.alkimium_applications.stage.1",
+          "required_knowledge": [
+            "THEORY;ALCHEMY;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.alkimium_applications.stage.2",
+          "required_knowledge": [
+            "THEORY;ARTIFICE;2",
+            "THEORY;ALCHEMY;1"
+          ],
+          "recipes": [
+            "planarartifice:alkimium_smeltery",
+            "planarartifice:alkimic_construct"
+          ]
+        },
+        {
+          "text": "planarartifice.research.alkimium_applications.stage.3",
+          "recipes": [
+            "planarartifice:alkimium_smeltery",
+            "planarartifice:alkimic_construct",
+            "planarartifice:alkimium_centrifuge"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_ALKIMIUM",
       "name": "planarartifice.research.alkimium.title",
       "category": "PLANAR_ARTIFICE",

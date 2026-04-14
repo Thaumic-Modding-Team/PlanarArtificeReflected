@@ -42,6 +42,46 @@ public class ModRecipesPA {
     }
 
     private static void registerArcaneCraftingRecipes() {
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimic_construct"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_ALKIMIUM_APPLICATIONS@2",
+                100,
+                new AspectList().add(Aspect.WATER, 1).add(Aspect.ORDER, 1).add(Aspect.ENTROPY, 1),
+                new ItemStack(ModBlocksPA.ALKIMIC_CONSTRUCT, 2),
+                "AVA",
+                "TPT",
+                "AVA",
+                'A', "plateAlkimium",
+                'V', new ItemStack(BlocksTC.tubeValve),
+                'T', new ItemStack(BlocksTC.tube),
+                'P', new ItemStack(BlocksTC.plankSilverwood)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_centrifuge"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_ALKIMIUM_APPLICATIONS@3",
+                125,
+                new AspectList().add(Aspect.ORDER, 1).add(Aspect.ENTROPY, 1),
+                ModBlocksPA.ALKIMIUM_CENTRIFUGE,
+                " T ",
+                "M*A",
+                " T ",
+                'T', new ItemStack(BlocksTC.tube),
+                'M', new ItemStack(ItemsTC.morphicResonator),
+                '*', new ItemStack(ModBlocksPA.ALKIMIC_CONSTRUCT),
+                'A', new ItemStack(ItemsTC.mechanismComplex)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_ALKIMIUM_APPLICATIONS@2",
+                75,
+                new AspectList().add(Aspect.FIRE, 1),
+                ModBlocksPA.ALKIMIUM_SMELTERY,
+                "ACA",
+                "#F#",
+                "#*#",
+                'A', "plateAlkimium",
+                'C', new ItemStack(BlocksTC.crucible),
+                '#', "cobblestone",
+                'F', new ItemStack(Blocks.FURNACE),
+                '*', new ItemStack(ModBlocksPA.ALKIMIC_CONSTRUCT)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "aura_meter"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_BISMUTH",
