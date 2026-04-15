@@ -70,10 +70,9 @@ planarartifice.research.alkimium_applications.stage.2=Another idea I had while d
 planarartifice.research.alkimium_applications.stage.3=Success! The Alkimium Essentia Smeltery, as I have cleverly dubbed it, has complete Alkimium internals, giving it 1.5x the capacity and a *slightly* faster speed. But whilst Essentia seems much more stable in the presence of Alkimium, I was unable to improve the efficiency of the Smeltery by more than 5%. Nevertheless, this property can be explored further.
 
 # -- ALKIMIUM: Alkimium Applications - Distillation
-planarartifice.research.alkimium_applications_distillation.title=Alkimium Applications: Distillation
-planarartifice.research.alkimium_applications_distillation.stage.1=[WIP]
-planarartifice.research.alkimium_applications_distillation.stage.2=[WIP]
-planarartifice.research.alkimium_applications_distillation.stage.3=[WIP]
+planarartifice.research.alkimium_distillation.title=Improved Alkimium Distillation
+planarartifice.research.alkimium_distillation.stage.1=[WIP]
+planarartifice.research.alkimium_distillation.stage.2=[WIP]
 
 # -- ALKIMIUM: Alkimium Applications - Goggles
 planarartifice.research.alkimium_applications_goggles.title=Alkimium Applications: Goggles

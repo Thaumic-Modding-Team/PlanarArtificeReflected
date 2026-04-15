@@ -46,6 +46,39 @@
       ]
     },
     {
+      "key": "PA_ALKIMIUM_DISTILLATION",
+      "name": "planarartifice.research.alkimium_distillation.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:alkimium_smelter_aux",
+        "planarartifice:alkimium_smelter_vent"
+      ],
+      "parents": [
+        "PA_ALKIMIUM_APPLICATIONS",
+        "IMPROVEDSMELTING2"
+      ],
+      "location": [
+        5,
+        1
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.alkimium_distillation.stage.1",
+          "required_knowledge": [
+            "OBSERVATION;ALCHEMY;1",
+            "THEORY;ALCHEMY;1"
+          ]
+        },
+        {
+          "text": "planarartifice.research.alkimium_distillation.stage.2",
+          "recipes": [
+            "planarartifice:alkimium_smelter_aux",
+            "planarartifice:alkimium_smelter_vent"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_ALKIMIUM",
       "name": "planarartifice.research.alkimium.title",
       "category": "PLANAR_ARTIFICE",

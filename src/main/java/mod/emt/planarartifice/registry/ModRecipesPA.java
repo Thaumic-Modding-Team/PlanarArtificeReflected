@@ -82,6 +82,34 @@ public class ModRecipesPA {
                 '#', "cobblestone",
                 'F', new ItemStack(Blocks.FURNACE),
                 '*', new ItemStack(ModBlocksPA.ALKIMIC_CONSTRUCT)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smelter_aux"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_ALKIMIUM_DISTILLATION",
+                125,
+                new AspectList().add(Aspect.AIR, 1).add(Aspect.EARTH, 1),
+                ModBlocksPA.ALKIMIUM_SMELTER_AUX,
+                "STS",
+                "A*A",
+                "I#I",
+                'S', new ItemStack(BlocksTC.plankSilverwood),
+                'T', new ItemStack(BlocksTC.tubeFilter),
+                'A', "plateAlkimium",
+                '*', new ItemStack(ModBlocksPA.ALKIMIC_CONSTRUCT),
+                'I', "plateIron",
+                '#', new ItemStack(BlocksTC.bellows)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smelter_vent"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_ALKIMIUM_DISTILLATION",
+                175,
+                new AspectList().add(Aspect.AIR, 1),
+                ModBlocksPA.ALKIMIUM_SMELTER_VENT,
+                "IAI",
+                "F*F",
+                "IAI",
+                'I', "plateIron",
+                'A', "plateAlkimium",
+                'F', new ItemStack(ItemsTC.filter),
+                '*', new ItemStack(ModBlocksPA.ALKIMIC_CONSTRUCT)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "aura_meter"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_BISMUTH",
