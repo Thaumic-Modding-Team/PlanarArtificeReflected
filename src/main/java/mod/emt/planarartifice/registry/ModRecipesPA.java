@@ -98,7 +98,7 @@ public class ModRecipesPA {
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery_void"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_ALKIMIUM_VOID_SMELTERY@2",
-                1000,
+                800,
                 new AspectList().add(Aspect.FIRE, 6),
                 ModBlocksPA.ALKIMIUM_SMELTERY_VOID,
                 "A#A",
@@ -106,7 +106,7 @@ public class ModRecipesPA {
                 "TTT",
                 'A', "plateAlkimium",
                 '#', new ItemStack(ModBlocksPA.ALKIMIUM_SMELTERY),
-                'T', "plateThaumium",
+                'T', "plateVoid",
                 '*', new ItemStack(BlocksTC.metalAlchemicalAdvanced)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smelter_aux"), new ShapedArcaneRecipe(
                 defaultGroup,
