@@ -3,6 +3,7 @@ package mod.emt.planarartifice.registry;
 import mod.emt.planarartifice.item.BaseItemPA;
 import mod.emt.planarartifice.item.bauble.*;
 import mod.emt.planarartifice.item.food.ItemAppleThaumaturge;
+import mod.emt.planarartifice.item.misc.ItemFocusPA;
 import mod.emt.planarartifice.item.tools.ItemCasterPA;
 import mod.emt.planarartifice.item.tools.ItemGlassCutter;
 import mod.emt.planarartifice.item.tools.ItemGlassCutterVis;
@@ -60,8 +61,7 @@ public class ModItemsPA {
         registry.register(MIRRORED_AMULET = new ItemMirroredAmulet());
         registry.register(SUSPENSION_BELT = new ItemSuspensionBelt());
         registry.register(BISMUTH_CASTER = new ItemCasterPA("bismuth_caster", 4, 2, 1.2f));
-        //TODO: Add texture/research and remove comment
-        // registry.register(FLAWLESS_FOCUS = new ItemFocusPA("flawless_focus", 100));
+        registry.register(FLAWLESS_FOCUS = new ItemFocusPA("flawless_focus", 100));
         registry.register(THAUMATURGES_FRUIT = new ItemAppleThaumaturge("thaumaturges_fruit", 6, 1.4F, false));
         registry.register(THAUMATURGES_FRUIT_ENCHANTED = new ItemAppleThaumaturge("thaumaturges_fruit_enchanted", 6, 1.4F, true));
     }

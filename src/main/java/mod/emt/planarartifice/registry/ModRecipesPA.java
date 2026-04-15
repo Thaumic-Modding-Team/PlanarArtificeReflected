@@ -231,6 +231,15 @@ public class ModRecipesPA {
     }
 
     private static void registerInfusionRecipes() {
+        //TODO: Change placeholder research for flawless focus
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "flawless_focus"),
+                new InfusionRecipe("PA_MIRRORED_AMULET", new ItemStack(ModItemsPA.FLAWLESS_FOCUS), 10,
+                        new AspectList().add(Aspect.AURA, 150).add(Aspect.MAGIC, 50).add(Aspect.ORDER, 100).add(Aspect.VOID, 150),
+                        new ItemStack(ItemsTC.primordialPearl),
+                        "blockBismuth",
+                        new ItemStack(ItemsTC.focus3),
+                        "blockBismuth",
+                        new ItemStack(Items.NETHER_STAR)));
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirromirous_headband"),
                 new InfusionRecipe("PA_MIRROMIROUS_HEADBAND", new ItemStack(ModItemsPA.MIRROMIROUS_HEADBAND), 7,
                         new AspectList().add(Aspect.MIND, 175).add(Aspect.CRYSTAL, 100).add(Aspect.TRAP, 125),
