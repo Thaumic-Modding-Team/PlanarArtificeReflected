@@ -31,6 +31,7 @@ public class ModItemsPA {
     public static Item BISMUTH_INGOT;
     public static Item BISMUTH_NUGGET;
     public static Item BISMUTH_PLATE;
+    public static Item FLAWLESS_FOCUS;
     public static Item GLASS_CUTTER;
     public static Item GLASS_CUTTER_VIS;
     public static Item MIRROMIROUS_HEADBAND;
@@ -59,6 +60,8 @@ public class ModItemsPA {
         registry.register(MIRRORED_AMULET = new ItemMirroredAmulet());
         registry.register(SUSPENSION_BELT = new ItemSuspensionBelt());
         registry.register(BISMUTH_CASTER = new ItemCasterPA("bismuth_caster", 4, 2, 1.2f));
+        //TODO: Add texture/research and remove comment
+        // registry.register(FLAWLESS_FOCUS = new ItemFocusPA("flawless_focus", 100));
         registry.register(THAUMATURGES_FRUIT = new ItemAppleThaumaturge("thaumaturges_fruit", 6, 1.4F, false));
         registry.register(THAUMATURGES_FRUIT_ENCHANTED = new ItemAppleThaumaturge("thaumaturges_fruit_enchanted", 6, 1.4F, true));
     }
