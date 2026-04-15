@@ -81,14 +81,14 @@ planarartifice.research.alkimium_applications_goggles.stage.2=[WIP]
 
 # -- ALKIMIUM: Alkimium Applications - Thaumium
 planarartifice.research.alkimium_applications_thaumium.title=Alkimium Applications: Thaumium
-planarartifice.research.alkimium_applications_thaumium.stage.1=[WIP]
-planarartifice.research.alkimium_applications_thaumium.stage.2=[WIP]
+planarartifice.research.alkimium_applications_thaumium.stage.1=Just as I did with the Thaumium Brass Smeltery, I should be able to use Thaumium to increase the speed of the smeltery. However, Thaumium and Alkimium may have unexpected interactions. I will have to account for those.
+planarartifice.research.alkimium_applications_thaumium.stage.2=And it WORKS! It has 2.16x the speed of my basic Alkimium Smeltery, or 2.6x the basic Brass Smeltery, whilst keeping it's increased capacity. Thankfully, there are no destructive side-effects to this combo; however, they don't particularly react together at all.
 
 # -- ALKIMIUM: Alkimium Applications - Void Metal
 planarartifice.research.alkimium_applications_void.title=Alkimium Applications: Void Metal
-planarartifice.research.alkimium_applications_void.stage.1=[WIP]
-planarartifice.research.alkimium_applications_void.stage.2=[WIP]
-planarartifice.research.alkimium_applications_void.stage.3=[WIP]
+planarartifice.research.alkimium_applications_void.stage.1=Void Metal is so unlike anything else I've ever paired with Alkimium that I simply *must* test any and all reactions possible! Not just that; but the possibility of a perfect, fluxless smeltery just has to be explored!
+planarartifice.research.alkimium_applications_void.stage.2=Unfortunately, it didn't *quite* work first time round, instead forming a rather large explosion. That explosive reaction is both interesting and completely irrelevant; but I *think* I've fixed it!
+planarartifice.research.alkimium_applications_void.stage.3=Moving past that minor setback, I was indeed able to create a stable and functioning Void variant, with the speed of the Brass Thaumium Smeltery and the same 1.5x capacity of the other Alkimium ones; however, it's efficiency is stuck at 95%, despite my calculations - of which I triple checked - telling me otherwise. Something else is stopping me from creating a perfect smeltery - I shall have to look towards other means.
 
 # -- ALKIMIUM: Material Studies - Alkimium
 planarartifice.research.golem_mat_alkimium.title=Material Studies: Alkimium
