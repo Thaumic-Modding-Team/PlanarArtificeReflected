@@ -116,6 +116,40 @@
       ]
     },
     {
+      "key": "PA_FLAWLESS_FOCI",
+      "name": "planarartifice.research.flawless_foci.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:flawless_focus"
+      ],
+      "parents": [
+        "PA_BISMUTH_CASTER",
+        "~PA_MIRRORED_AMULET",
+        "~PA_ALKIMIUM",
+        "FOCUSGREATER"
+      ],
+      "location": [
+        -1,
+        5
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.flawless_foci.stage.1",
+          "required_knowledge": [
+            "THEORY;ARTIFICE;2",
+            "OBSERVATION;AUROMANCY;2",
+            "OBSERVATION;INFUSION;2"
+          ]
+        },
+        {
+          "text": "planarartifice.research.flawless_foci.stage.2",
+          "recipes": [
+            "planarartifice:flawless_focus"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_METAL_TRANSMUTATION",
       "name": "planarartifice.research.metal_transmutation.title",
       "category": "PLANAR_ARTIFICE",
