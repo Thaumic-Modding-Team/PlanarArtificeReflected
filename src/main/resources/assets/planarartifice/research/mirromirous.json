@@ -1,40 +1,6 @@
 {
   "entries": [
     {
-      "key": "PA_FLAWLESS_FOCI",
-      "name": "planarartifice.research.flawless_foci.title",
-      "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:flawless_focus"
-      ],
-      "parents": [
-        "PA_MIRRORED_AMULET",
-        "~PA_ALKIMIUM",
-        "~PA_BISMUTH",
-        "MIRRORESSENTIA"
-      ],
-      "location": [
-        -1,
-        5
-      ],
-      "stages": [
-        {
-          "text": "planarartifice.research.flawless_foci.stage.1",
-          "required_knowledge": [
-            "THEORY;ARTIFICE;2",
-            "OBSERVATION;AUROMANCY;2",
-            "OBSERVATION;INFUSION;2"
-          ]
-        },
-        {
-          "text": "planarartifice.research.flawless_foci.stage.2",
-          "recipes": [
-            "planarartifice:flawless_focus"
-          ]
-        }
-      ]
-    },
-    {
       "key": "PA_FLAWLESS_MIRRORS",
       "name": "planarartifice.research.flawless_mirrors.title",
       "category": "PLANAR_ARTIFICE",
@@ -45,7 +11,8 @@
       "parents": [
         "PA_MIRRORED_AMULET",
         "~PA_ALKIMIUM",
-        "~PA_BISMUTH"
+        "~PA_BISMUTH",
+        "MIRRORESSENTIA"
       ],
       "location": [
         1,
