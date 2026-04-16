@@ -57,7 +57,7 @@ public class ModRecipesPA {
                 'P', new ItemStack(BlocksTC.plankSilverwood)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_centrifuge"), new ShapedArcaneRecipe(
                 defaultGroup,
-                "PA_ALKIMIUM_APPLICATIONS@3",
+                "PA_ALKIMIUM_CENTRIFUGE",
                 125,
                 new AspectList().add(Aspect.ORDER, 2).add(Aspect.ENTROPY, 2),
                 ModBlocksPA.ALKIMIUM_CENTRIFUGE,
