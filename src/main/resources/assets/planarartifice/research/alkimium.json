@@ -231,6 +231,34 @@
           ]
         }
       ]
+    },
+    {
+      "key": "PA_GOLEM_MAT_ALKIMIUM",
+      "name": "planarartifice.research.golem_mat_alkimium.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:alkimium_plate"
+      ],
+      "meta": [
+        "HIDDEN",
+        "REVERSE",
+        "ROUND"
+      ],
+      "parents": [
+        "PA_ALKIMIUM_GOGGLES",
+        "PA_ALKIMIUM_DISTILLATION",
+        "MATSTUDTHAUMIUM",
+        "MINDCLOCKWORK"
+      ],
+      "location": [
+        7,
+        2
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.golem_mat_alkimium.stage.1"
+        }
+      ]
     }
   ]
 }

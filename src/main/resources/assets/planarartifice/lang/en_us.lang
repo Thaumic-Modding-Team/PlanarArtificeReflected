@@ -23,6 +23,10 @@ tile.planarartifice:starving_chest_huge.name=Ravenous Starving Chest
 # Chat
 chat.planarartifice.mirror.already_linked=That mirror is already linked to a valid destination.
 
+# Golems
+golem.material.pa_alkimium=Alkimium
+golem.material.text.pa_alkimium=This golem is crafted from alkimium. It's light, fireproof, and blastproof, with more defense and attacking power than a brass golem, but is also more fragile as a golem material.
+
 # Items
 item.planarartifice:alkimium_goggles.name=Alkimium Goggles of Revealing
 item.planarartifice:alkimium_ingot.name=Alkimium Ingot
@@ -93,8 +97,7 @@ planarartifice.research.alkimium_applications_void.stage.3=Moving past that mino
 
 # -- ALKIMIUM: Material Studies - Alkimium
 planarartifice.research.golem_mat_alkimium.title=Material Studies: Alkimium
-planarartifice.research.golem_mat_alkimium.stage.1=[WIP]
-planarartifice.research.golem_mat_alkimium.stage.2=[WIP]
+planarartifice.research.golem_mat_alkimium.stage.1=After deeply studying this vibrant green metal, it seems that golems built from Alkimium will move more swiftly...<BR>They also have double the amount of armor and retain traits from the stronger metal golems. Their fragility however, is something to take note of.
 
 # -- BISMUTH
 planarartifice.research.bismuth.title=Bismuth
