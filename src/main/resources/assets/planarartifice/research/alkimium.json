@@ -82,6 +82,36 @@
       ]
     },
     {
+      "key": "PA_ALKIMIUM_GOGGLES",
+      "name": "planarartifice.research.alkimium_applications_goggles.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:alkimium_goggles"
+      ],
+      "parents": [
+        "PA_ALKIMIUM_APPLICATIONS"
+      ],
+      "location": [
+        7,
+        0
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.alkimium_applications_goggles.stage.1",
+          "required_knowledge": [
+            "OBSERVATION;ARTIFICE;2",
+            "THEORY;INFUSION;2"
+          ]
+        },
+        {
+          "text": "planarartifice.research.alkimium_applications_goggles.stage.2",
+          "recipes": [
+            "planarartifice:alkimium_goggles"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_ALKIMIUM_THAUMIUM_SMELTERY",
       "name": "planarartifice.research.alkimium_applications_thaumium.title",
       "category": "PLANAR_ARTIFICE",

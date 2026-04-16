@@ -77,8 +77,8 @@ planarartifice.research.alkimium_distillation.stage.2=[WIP]
 
 # -- ALKIMIUM: Alkimium Applications - Goggles
 planarartifice.research.alkimium_applications_goggles.title=Alkimium Applications: Goggles
-planarartifice.research.alkimium_applications_goggles.stage.1=[WIP]
-planarartifice.research.alkimium_applications_goggles.stage.2=[WIP]
+planarartifice.research.alkimium_applications_goggles.stage.1=Alkimium has many potential applications. Perhaps it's time to touch up the Goggles of Revealing?
+planarartifice.research.alkimium_applications_goggles.stage.2=Infusing a pair of Goggles with Alkimium has attuned them to the actions of my Essentia tubing, and significantly increased it's strength and usability as armor. When looking at a tube, jar, or other Essentia-related device of any sort, it will show me how much suction the block currently has, on both the side looked at and the opposite side.
 
 # -- ALKIMIUM: Alkimium Applications - Thaumium
 planarartifice.research.alkimium_applications_thaumium.title=Alkimium Applications: Thaumium

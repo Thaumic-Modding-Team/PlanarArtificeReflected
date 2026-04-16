@@ -231,6 +231,18 @@ public class ModRecipesPA {
     }
 
     private static void registerInfusionRecipes() {
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_goggles"),
+                new InfusionRecipe("PA_ALKIMIUM_GOGGLES", new ItemStack(ModItemsPA.ALKIMIUM_GOGGLES), 4,
+                        new AspectList().add(Aspect.ALCHEMY, 75).add(Aspect.AURA, 50).add(Aspect.MAGIC, 50).add(Aspect.MIND, 75),
+                        new ItemStack(ItemsTC.goggles, 1, OreDictionary.WILDCARD_VALUE),
+                        "quicksilver",
+                        "plateAlkimium",
+                        "quicksilver",
+                        "plateAlkimium",
+                        new ItemStack(ItemsTC.resonator),
+                        "plateAlkimium",
+                        "quicksilver",
+                        "plateAlkimium"));
         //TODO: Change placeholder research for flawless focus
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "flawless_focus"),
                 new InfusionRecipe("PA_MIRRORED_AMULET", new ItemStack(ModItemsPA.FLAWLESS_FOCUS), 10,
