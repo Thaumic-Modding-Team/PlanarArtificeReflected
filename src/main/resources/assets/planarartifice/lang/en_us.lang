@@ -146,6 +146,11 @@ planarartifice.research.alchemical_glass_cutter.title=Alchemical Glass Cutter
 planarartifice.research.alchemical_glass_cutter.stage.1=[WIP]
 planarartifice.research.alchemical_glass_cutter.stage.2=[WIP]
 
+# -- GLASSWORK: Glassworking
+planarartifice.research.glassworking.title=Glassworking
+planarartifice.research.glassworking.stage.1=[WIP]
+planarartifice.research.glassworking.stage.2=[WIP]
+
 # -- MIRROMIROUS: Belt of Suspension
 planarartifice.research.suspension_belt.title=Belt of Suspension
 planarartifice.research.suspension_belt.stage.1=The ability to fly is an incredible one. Whilst I have been able to reach significant heights with the Cloudstepper Ring, I'm still reliant on the ground for support. <BR>However, with my newfound knowledge of levitation, I may be able to enhance this to allow constant horizontal movement.

@@ -231,6 +231,14 @@ public class ModRecipesPA {
     }
 
     private static void registerInfusionRecipes() {
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alchemical_glass_cutter"),
+                new InfusionRecipe("PA_ALCHEMICAL_GLASS_CUTTER", new ItemStack(ModItemsPA.GLASS_CUTTER_VIS), 2,
+                        new AspectList().add(Aspect.AURA, 25).add(Aspect.CRYSTAL, 25),
+                        new ItemStack(ModItemsPA.GLASS_CUTTER, 1, OreDictionary.WILDCARD_VALUE),
+                        "gemAmber",
+                        "ingotAlkimium",
+                        "gemAmber",
+                        "ingotAlkimium"));
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_goggles"),
                 new InfusionRecipe("PA_ALKIMIUM_GOGGLES", new ItemStack(ModItemsPA.ALKIMIUM_GOGGLES), 4,
                         new AspectList().add(Aspect.ALCHEMY, 75).add(Aspect.AURA, 50).add(Aspect.MAGIC, 50).add(Aspect.MIND, 75),
