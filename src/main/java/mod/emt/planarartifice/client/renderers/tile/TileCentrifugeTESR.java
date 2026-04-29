@@ -8,7 +8,7 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import thaumcraft.client.renderers.models.block.ModelCentrifuge;
 
-public class TileCentrifugeRendererPA extends TileEntitySpecialRenderer<TileCentrifiguePA> {
+public class TileCentrifugeTESR extends TileEntitySpecialRenderer<TileCentrifiguePA> {
     public static final ResourceLocation TEXTURE = new ResourceLocation(PlanarArtifice.MOD_ID, "textures/models/alkimium_centrifuge.png");
     private final ModelCentrifuge model = new ModelCentrifuge();
 
