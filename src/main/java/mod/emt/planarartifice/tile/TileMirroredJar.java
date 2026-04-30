@@ -1,5 +1,7 @@
 package mod.emt.planarartifice.tile;
 
+import mod.emt.planarartifice.network.NetworkHandler;
+import mod.emt.planarartifice.network.packets.MessageSyncWorldSaveDataClient;
 import mod.emt.planarartifice.utils.helper.WorldHelper;
 import mod.emt.planarartifice.utils.world.MirroredJarData;
 import net.minecraft.nbt.NBTTagCompound;
@@ -94,6 +96,7 @@ public class TileMirroredJar extends TileJarFillable {
             if(data != null) {
                 if(data.getAspect() != this.aspect || data.getAmount() != this.amount) {
                     data.setAspect(this.aspect, this.amount);
+                    NetworkHandler.INSTANCE.sendToAll(new MessageSyncWorldSaveDataClient());
                 }
             }
         }

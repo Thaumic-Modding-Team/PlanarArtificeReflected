@@ -12,6 +12,8 @@ import javax.annotation.Nullable;
 import java.util.UUID;
 
 public class WorldHelper {
+    private static final WorldSaveDataPA SAVE_DATA_CACHE = new WorldSaveDataPA();
+
     /**
      * Gets the World object from the dimension id.
      *
@@ -69,7 +71,7 @@ public class WorldHelper {
     public static WorldSaveDataPA getWorldSaveDataPA() {
         World world = DimensionManager.getWorld(0);
         if(world == null || world.getMapStorage() == null)
-            return new WorldSaveDataPA();
+            return SAVE_DATA_CACHE;
 
         WorldSaveDataPA saveData = (WorldSaveDataPA) world.getMapStorage().getOrLoadData(WorldSaveDataPA.class, WorldSaveDataPA.ID);
         if(saveData == null) {

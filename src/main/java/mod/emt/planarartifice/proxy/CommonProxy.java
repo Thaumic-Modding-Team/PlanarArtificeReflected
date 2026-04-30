@@ -3,6 +3,7 @@ package mod.emt.planarartifice.proxy;
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.compat.CompatHandlerPA;
 import mod.emt.planarartifice.item.bauble.ItemAuraMeter;
+import mod.emt.planarartifice.network.NetworkHandler;
 import mod.emt.planarartifice.registry.ModGuiHandlerPA;
 import mod.emt.planarartifice.registry.ModItemsPA;
 import mod.emt.planarartifice.registry.ModRecipesPA;
@@ -19,6 +20,7 @@ import thaumcraft.api.research.ResearchCategories;
 
 public class CommonProxy {
     public void preInit() {
+        NetworkHandler.init();
     }
 
     public void init() {

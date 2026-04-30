@@ -119,7 +119,6 @@ public class ItemBlockMirroredJar extends BlockJarItem {
             if(data != null && data.getAspect() != null && data.getAmount() > 0) {
                 return new AspectList().add(data.getAspect(), data.getAmount());
             }
-            return null;
         }
         return super.getAspects(itemstack);
     }
