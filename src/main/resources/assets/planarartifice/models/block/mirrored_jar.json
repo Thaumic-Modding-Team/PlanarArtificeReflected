@@ -1,0 +1,97 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "thaumcraft:blocks/log_greatwood",
+		"base": "thaumcraft:blocks/log_greatwood",
+		"jar_side": "planarartifice:blocks/mirrored_jar_side",
+		"jar_top": "thaumcraft:blocks/jar_top"
+	},
+	"elements": [
+		{
+			"name": "base_down",
+			"from": [2, 0, 2],
+			"to": [14, 0.02, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 0, 3]},
+			"faces": {
+				"up": {"uv": [2, 2, 14, 14], "texture": "#base"},
+				"down": {"uv": [2, 2, 14, 14], "texture": "#base"}
+			}
+		},
+		{
+			"name": "base_north",
+			"from": [2, 0, 2],
+			"to": [14, 6, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 2]},
+			"faces": {
+				"north": {"uv": [2, 10, 14, 16], "texture": "#base"},
+				"east": {"uv": [14, 10, 15, 16], "texture": "#base"},
+				"south": {"uv": [2, 10, 14, 16], "texture": "#base"},
+				"west": {"uv": [1, 10, 2, 16], "texture": "#base"},
+				"up": {"uv": [2, 9, 14, 10], "texture": "#base"}
+			}
+		},
+		{
+			"name": "base_south",
+			"from": [2, 0, 13],
+			"to": [14, 6, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 13]},
+			"faces": {
+				"north": {"uv": [2, 10, 14, 16], "texture": "#base"},
+				"east": {"uv": [14, 10, 15, 16], "texture": "#base"},
+				"south": {"uv": [2, 10, 14, 16], "texture": "#base"},
+				"west": {"uv": [1, 10, 2, 16], "texture": "#base"},
+				"up": {"uv": [2, 9, 14, 10], "texture": "#base"}
+			}
+		},
+		{
+			"name": "base_west",
+			"from": [2, 0, 3],
+			"to": [3, 6, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 3]},
+			"faces": {
+				"east": {"uv": [3, 10, 13, 16], "texture": "#base"},
+				"west": {"uv": [3, 10, 13, 16], "texture": "#base"},
+				"up": {"uv": [3, 9, 13, 10], "rotation": 270, "texture": "#base"}
+			}
+		},
+		{
+			"name": "base_east",
+			"from": [13, 0, 3],
+			"to": [14, 6, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13, 0, 3]},
+			"faces": {
+				"east": {"uv": [3, 10, 13, 16], "texture": "#base"},
+				"west": {"uv": [3, 10, 13, 16], "texture": "#base"},
+				"up": {"uv": [3, 9, 13, 10], "rotation": 270, "texture": "#base"}
+			}
+		},
+		{
+			"name": "jar",
+			"from": [3, 0, 3],
+			"to": [13, 12, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 0, 3]},
+			"faces": {
+				"north": {"uv": [3, 4, 13, 16], "texture": "#jar_side"},
+				"east": {"uv": [3, 4, 13, 16], "texture": "#jar_side"},
+				"south": {"uv": [3, 4, 13, 16], "texture": "#jar_side"},
+				"west": {"uv": [3, 4, 13, 16], "texture": "#jar_side"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#jar_top"}
+			}
+		},
+		{
+			"name": "lid",
+			"from": [5, 12, 5],
+			"to": [11, 14, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 12, 5]},
+			"faces": {
+				"north": {"uv": [5, 2, 11, 4], "texture": "#jar_side"},
+				"east": {"uv": [5, 2, 11, 4], "texture": "#jar_side"},
+				"south": {"uv": [5, 2, 11, 4], "texture": "#jar_side"},
+				"west": {"uv": [5, 2, 11, 4], "texture": "#jar_side"},
+				"up": {"uv": [5, 5, 11, 11], "texture": "#jar_top"},
+				"down": {"uv": [5, 5, 11, 11], "texture": "#jar_top"}
+			}
+		}
+	]
+}

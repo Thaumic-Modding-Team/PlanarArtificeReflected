@@ -15,6 +15,7 @@ tile.planarartifice:alkimium_smeltery_void.name=Alkimium Void Metal Smeltery
 tile.planarartifice:bismuth_block.name=Block of Bismuth
 tile.planarartifice:flawless_mirror.name=Flawless Magic Mirror
 tile.planarartifice:flawless_mirror_essentia.name=Flawless Essentia Mirror
+tile.planarartifice:mirrored_jar.name=Mirrored Jar
 tile.planarartifice:starving_chest_small.name=Starving Chest
 tile.planarartifice:starving_chest_medium.name=Hungry Starving Chest
 tile.planarartifice:starving_chest_large.name=Famished Starving Chest
@@ -22,6 +23,11 @@ tile.planarartifice:starving_chest_huge.name=Ravenous Starving Chest
 
 # Chat
 chat.planarartifice.mirror.already_linked=That mirror is already linked to a valid destination.
+chat.planarartifice:mirrored_jar.failed.already_linked=The Mirrored Jars are already linked together.
+chat.planarartifice:mirrored_jar.failed.exceeds_capacity=There is too much essentia to link the two jars together.
+chat.planarartifice:mirrored_jar.failed.incompatible_aspects=The Mirrored Jar aspects do not match.
+chat.planarartifice:mirrored_jar.failed=Mirrored jar item must be empty before assigning a new link.
+chat.planarartifice:mirrored_jar.success=Mirrored Jar successfully linked!
 
 # Golems
 golem.material.pa_alkimium=Alkimium
@@ -56,6 +62,9 @@ enchantment.infusion.METAPHIZE=Metaphize
 
 # Tooltips
 tooltip.planarartifice.glass_cutter.info=Right-click to instantly harvest glass blocks.
+tooltip.planarartifice:mirrored_jar.info=Network UUID:
+tooltip.planarartifice:mirrored_jar.linked=Linked
+tooltip.planarartifice:mirrored_jar.unlinked=Unlinked
 
 # Research
 tc.research_category.PLANAR_ARTIFICE=Planar Artifice

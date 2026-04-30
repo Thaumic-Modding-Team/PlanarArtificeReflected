@@ -5,6 +5,7 @@
 - Added Flawless Magic Mirror, a Magic Mirror with significantly reduce flux pollution and faster transfer speed.
 - Added Flawless Essentia Mirror, an Essentia Mirror with significantly reduce flux pollution.
 - Added Infusion Enchant: Mirrored, link a weapon or tool to a Magic Mirror to instantly transport any dropped items to that mirror.
+- Added Mirrored Jars, essentia jars that can be linked to share aspect contents
 
 ### Changed
 - Cut most Bush Alchemy recipes, reducing overlap with other Thaumcraft addons. Use Thaumic Wonders Unofficial for similar features.

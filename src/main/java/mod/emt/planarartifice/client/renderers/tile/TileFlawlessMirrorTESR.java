@@ -8,6 +8,8 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.FMLClientHandler;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import thaumcraft.Thaumcraft;
 import thaumcraft.client.lib.UtilsFX;
 import thaumcraft.client.renderers.tile.TileMirrorRenderer;
@@ -15,6 +17,7 @@ import thaumcraft.common.lib.utils.BlockStateUtils;
 import thaumcraft.common.tiles.devices.TileMirror;
 import thaumcraft.common.tiles.devices.TileMirrorEssentia;
 
+@SideOnly(Side.CLIENT)
 public class TileFlawlessMirrorTESR extends TileMirrorRenderer {
     public static final ResourceLocation mirrorPane = new ResourceLocation(Thaumcraft.MODID, "textures/blocks/mirrorpane.png");
     public static final ResourceLocation mirrorPaneTrans = new ResourceLocation(Thaumcraft.MODID, "textures/blocks/mirrorpanetrans.png");

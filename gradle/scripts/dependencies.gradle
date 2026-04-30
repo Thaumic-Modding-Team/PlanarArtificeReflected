@@ -44,6 +44,7 @@ dependencies {
     implementation rfg.deobf('curse.maven:thaumcraftfix-1069346:7288369')
     implementation rfg.deobf(files('libs/thaumicapi-1.0.0.jar'))
     implementation rfg.deobf('curse.maven:thaumic-wonders-unofficial-1307741:7646734')
+    compileOnly rfg.deobf("curse.maven:magiculture-integrations-1064613:7445189")
 
     //implementation rfg.deobf('curse.maven:thaumic-additions-232564:5394706')
     //implementation rfg.deobf("curse.maven:hammer-lib-247401:6348753")

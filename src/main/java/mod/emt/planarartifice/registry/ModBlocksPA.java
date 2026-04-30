@@ -4,15 +4,14 @@ import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.block.BlockFlawlessMirror;
 import mod.emt.planarartifice.block.BlockMaterialPA;
 import mod.emt.planarartifice.block.BlockStarvingChest;
-import mod.emt.planarartifice.block.essentia.BlockCentrifugePA;
-import mod.emt.planarartifice.block.essentia.BlockSmelterAuxiliaryPA;
-import mod.emt.planarartifice.block.essentia.BlockSmelterPA;
-import mod.emt.planarartifice.block.essentia.BlockSmelterVentPA;
+import mod.emt.planarartifice.block.essentia.*;
 import mod.emt.planarartifice.client.renderers.tile.TileCentrifugeTESR;
 import mod.emt.planarartifice.client.renderers.tile.TileFlawlessMirrorTESR;
+import mod.emt.planarartifice.client.renderers.tile.TileMirroredJarTESR;
 import mod.emt.planarartifice.client.renderers.tile.TileStarvingChestTESR;
 import mod.emt.planarartifice.compat.CompatHandlerPA;
 import mod.emt.planarartifice.item.blocks.ItemBlockFlawlessMirror;
+import mod.emt.planarartifice.item.blocks.ItemBlockMirroredJar;
 import mod.emt.planarartifice.item.blocks.ItemBlockPA;
 import mod.emt.planarartifice.tile.*;
 import mod.emt.planarartifice.utils.helper.LogHelper;
@@ -47,6 +46,7 @@ public class ModBlocksPA {
     public static Block BISMUTH_BLOCK;
     public static Block FLAWLESS_MIRROR;
     public static Block FLAWLESS_MIRROR_ESSENTIA;
+    public static Block MIRRORED_JAR;
     public static Block STARVING_CHEST_SMALL;
     public static Block STARVING_CHEST_MEDIUM;
     public static Block STARVING_CHEST_LARGE;
@@ -84,6 +84,7 @@ public class ModBlocksPA {
         registry.register(ALKIMIUM_SMELTER_VENT = new BlockSmelterVentPA("alkimium_smelter_vent", 0.5f));
         registry.register(FLAWLESS_MIRROR = new BlockFlawlessMirror(TileFlawlessMirror.class, "flawless_mirror"));
         registry.register(FLAWLESS_MIRROR_ESSENTIA = new BlockFlawlessMirror(TileFlawlessMirrorEssentia.class, "flawless_mirror_essentia"));
+        registry.register(MIRRORED_JAR = new BlockMirroredJar());
 
 
 
@@ -94,6 +95,7 @@ public class ModBlocksPA {
         GameRegistry.registerTileEntity(TileCentrifiguePA.class, new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_centrifuge"));
         GameRegistry.registerTileEntity(TileFlawlessMirror.class, new ResourceLocation(PlanarArtifice.MOD_ID, "flawless_mirror"));
         GameRegistry.registerTileEntity(TileFlawlessMirrorEssentia.class, new ResourceLocation(PlanarArtifice.MOD_ID, "flawless_mirror_essentia"));
+        GameRegistry.registerTileEntity(TileMirroredJar.class, new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_jar"));
         GameRegistry.registerTileEntity(TileSmelterPA.class, new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery"));
         GameRegistry.registerTileEntity(TileStarvingChest.class, new ResourceLocation(PlanarArtifice.MOD_ID, "starving_chest"));
     }
@@ -123,9 +125,11 @@ public class ModBlocksPA {
         registry.register(new ItemBlockPA(ALKIMIUM_CENTRIFUGE, EnumRarity.RARE));
         registry.register(new ItemBlockFlawlessMirror(FLAWLESS_MIRROR));
         registry.register(new ItemBlockFlawlessMirror(FLAWLESS_MIRROR_ESSENTIA));
+        registry.register(new ItemBlockMirroredJar(MIRRORED_JAR));
     }
 
     @SuppressWarnings({"ConstantConditions", "unchecked"})
+    @SideOnly(Side.CLIENT)
     public static void registerBlockModels(ModelRegistryEvent event) {
         registerItemModel(ALKIMIUM_BLOCK);
         registerItemModel(BISMUTH_BLOCK);
@@ -141,6 +145,7 @@ public class ModBlocksPA {
         registerItemModel(ALKIMIUM_SMELTERY_MITHRILLIUM);
         registerItemModel(FLAWLESS_MIRROR);
         registerItemModel(FLAWLESS_MIRROR_ESSENTIA);
+        registerItemModel(MIRRORED_JAR);
         registerItemModel(STARVING_CHEST_HUGE);
         registerItemModel(STARVING_CHEST_LARGE);
         registerItemModel(STARVING_CHEST_MEDIUM);
@@ -149,6 +154,7 @@ public class ModBlocksPA {
         ClientRegistry.bindTileEntitySpecialRenderer(TileCentrifiguePA.class, new TileCentrifugeTESR());
         ClientRegistry.bindTileEntitySpecialRenderer(TileFlawlessMirror.class, new TileFlawlessMirrorTESR());
         ClientRegistry.bindTileEntitySpecialRenderer(TileFlawlessMirrorEssentia.class, new TileFlawlessMirrorTESR());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileMirroredJar.class, new TileMirroredJarTESR());
         ClientRegistry.bindTileEntitySpecialRenderer(TileStarvingChest.class, new TileStarvingChestTESR());
     }
 

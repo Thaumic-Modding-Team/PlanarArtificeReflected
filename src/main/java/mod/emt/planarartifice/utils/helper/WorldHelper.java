@@ -1,11 +1,15 @@
 package mod.emt.planarartifice.utils.helper;
 
+import mod.emt.planarartifice.utils.world.MirroredJarData;
+import mod.emt.planarartifice.utils.world.WorldSaveDataPA;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.DimensionManager;
+import thaumcraft.api.aspects.Aspect;
 
 import javax.annotation.Nullable;
+import java.util.UUID;
 
 public class WorldHelper {
     /**
@@ -40,5 +44,38 @@ public class WorldHelper {
             return world.getTileEntity(pos);
         }
         return null;
+    }
+
+    @Nullable
+    public static MirroredJarData getMirroredJarData(UUID linkUUID) {
+        return getWorldSaveDataPA().getJarData(linkUUID);
+    }
+
+    public static void setMirroredJarData(UUID linkUUID, Aspect aspect, int amount) {
+        getWorldSaveDataPA().setJarData(linkUUID, aspect, amount);
+    }
+
+    public static void removeMirroredJarData(UUID linkUUID) {
+        getWorldSaveDataPA().removeJarData(linkUUID);
+    }
+
+    /**
+     * Mostly here as a debug for clearing all saved Mirrored Jar data.
+     */
+    public static void deleteMirroredJarData() {
+        getWorldSaveDataPA().deleteJarData();
+    }
+
+    public static WorldSaveDataPA getWorldSaveDataPA() {
+        World world = DimensionManager.getWorld(0);
+        if(world == null || world.getMapStorage() == null)
+            return new WorldSaveDataPA();
+
+        WorldSaveDataPA saveData = (WorldSaveDataPA) world.getMapStorage().getOrLoadData(WorldSaveDataPA.class, WorldSaveDataPA.ID);
+        if(saveData == null) {
+            saveData = new WorldSaveDataPA();
+            world.getMapStorage().setData(WorldSaveDataPA.ID, saveData);
+        }
+        return saveData;
     }
 }
