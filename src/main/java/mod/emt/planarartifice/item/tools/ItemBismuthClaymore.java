@@ -14,7 +14,7 @@ import java.util.Objects;
 import thaumcraft.common.lib.enchantment.EnumInfusionEnchantment;
 
 public class ItemBismuthClaymore extends ItemSword {
-    public static ItemTool.ToolMaterial BISMUTH_MATERIAL = EnumHelper.addToolMaterial("BISMUTH", 4, 3081, 10.0F, 2.5F, 25);
+    public static ItemTool.ToolMaterial BISMUTH_MATERIAL = EnumHelper.addToolMaterial("BISMUTH", 4, 2081, 10.0F, 2.5F, 25);
 
     public ItemBismuthClaymore(String name) {
         super(BISMUTH_MATERIAL);
