@@ -1,13 +1,16 @@
 package mod.emt.planarartifice.tile;
 
+import com.invadermonky.magicultureintegrations.api.tile.IHeatableTile;
 import com.invadermonky.thaumicapi.api.tile.AbstractTileEssentiaSmelter;
 import mod.emt.planarartifice.block.essentia.BlockSmelterPA;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
+import net.minecraftforge.fml.common.Optional;
 
-public class TileSmelterPA extends AbstractTileEssentiaSmelter {
+@Optional.Interface(modid = "magicultureintegrations", iface = "com.invadermonky.magicultureintegrations.api.tile.IHeatableTile")
+public class TileSmelterPA extends AbstractTileEssentiaSmelter implements IHeatableTile {
     @Override
     public int getMaxEssentiaCapacity() {
         Block block = this.world.getBlockState(this.pos).getBlock();
@@ -55,5 +58,62 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter {
                 this.world.setTileEntity(this.pos, tile);
             }
         }
+    }
+
+    //Magiculture Integrations IHeatableTile
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public boolean canSmeltHeatable() {
+        return this.canSmeltItem();
+    }
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public int getBurnTimeHeatable() {
+        return this.burnTime;
+    }
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public int getBurnTimeMaxHeatable() {
+        return this.burnTimeMax;
+    }
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public void setBurnTimeMaxHeatable(int amount) {
+        this.burnTime = amount;
+    }
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public int getCookTimeHeatable() {
+        return this.progress;
+    }
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public int getCookTimeMaxHeatable() {
+        return this.progressMax;
+    }
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public void boostBurnTimeHeatable(int boostAmount) {
+        this.burnTime += boostAmount;
+        this.setBurnTimeMaxHeatable(this.burnTime);
+    }
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public void boostCookTimeHeatable(int boostAmount) {
+        this.progress = Math.min(getCookTimeMaxHeatable() - 1, this.getCookTimeHeatable() + boostAmount);
+    }
+
+    @Optional.Method(modid = "magicultureintegrations")
+    @Override
+    public void updateTileHeatable() {
+        this.markDirty();
     }
 }
