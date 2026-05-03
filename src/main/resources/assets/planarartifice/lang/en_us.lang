@@ -22,7 +22,7 @@ tile.planarartifice:starving_chest_large.name=Famished Starving Chest
 tile.planarartifice:starving_chest_huge.name=Ravenous Starving Chest
 
 # Chat
-chat.planarartifice.mirror.already_linked=That mirror is already linked to a valid destination.
+chat.planarartifice:mirror.already_linked=That mirror is already linked to a valid destination.
 chat.planarartifice:mirrored_jar.failed.already_linked=The Mirrored Jars are already linked together.
 chat.planarartifice:mirrored_jar.failed.exceeds_capacity=There is too much essentia to link the two jars together.
 chat.planarartifice:mirrored_jar.failed.incompatible_aspects=The Mirrored Jar aspects do not match.
@@ -61,7 +61,7 @@ enchantment.infusion.MIRRORED.unlinked=§6Mirrored §f(§7Unlinked§f)
 enchantment.infusion.METAPHIZE=Metaphize
 
 # Tooltips
-tooltip.planarartifice.glass_cutter.info=Right-click to instantly harvest glass blocks.
+tooltip.planarartifice:glass_cutter.info=Right-click to instantly harvest glass blocks.
 tooltip.planarartifice:mirrored_jar.info=Network UUID:
 tooltip.planarartifice:mirrored_jar.linked=Linked
 tooltip.planarartifice:mirrored_jar.unlinked=Unlinked

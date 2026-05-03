@@ -69,7 +69,7 @@ public class ItemGlassCutter extends BaseItemPA {
 
     @Override
     public void addInformation(@NotNull ItemStack stack, @Nullable World worldIn, @NotNull List<String> tooltip, @NotNull ITooltipFlag flagIn) {
-        tooltip.add(I18n.format("tooltip.planarartifice.glass_cutter.info"));
+        tooltip.add(I18n.format("tooltip.planarartifice:glass_cutter.info"));
     }
 
     public ItemStack getSilkTouchDrop(IBlockState state) {

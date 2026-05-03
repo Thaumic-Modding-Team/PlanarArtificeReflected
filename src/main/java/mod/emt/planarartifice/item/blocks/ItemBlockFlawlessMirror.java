@@ -51,7 +51,7 @@ public class ItemBlockFlawlessMirror extends ItemBlockPA {
             ItemStack heldStack = player.getHeldItem(hand);
             if (validLink) {
                 if(!world.isRemote) {
-                    player.sendMessage(new TextComponentTranslation("chat.planarartifice.mirror.already_linked")
+                    player.sendMessage(new TextComponentTranslation("chat.planarartifice:mirror.already_linked")
                             .setStyle(new Style().setColor(TextFormatting.DARK_PURPLE).setItalic(true)));
                 }
             } else {
