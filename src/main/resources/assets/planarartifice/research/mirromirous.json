@@ -104,6 +104,41 @@
       ]
     },
     {
+      "key": "PA_MIRRORED_JAR",
+      "name": "planarartifice.research.mirrored_jar.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": [
+        "planarartifice:mirrored_jar"
+      ],
+      "parents": [
+        "PA_MIRRORED_AMULET",
+        "~PA_ALKIMIUM",
+        "~PA_BISMUTH",
+        "WARDEDJARS",
+        "MIRRORESSENTIA"
+      ],
+      "location": [
+        -1,
+        5
+      ],
+      "stages": [
+        {
+          "text": "planarartifice.research.mirrored_jar.stage.1",
+          "required_knowledge": [
+            "THEORY;ARTIFICE;2",
+            "OBSERVATION;AUROMANCY;2",
+            "OBSERVATION;INFUSION;2"
+          ]
+        },
+        {
+          "text": "planarartifice.research.mirrored_jar.stage.2",
+          "recipes": [
+            "planarartifice:mirrored_jar"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_PLANAR_INFUSION_ENCHANTMENT",
       "name": "planarartifice.research.planar_infusion_enchantment.title",
       "category": "PLANAR_ARTIFICE",

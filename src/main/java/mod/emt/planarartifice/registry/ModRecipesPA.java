@@ -174,6 +174,19 @@ public class ModRecipesPA {
                 " T ",
                 'B', "ingotBismuth",
                 'T', "ingotThaumium"));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_jar"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_MIRRORED_JAR",
+                50,
+                new AspectList().add(Aspect.ORDER, 1),
+                new ItemStack(ModBlocksPA.MIRRORED_JAR),
+                "LJL",
+                "LML",
+                " S ",
+                'L', new ItemStack(BlocksTC.logGreatwood),
+                'J', new ItemStack(BlocksTC.jarNormal),
+                'M', new ItemStack(BlocksTC.mirrorEssentia),
+                'S', "slimeball"));
     }
 
     private static void registerCrucibleRecipes() {
