@@ -18,6 +18,7 @@ import thaumcraft.api.crafting.IngredientNBTTC;
 import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
 import thaumcraft.common.lib.crafting.InfusionEnchantmentRecipe;
+import thaumcraft.common.lib.enchantment.EnumInfusionEnchantment;
 
 @SuppressWarnings("ConstantConditions")
 public class ModRecipesPA {
@@ -160,6 +161,19 @@ public class ModRecipesPA {
                 'M', new ItemStack(ItemsTC.fabric),
                 'F', new ItemStack(ItemsTC.filter),
                 'R', new ItemStack(ItemsTC.morphicResonator)));
+        ItemStack claymoreStack = new ItemStack(ModItemsPA.BISMUTH_CLAYMORE);
+        EnumInfusionEnchantment.addInfusionEnchantment(claymoreStack, ModEnchantsPA.METAPHIZE, 2);
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "bismuth_claymore"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_BISMUTH",
+                50,
+                new AspectList().add(Aspect.AIR, 1).add(Aspect.EARTH, 1).add(Aspect.ENTROPY, 1).add(Aspect.FIRE, 1).add(Aspect.ORDER, 1).add(Aspect.WATER, 1),
+                claymoreStack,
+                " B ",
+                "BBB",
+                " T ",
+                'B', "ingotBismuth",
+                'T', "ingotThaumium"));
     }
 
     private static void registerCrucibleRecipes() {

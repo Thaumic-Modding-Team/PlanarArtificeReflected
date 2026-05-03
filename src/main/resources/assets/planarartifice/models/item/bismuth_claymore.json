@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "planarartifice:items/bismuth/bismuth_claymore"
+  }
+}

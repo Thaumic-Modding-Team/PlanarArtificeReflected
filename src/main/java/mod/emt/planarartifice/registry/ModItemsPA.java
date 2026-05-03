@@ -4,6 +4,7 @@ import mod.emt.planarartifice.item.BaseItemPA;
 import mod.emt.planarartifice.item.bauble.*;
 import mod.emt.planarartifice.item.food.ItemAppleThaumaturge;
 import mod.emt.planarartifice.item.misc.ItemFocusPA;
+import mod.emt.planarartifice.item.tools.ItemBismuthClaymore;
 import mod.emt.planarartifice.item.tools.ItemCasterPA;
 import mod.emt.planarartifice.item.tools.ItemGlassCutter;
 import mod.emt.planarartifice.item.tools.ItemGlassCutterVis;
@@ -29,6 +30,7 @@ public class ModItemsPA {
     public static Item ALKIMIUM_PLATE;
     public static ItemAuraMeter AURA_METER;
     public static ItemCasterPA BISMUTH_CASTER;
+    public static Item BISMUTH_CLAYMORE;
     public static Item BISMUTH_INGOT;
     public static Item BISMUTH_NUGGET;
     public static Item BISMUTH_PLATE;
@@ -56,6 +58,7 @@ public class ModItemsPA {
         registry.register(GLASS_CUTTER = new ItemGlassCutter("glass_cutter"));
         registry.register(GLASS_CUTTER_VIS = new ItemGlassCutterVis());
         registry.register(ALKIMIUM_GOGGLES = new ItemAlkimiumGoggles());
+        registry.register(BISMUTH_CLAYMORE = new ItemBismuthClaymore("bismuth_claymore"));
         registry.register(AURA_METER = new ItemAuraMeter());
         registry.register(MIRROMIROUS_HEADBAND = new ItemMirroredHeadband());
         registry.register(MIRRORED_AMULET = new ItemMirroredAmulet());
@@ -76,6 +79,7 @@ public class ModItemsPA {
         registerItemModel(ALKIMIUM_PLATE);
         registerItemModel(AURA_METER);
         registerItemModel(BISMUTH_CASTER);
+        registerItemModel(BISMUTH_CLAYMORE);
         registerItemModel(BISMUTH_INGOT);
         registerItemModel(BISMUTH_NUGGET);
         registerItemModel(BISMUTH_PLATE);
