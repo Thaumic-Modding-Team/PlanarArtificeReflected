@@ -3,20 +3,10 @@
     {
       "key": "PA_ALCHEMICAL_GLASS_CUTTER",
       "name": "planarartifice.research.alchemical_glass_cutter.title",
-      "icons": [
-        "planarartifice:glass_cutter_vis"
-      ],
+      "icons": ["planarartifice:glass_cutter_vis"],
       "category": "PLANAR_ARTIFICE",
-      "parents": [
-        "PA_GLASSWORKING",
-        "~PA_ALKIMIUM",
-        "~RECHARGEPEDESTAL",
-        "~INFUSION"
-      ],
-      "location": [
-        -4,
-        0
-      ],
+      "parents": ["PA_GLASSWORKING", "~PA_ALKIMIUM", "~RECHARGEPEDESTAL", "~INFUSION"],
+      "location": [-4, 0],
       "stages": [
         {
           "text": "planarartifice.research.alchemical_glass_cutter.stage.1",
@@ -27,42 +17,26 @@
         },
         {
           "text": "planarartifice.research.alchemical_glass_cutter.stage.2",
-          "recipes": [
-            "planarartifice:alchemical_glass_cutter"
-          ]
+          "recipes": ["planarartifice:alchemical_glass_cutter"]
         }
       ]
     },
     {
       "key": "PA_GLASSWORKING",
       "name": "planarartifice.research.glassworking.title",
-      "icons": [
-        "planarartifice:glass_cutter"
-      ],
+      "icons": ["planarartifice:glass_cutter"],
       "category": "PLANAR_ARTIFICE",
-      "parents": [
-        "PLANAR_ARTIFICE_BASE"
-      ],
-      "location": [
-        -2,
-        0
-      ],
+      "parents": ["PLANAR_ARTIFICE_BASE"],
+      "location": [-2, 0],
       "stages": [
         {
           "text": "planarartifice.research.glassworking.stage.1",
-          "required_item": [
-            "minecraft:glass",
-            "minecraft:quartz"
-          ],
-          "required_research": [
-            "!vitreus"
-          ]
+          "required_item": ["minecraft:glass", "minecraft:quartz"],
+          "required_research": ["!vitreus"]
         },
         {
           "text": "planarartifice.research.glassworking.stage.2",
-          "recipes": [
-            "planarartifice:glass_cutter"
-          ]
+          "recipes": ["planarartifice:glass_cutter"]
         }
       ]
     }

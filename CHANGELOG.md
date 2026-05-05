@@ -15,18 +15,19 @@
 - Rewrote Alkimium Vent/Slurry Pump, smelter addons now work with Thaumcraft and Planar Artifice Essentia Smelters.
 - Rewrote Belt of Suspension, can now be used to hover by holding jump or float downwards by crouching.
 - Rewrote Bismuth Caster's Gauntlet, drains vis from the 5x5 chunk area at the cost of 20% increased spell cost and can receive up to 4 augments if Thaumic Augmentation is installed.
+- Rewrote Bismuth Claymore, sword has reduced stats but comes pre-enchanted with Metaphize II.
 - Rewrote Glass Cutters, instantly harvests most glass blocks on interact.
 - Rewrote Mirrored Amulet, transfers any items dropped on death to the linked Magic Mirror.
 
 ### Removed
 - Removed Alchemical Scribing Tools, use New Crimson Revelations for a similar feature.
-- Removed Bismuth Claymore
 - Removed Condensed Crystal Cluster
-- Removed Dimensional Curiosity
+- Removed Colored Glass variants
+- Removed Dimensional Curiosity, dimensional research no longer exists
 - Removed Focus Effect: Prismatic Light, use New Crimson Revelations for a similar feature.
 - Removed Flux Scrubber
 - Removed Fundamental Curiosity
 - Removed Infusion Enchant: Curious, use ThaumicTweaker's curiosity drop tweak for a similar feature.
-- Removed Infusion Enchant: Projecting
-- Removed Infusion Enchant: Transmutative
+- Removed Infusion Enchant: Projecting, use Thaumic Tinkerer: Reborn for a similar feature.
+- Removed Infusion Enchant: Transmutative, enchant had limited use and was very situational.
 - Removed Mirromirous Matrix and associated multiblock, use Thaumic Wonders Unofficial for a similar feature.

@@ -1,9 +1,7 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.block.BlockFlawlessMirror;
-import mod.emt.planarartifice.block.BlockMaterialPA;
-import mod.emt.planarartifice.block.BlockStarvingChest;
+import mod.emt.planarartifice.block.*;
 import mod.emt.planarartifice.block.essentia.*;
 import mod.emt.planarartifice.client.renderers.tile.TileCentrifugeTESR;
 import mod.emt.planarartifice.client.renderers.tile.TileFlawlessMirrorTESR;
@@ -20,6 +18,11 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.monster.EntityMob;
+import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.passive.EntityVillager;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -46,6 +49,17 @@ public class ModBlocksPA {
     public static Block BISMUTH_BLOCK;
     public static Block FLAWLESS_MIRROR;
     public static Block FLAWLESS_MIRROR_ESSENTIA;
+    public static Block GLASS_CLEAR;
+    public static Block GLASS_CRYSTAL;
+    public static Block GLASS_DARK;
+    public static Block GLASS_ENTITY;
+    public static Block GLASS_HARDENED;
+    public static Block GLASS_HOSTILE;
+    public static Block GLASS_LIGHT;
+    public static Block GLASS_NON_LIVING;
+    public static Block GLASS_PASSIVE;
+    public static Block GLASS_PLAYER;
+    public static Block GLASS_REDSTONE;
     public static Block MIRRORED_JAR;
     public static Block STARVING_CHEST_SMALL;
     public static Block STARVING_CHEST_MEDIUM;
@@ -61,6 +75,20 @@ public class ModBlocksPA {
         LogHelper.info("Registering blocks...");
 
         final IForgeRegistry<Block> registry = event.getRegistry();
+
+        registry.register(GLASS_CLEAR = new BlockGlassPA("glass_clear"));
+        registry.register(GLASS_CRYSTAL = new BlockGlassPA("glass_crystal"));
+        registry.register(GLASS_HARDENED = new BlockGlassPA("glass_hardened").setHardness(3.0f).setResistance(2000.0f));
+
+        registry.register(GLASS_LIGHT = new BlockGlassPA("glass_light").setLightLevel(1.0f));
+        registry.register(GLASS_DARK = new BlockGlassPA("glass_dark").setLightOpacity(15));
+        registry.register(GLASS_REDSTONE = new BlockGlassRedstone("glass_redstone"));
+
+        registry.register(GLASS_ENTITY = new BlockGlassPA("glass_entity").setCollisionPredicate(entity -> entity instanceof EntityLivingBase));
+        registry.register(GLASS_HOSTILE = new BlockGlassPA("glass_hostile").setCollisionPredicate(entity -> entity instanceof EntityMob));
+        registry.register(GLASS_PASSIVE = new BlockGlassPA("glass_passive").setCollisionPredicate(entity -> entity instanceof EntityAnimal || entity instanceof EntityVillager));
+        registry.register(GLASS_PLAYER = new BlockGlassPA("glass_player").setCollisionPredicate(entity -> entity instanceof EntityPlayer));
+        registry.register(GLASS_NON_LIVING = new BlockGlassPA("glass_non_living").setCollisionPredicate(entity -> !(entity instanceof EntityLivingBase)));
 
         registry.register(ALKIMIUM_BLOCK = new BlockMaterialPA("alkimium_block", Material.IRON, MapColor.LIME, 5.0F, 15.0F, SoundType.METAL, true));
         registry.register(BISMUTH_BLOCK = new BlockMaterialPA("bismuth_block", Material.IRON, MapColor.LIME, 5.0F, 15.0F, SoundType.METAL, true));
@@ -102,6 +130,20 @@ public class ModBlocksPA {
 
     public static void registerBlockItems(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> registry = event.getRegistry();
+
+        registry.register(new ItemBlockPA(GLASS_CLEAR));
+        registry.register(new ItemBlockPA(GLASS_CRYSTAL));
+        registry.register(new ItemBlockPA(GLASS_HARDENED));
+
+        registry.register(new ItemBlockPA(GLASS_LIGHT));
+        registry.register(new ItemBlockPA(GLASS_DARK));
+        registry.register(new ItemBlockPA(GLASS_REDSTONE));
+
+        registry.register(new ItemBlockPA(GLASS_ENTITY, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(GLASS_HOSTILE, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(GLASS_PASSIVE, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(GLASS_PLAYER, EnumRarity.RARE));
+        registry.register(new ItemBlockPA(GLASS_NON_LIVING, EnumRarity.RARE));
 
         registry.register(new ItemBlockPA(ALKIMIUM_BLOCK, EnumRarity.RARE));
         registry.register(new ItemBlockPA(BISMUTH_BLOCK, EnumRarity.RARE));
@@ -145,6 +187,17 @@ public class ModBlocksPA {
         registerItemModel(ALKIMIUM_SMELTERY_MITHRILLIUM);
         registerItemModel(FLAWLESS_MIRROR);
         registerItemModel(FLAWLESS_MIRROR_ESSENTIA);
+        registerItemModel(GLASS_CLEAR);
+        registerItemModel(GLASS_CRYSTAL);
+        registerItemModel(GLASS_DARK);
+        registerItemModel(GLASS_ENTITY);
+        registerItemModel(GLASS_HARDENED);
+        registerItemModel(GLASS_HOSTILE);
+        registerItemModel(GLASS_LIGHT);
+        registerItemModel(GLASS_NON_LIVING);
+        registerItemModel(GLASS_PASSIVE);
+        registerItemModel(GLASS_PLAYER);
+        registerItemModel(GLASS_REDSTONE);
         registerItemModel(MIRRORED_JAR);
         registerItemModel(STARVING_CHEST_HUGE);
         registerItemModel(STARVING_CHEST_LARGE);
