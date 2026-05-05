@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.block;
+package mod.emt.planarartifice.block.glass;
 
 import mod.emt.planarartifice.PlanarArtifice;
 import net.minecraft.block.Block;

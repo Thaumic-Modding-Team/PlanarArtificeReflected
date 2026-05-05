@@ -1,4 +1,4 @@
-package mod.emt.planarartifice.block;
+package mod.emt.planarartifice.block.glass;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.EnumFacing;

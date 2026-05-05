@@ -3,7 +3,7 @@
   "defaults": {
     "model": "cube_all",
     "textures": {
-      "all": "planarartifice:blocks/glass_hostile"
+      "all": "planarartifice:blocks/glass_ethereal"
     }
   },
   "variants": {

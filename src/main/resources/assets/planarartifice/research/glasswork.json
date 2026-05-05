@@ -36,7 +36,12 @@
         },
         {
           "text": "planarartifice.research.glassworking.stage.2",
-          "recipes": ["planarartifice:glass_cutter"]
+          "recipes": [
+            "planarartifice:glass_cutter",
+            "planarartifice:glass_clear",
+            "planarartifice:glass_crystal",
+            "planarartifice:glass_hardened"
+          ]
         }
       ]
     }

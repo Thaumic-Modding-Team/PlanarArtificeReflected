@@ -8,7 +8,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.OreIngredient;
 import thaumcraft.api.ThaumcraftApi;
+import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.blocks.BlocksTC;
@@ -171,6 +173,95 @@ public class ModRecipesPA {
                 " T ",
                 'B', "ingotBismuth",
                 'T', "ingotThaumium"));
+
+
+
+
+
+
+
+
+
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_clear"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_GLASSWORKING",
+                2,
+                new AspectList().add(Aspect.ORDER, 1),
+                new ItemStack(ModBlocksPA.GLASS_CLEAR, 8),
+                "GGG",
+                "GCG",
+                "GGG",
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.SENSES)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_crystal"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_GLASSWORKING",
+                2,
+                new AspectList().add(Aspect.ORDER, 1),
+                new ItemStack(ModBlocksPA.GLASS_CRYSTAL, 8),
+                "GGG",
+                "GCG",
+                "GGG",
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.CRYSTAL)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_dark"), new ShapedArcaneRecipe(
+                defaultGroup,
+                //TODO: change research
+                "PA_GLASSWORKING",
+                10,
+                new AspectList().add(Aspect.AIR, 1),
+                new ItemStack(ModBlocksPA.GLASS_DARK, 4),
+                "CGC",
+                "GCG",
+                "CGC",
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.DARKNESS)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_hardened"), new ShapedArcaneRecipe(
+                defaultGroup,
+                "PA_GLASSWORKING",
+                10,
+                new AspectList().add(Aspect.EARTH, 1).add(Aspect.ORDER, 1),
+                new ItemStack(ModBlocksPA.GLASS_HARDENED, 4),
+                "OGO",
+                "GCG",
+                "OGO",
+                'O', new OreIngredient("obsidian"),
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.PROTECT)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_light"), new ShapedArcaneRecipe(
+                defaultGroup,
+                //TODO: change research
+                "PA_GLASSWORKING",
+                10,
+                new AspectList().add(Aspect.AIR, 1),
+                new ItemStack(ModBlocksPA.GLASS_LIGHT, 4),
+                "CGC",
+                "GCG",
+                "CGC",
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.LIGHT)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_redstone"), new ShapedArcaneRecipe(
+                defaultGroup,
+                //TODO: change research
+                "PA_GLASSWORKING",
+                10,
+                new AspectList().add(Aspect.AIR, 1),
+                new ItemStack(ModBlocksPA.GLASS_REDSTONE, 4),
+                "CGC",
+                "GCG",
+                "CGC",
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.ENERGY)));
+
+
+
+
+
+
+
+
+
+
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_jar"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_MIRRORED_JAR",
