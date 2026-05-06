@@ -22,6 +22,39 @@
       ]
     },
     {
+      "key": "PA_EMISSIVE_GLASS",
+      "name": "planarartifice.research.emissive_glass.title",
+      "icons": [
+        "planarartifice:glass_dark",
+        "planarartifice:glass_light",
+        "planarartifice:glass_redstone"
+      ],
+      "category": "PLANAR_ARTIFICE",
+      "parents": ["PA_GLASSWORKING"],
+      "meta": ["REVERSE"],
+      "location": [-3, -1],
+      "stages": [
+        {
+          "text": "planarartifice.research.emissive_glass.stage.1",
+          "required_knowledge": [
+            "THEORY;ALCHEMY;2"
+          ],
+          "required_item": [
+            "minecraft:glowstone",
+            "minecraft:redstone_block"
+          ]
+        },
+        {
+          "text": "planarartifice.research.emissive_glass.stage.2",
+          "recipes": [
+            "planarartifice:glass_dark",
+            "planarartifice:glass_light",
+            "planarartifice:glass_redstone"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_GLASSWORKING",
       "name": "planarartifice.research.glassworking.title",
       "icons": ["planarartifice:glass_cutter"],
@@ -41,6 +74,39 @@
             "planarartifice:glass_clear",
             "planarartifice:glass_crystal",
             "planarartifice:glass_hardened"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "PA_PERMEABLE_GLASS",
+      "name": "planarartifice.research.permeable_glass.title",
+      "icons": [
+        "planarartifice:glass_entity",
+        "planarartifice:glass_ethereal",
+        "planarartifice:glass_non_living"
+      ],
+      "category": "PLANAR_ARTIFICE",
+      "parents": ["PA_GLASSWORKING"],
+      "meta": ["REVERSE"],
+      "location": [-3, 1],
+      "stages": [
+        {
+          "text": "planarartifice.research.permeable_glass.stage.1",
+          "required_knowledge": [
+            "THEORY;ALCHEMY;2"
+          ],
+          "required_item": [
+            "minecraft:ender_pearl",
+            "minecraft:ghast_tear"
+          ]
+        },
+        {
+          "text": "planarartifice.research.permeable_glass.stage.2",
+          "recipes": [
+            "planarartifice:glass_dark",
+            "planarartifice:glass_light",
+            "planarartifice:glass_redstone"
           ]
         }
       ]
