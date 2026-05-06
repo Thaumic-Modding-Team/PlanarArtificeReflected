@@ -164,10 +164,20 @@ planarartifice.research.alchemical_glass_cutter.title=Alchemical Glass Cutter
 planarartifice.research.alchemical_glass_cutter.stage.1=[WIP]
 planarartifice.research.alchemical_glass_cutter.stage.2=[WIP]
 
+# -- GLASSWORK: Emissive Glass
+planarartifice.research.emissive_glass.title=Emissive Glass
+planarartifice.research.emissive_glass.stage.1=[WIP]
+planarartifice.research.emissive_glass.stage.2=[WIP]
+
 # -- GLASSWORK: Glassworking
 planarartifice.research.glassworking.title=Glassworking
 planarartifice.research.glassworking.stage.1=[WIP]
 planarartifice.research.glassworking.stage.2=[WIP]
+
+# -- GLASSWORK: Permeable Glass
+planarartifice.research.permeable_glass.title=Permeable Glass
+planarartifice.research.permeable_glass.stage.1=[WIP]
+planarartifice.research.permeable_glass.stage.2=[WIP]
 
 # -- MIRROMIROUS: Belt of Suspension
 planarartifice.research.suspension_belt.title=Belt of Suspension

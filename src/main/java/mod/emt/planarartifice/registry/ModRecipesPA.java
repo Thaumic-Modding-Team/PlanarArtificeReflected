@@ -35,6 +35,12 @@ public class ModRecipesPA {
     public static void registerOreDicts() {
         OreDictionary.registerOre("blockAlkimium", ModBlocksPA.ALKIMIUM_BLOCK);
         OreDictionary.registerOre("blockBismuth", ModBlocksPA.BISMUTH_BLOCK);
+        OreDictionary.registerOre("blockGlassColorless", ModBlocksPA.GLASS_CLEAR);
+        OreDictionary.registerOre("blockGlassColorless", ModBlocksPA.GLASS_CRYSTAL);
+        OreDictionary.registerOre("blockGlassColorless", ModBlocksPA.GLASS_HARDENED);
+        OreDictionary.registerOre("blockGlass", ModBlocksPA.GLASS_CLEAR);
+        OreDictionary.registerOre("blockGlass", ModBlocksPA.GLASS_CRYSTAL);
+        OreDictionary.registerOre("blockGlass", ModBlocksPA.GLASS_HARDENED);
 
         OreDictionary.registerOre("ingotAlkimium", ModItemsPA.ALKIMIUM_INGOT);
         OreDictionary.registerOre("nuggetAlkimium", ModItemsPA.ALKIMIUM_NUGGET);
@@ -209,8 +215,7 @@ public class ModRecipesPA {
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.CRYSTAL)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_dark"), new ShapedArcaneRecipe(
                 defaultGroup,
-                //TODO: change research
-                "PA_GLASSWORKING",
+                "PA_EMISSIVE_GLASS",
                 10,
                 new AspectList().add(Aspect.AIR, 1),
                 new ItemStack(ModBlocksPA.GLASS_DARK, 4),
@@ -221,8 +226,7 @@ public class ModRecipesPA {
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.DARKNESS)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_entity"), new ShapedArcaneRecipe(
                 defaultGroup,
-                //TODO: change research
-                "PA_GLASSWORKING",
+                "PA_PERMEABLE_GLASS",
                 10,
                 new AspectList().add(Aspect.AIR, 1).add(Aspect.ENTROPY, 1),
                 new ItemStack(ModBlocksPA.GLASS_ENTITY, 4),
@@ -233,8 +237,7 @@ public class ModRecipesPA {
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.SOUL)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_ethereal"), new ShapedArcaneRecipe(
                 defaultGroup,
-                //TODO: change research
-                "PA_GLASSWORKING",
+                "PA_PERMEABLE_GLASS",
                 10,
                 new AspectList().add(Aspect.AIR, 1).add(Aspect.ENTROPY, 1),
                 new ItemStack(ModBlocksPA.GLASS_ETHEREAL, 4),
@@ -257,8 +260,7 @@ public class ModRecipesPA {
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.PROTECT)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_light"), new ShapedArcaneRecipe(
                 defaultGroup,
-                //TODO: change research
-                "PA_GLASSWORKING",
+                "PA_EMISSIVE_GLASS",
                 10,
                 new AspectList().add(Aspect.AIR, 1),
                 new ItemStack(ModBlocksPA.GLASS_LIGHT, 4),
@@ -269,8 +271,7 @@ public class ModRecipesPA {
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.LIGHT)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_non_living"), new ShapedArcaneRecipe(
                 defaultGroup,
-                //TODO: change research
-                "PA_GLASSWORKING",
+                "PA_PERMEABLE_GLASS",
                 10,
                 new AspectList().add(Aspect.AIR, 1).add(Aspect.ENTROPY, 1),
                 new ItemStack(ModBlocksPA.GLASS_NON_LIVING, 4),
@@ -281,8 +282,7 @@ public class ModRecipesPA {
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.CRAFT)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_redstone"), new ShapedArcaneRecipe(
                 defaultGroup,
-                //TODO: change research
-                "PA_GLASSWORKING",
+                "PA_EMISSIVE_GLASS",
                 10,
                 new AspectList().add(Aspect.AIR, 1),
                 new ItemStack(ModBlocksPA.GLASS_REDSTONE, 4),
