@@ -38,8 +38,8 @@
         {
           "text": "planarartifice.research.alkimium_applications_centrifuge.stage.1",
           "required_knowledge": [
-            "THEORY;ARTIFICE;2",
-            "THEORY;ALCHEMY;2"
+            "THEORY;ARTIFICE;1",
+            "THEORY;ALCHEMY;1"
           ]
         },
         {
@@ -89,8 +89,8 @@
         {
           "text": "planarartifice.research.alkimium_applications_goggles.stage.1",
           "required_knowledge": [
-            "OBSERVATION;ARTIFICE;2",
-            "THEORY;INFUSION;2"
+            "OBSERVATION;ARTIFICE;1",
+            "THEORY;INFUSION;1"
           ]
         },
         {
@@ -138,13 +138,10 @@
       "stages": [
         {
           "text": "planarartifice.research.alkimium_applications_void.stage.1",
-          "required_knowledge": ["THEORY;ALCHEMY;3", "OBSERVATION;ALCHEMY;3"]
+          "required_knowledge": ["THEORY;ALCHEMY;2", "OBSERVATION;ALCHEMY;2"]
         },
         {
           "text": "planarartifice.research.alkimium_applications_void.stage.2",
-          "required_craft": [
-            "planarartifice:alkimium_smeltery_void"
-          ],
           "recipes": [
             "planarartifice:alkimium_smeltery_void"
           ]
@@ -163,7 +160,7 @@
           "text": "planarartifice.research.alkimium.stage.1",
           "required_knowledge": [
             "OBSERVATION;ALCHEMY;1",
-            "OBSERVATION;INFUSION;2"
+            "OBSERVATION;INFUSION;1"
           ],
           "recipes": [
             "planarartifice:alkimium_ingot"

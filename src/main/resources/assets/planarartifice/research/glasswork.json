@@ -37,7 +37,7 @@
         {
           "text": "planarartifice.research.emissive_glass.stage.1",
           "required_knowledge": [
-            "THEORY;ALCHEMY;2"
+            "THEORY;ALCHEMY;1"
           ],
           "required_item": [
             "minecraft:glowstone",
@@ -94,7 +94,7 @@
         {
           "text": "planarartifice.research.permeable_glass.stage.1",
           "required_knowledge": [
-            "THEORY;ALCHEMY;2"
+            "THEORY;ALCHEMY;1"
           ],
           "required_item": [
             "minecraft:ender_pearl",
