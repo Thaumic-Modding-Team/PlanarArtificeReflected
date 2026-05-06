@@ -24,6 +24,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -74,7 +75,7 @@ public class ModBlocksPA {
         final IForgeRegistry<Block> registry = event.getRegistry();
 
         registry.register(GLASS_CLEAR = new BlockGlassPA("glass_clear"));
-        registry.register(GLASS_CRYSTAL = new BlockGlassPA("glass_crystal"));
+        registry.register(GLASS_CRYSTAL = new BlockGlassPA("glass_crystal").setRenderLayer(BlockRenderLayer.TRANSLUCENT));
         registry.register(GLASS_HARDENED = new BlockGlassPA("glass_hardened").setHardness(3.0f).setResistance(2000.0f));
 
         registry.register(GLASS_LIGHT = new BlockGlassPA("glass_light").setLightLevel(1.0f));

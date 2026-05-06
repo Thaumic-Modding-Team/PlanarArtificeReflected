@@ -9,6 +9,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.pathfinding.PathNodeType;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -22,6 +23,7 @@ import java.util.function.Predicate;
 
 public class BlockGlassPA extends BlockGlass {
     protected Predicate<Entity> collisionPredicate;
+    protected BlockRenderLayer renderLayer = BlockRenderLayer.CUTOUT;
 
     public BlockGlassPA(String name) {
         super(Material.GLASS, false);
@@ -34,6 +36,11 @@ public class BlockGlassPA extends BlockGlass {
 
     public Block setCollisionPredicate(Predicate<Entity> collisionPredicate) {
         this.collisionPredicate = collisionPredicate;
+        return this;
+    }
+
+    public Block setRenderLayer(BlockRenderLayer renderLayer) {
+        this.renderLayer = renderLayer;
         return this;
     }
 
@@ -52,5 +59,10 @@ public class BlockGlassPA extends BlockGlass {
         } else {
             return super.getAiPathNodeType(state, world, pos, entity);
         }
+    }
+
+    @Override
+    public @NotNull BlockRenderLayer getRenderLayer() {
+        return this.renderLayer;
     }
 }
