@@ -10,16 +10,11 @@
       "stages": [
         {
           "text": "planarartifice.research.bismuth_caster.stage.1",
-          "required_item": ["planarartifice:bismuth_ingot;2", "thaumcraft:caster_basic"],
+          "required_item": ["thaumcraft:caster_basic", "thaumcraft:morphic_resonator"],
           "required_knowledge": ["THEORY;AUROMANCY;1", "THEORY;ARTIFICE;1"]
         },
         {
           "text": "planarartifice.research.bismuth_caster.stage.2",
-          "required_item": ["thaumcraft:morphic_resonator", "thaumcraft:filter"],
-          "required_knowledge": ["THEORY;AUROMANCY;1"]
-        },
-        {
-          "text": "planarartifice.research.bismuth_caster.stage.3",
           "recipes": [
             "planarartifice:bismuth_caster"
           ]
@@ -40,12 +35,6 @@
             "THEORY;INFUSION;1",
             "THEORY;AUROMANCY;1",
             "OBSERVATION;AUROMANCY;1"
-          ],
-          "recipes": [
-            "planarartifice:bismuth_ingot"
-          ],
-          "required_craft": [
-            "planarartifice:bismuth_ingot"
           ]
         },
         {
@@ -102,7 +91,7 @@
           "required_knowledge": [
             "THEORY;ARTIFICE;2",
             "OBSERVATION;AUROMANCY;2",
-            "OBSERVATION;INFUSION;2"
+            "OBSERVATION;INFUSION;1"
           ]
         },
         {
@@ -132,12 +121,8 @@
       "stages": [
         {
           "text": "planarartifice.research.metal_transmutation.stage.1",
-          "required_item": [
-            "planarartifice:bismuth_ingot",
-            "thaumcraft:quicksilver"
-          ],
           "required_knowledge": [
-            "THEORY;ALCHEMY;2"
+            "THEORY;ALCHEMY;1"
           ]
         },
         {
@@ -169,14 +154,14 @@
         {
           "text": "planarartifice.research.reagent_transmutation.stage.1",
           "required_knowledge": [
-            "THEORY;ALCHEMY;2",
+            "THEORY;ALCHEMY;1",
             "THEORY;ARTIFICE;1"
           ]
         },
         {
           "text": "planarartifice.research.reagent_transmutation.stage.2",
           "required_item": [
-            "minecraft:blaze_rod;2"
+            "minecraft:blaze_rod;1"
           ],
           "recipes": [
             "planarartifice:rt_ender_eye",
@@ -186,8 +171,8 @@
         {
           "text": "planarartifice.research.reagent_transmutation.stage.3",
           "required_item": [
-            "thaumcraft:amber;2",
-            "thaumcraft:quicksilver;2"
+            "thaumcraft:amber;1",
+            "thaumcraft:quicksilver;1"
           ],
           "recipes": [
             "planarartifice:rt_ender_eye",
