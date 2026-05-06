@@ -1,8 +1,7 @@
 package mod.emt.planarartifice.block.glass;
 
-import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.block.base.BlockPA;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockGlass;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -10,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -18,18 +18,15 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import java.util.Objects;
+import java.util.Random;
 import java.util.function.Predicate;
 
-public class BlockGlassPA extends BlockGlass {
+public class BlockGlassPA extends BlockPA {
     protected Predicate<Entity> collisionPredicate;
     protected BlockRenderLayer renderLayer = BlockRenderLayer.CUTOUT;
 
     public BlockGlassPA(String name) {
-        super(Material.GLASS, false);
-        this.setRegistryName(PlanarArtifice.MOD_ID, name);
-        this.setTranslationKey(Objects.requireNonNull(this.getRegistryName()).toString());
-        this.setCreativeTab(PlanarArtifice.tabPA);
+        super(name, Material.GLASS);
         this.setHardness(0.3f);
         this.setSoundType(SoundType.GLASS);
     }
@@ -61,8 +58,38 @@ public class BlockGlassPA extends BlockGlass {
         }
     }
 
+    @SuppressWarnings("deprecation")
+    @Override
+    public boolean isOpaqueCube(@NotNull IBlockState state) {
+        return false;
+    }
+
+    @SuppressWarnings("deprecation")
+    @Override
+    public boolean isFullCube(@NotNull IBlockState state) {
+        return false;
+    }
+
+    @Override
+    public int quantityDropped(@NotNull Random random) {
+        return 0;
+    }
+
+    @SuppressWarnings("deprecation")
+    @Override
+    protected boolean canSilkHarvest() {
+        return true;
+    }
+
     @Override
     public @NotNull BlockRenderLayer getRenderLayer() {
         return this.renderLayer;
+    }
+
+    @SuppressWarnings("deprecation")
+    @Override
+    public boolean shouldSideBeRendered(@NotNull IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, @NotNull EnumFacing side) {
+        IBlockState state = blockAccess.getBlockState(pos.offset(side));
+        return state != blockState || state.getBlock() != this && super.shouldSideBeRendered(blockState, blockAccess, pos, side);
     }
 }
