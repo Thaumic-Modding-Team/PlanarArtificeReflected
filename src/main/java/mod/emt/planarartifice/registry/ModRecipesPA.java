@@ -14,7 +14,10 @@ import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.blocks.BlocksTC;
-import thaumcraft.api.crafting.*;
+import thaumcraft.api.crafting.CrucibleRecipe;
+import thaumcraft.api.crafting.InfusionRecipe;
+import thaumcraft.api.crafting.IngredientNBTTC;
+import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
 import thaumcraft.common.lib.crafting.InfusionEnchantmentRecipe;
 import thaumcraft.common.lib.enchantment.EnumInfusionEnchantment;
@@ -216,6 +219,30 @@ public class ModRecipesPA {
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.DARKNESS)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_entity"), new ShapedArcaneRecipe(
+                defaultGroup,
+                //TODO: change research
+                "PA_GLASSWORKING",
+                10,
+                new AspectList().add(Aspect.AIR, 1).add(Aspect.ENTROPY, 1),
+                new ItemStack(ModBlocksPA.GLASS_ENTITY, 4),
+                "CGC",
+                "GCG",
+                "CGC",
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.SOUL)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_ethereal"), new ShapedArcaneRecipe(
+                defaultGroup,
+                //TODO: change research
+                "PA_GLASSWORKING",
+                10,
+                new AspectList().add(Aspect.AIR, 1).add(Aspect.ENTROPY, 1),
+                new ItemStack(ModBlocksPA.GLASS_ETHEREAL, 4),
+                "CGC",
+                "GCG",
+                "CGC",
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.MAGIC)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_hardened"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_GLASSWORKING",
@@ -240,6 +267,18 @@ public class ModRecipesPA {
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.LIGHT)));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_non_living"), new ShapedArcaneRecipe(
+                defaultGroup,
+                //TODO: change research
+                "PA_GLASSWORKING",
+                10,
+                new AspectList().add(Aspect.AIR, 1).add(Aspect.ENTROPY, 1),
+                new ItemStack(ModBlocksPA.GLASS_NON_LIVING, 4),
+                "CGC",
+                "GCG",
+                "CGC",
+                'G', new OreIngredient("blockGlass"),
+                'C', ThaumcraftApiHelper.makeCrystal(Aspect.CRAFT)));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_redstone"), new ShapedArcaneRecipe(
                 defaultGroup,
                 //TODO: change research

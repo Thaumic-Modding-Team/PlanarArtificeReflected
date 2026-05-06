@@ -3,15 +3,17 @@ package mod.emt.planarartifice.item.tools;
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.registry.ModEnchantsPA;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.*;
+import net.minecraft.item.EnumRarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
+import net.minecraft.item.ItemTool;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.IRarity;
 import net.minecraftforge.common.util.EnumHelper;
 import org.jetbrains.annotations.NotNull;
+import thaumcraft.common.lib.enchantment.EnumInfusionEnchantment;
 
 import java.util.Objects;
-
-import thaumcraft.common.lib.enchantment.EnumInfusionEnchantment;
 
 public class ItemBismuthClaymore extends ItemSword {
     public static ItemTool.ToolMaterial BISMUTH_MATERIAL = EnumHelper.addToolMaterial("BISMUTH", 4, 2081, 10.0F, 2.5F, 25);

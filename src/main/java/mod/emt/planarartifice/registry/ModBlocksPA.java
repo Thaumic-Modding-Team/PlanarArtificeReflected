@@ -1,7 +1,9 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
-import mod.emt.planarartifice.block.*;
+import mod.emt.planarartifice.block.BlockFlawlessMirror;
+import mod.emt.planarartifice.block.BlockMaterialPA;
+import mod.emt.planarartifice.block.BlockStarvingChest;
 import mod.emt.planarartifice.block.essentia.*;
 import mod.emt.planarartifice.block.glass.BlockGlassPA;
 import mod.emt.planarartifice.block.glass.BlockGlassPassable;
