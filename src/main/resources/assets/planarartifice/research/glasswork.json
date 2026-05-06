@@ -104,9 +104,9 @@
         {
           "text": "planarartifice.research.permeable_glass.stage.2",
           "recipes": [
-            "planarartifice:glass_dark",
-            "planarartifice:glass_light",
-            "planarartifice:glass_redstone"
+            "planarartifice:glass_entity",
+            "planarartifice:glass_ethereal",
+            "planarartifice:glass_non_living"
           ]
         }
       ]
