@@ -8,14 +8,8 @@
         "planarartifice:alkimium_smeltery",
         "planarartifice:alkimic_construct"
       ],
-      "parents": [
-        "PA_ALKIMIUM",
-        "ESSENTIASMELTER"
-      ],
-      "location": [
-        4,
-        0
-      ],
+      "parents": ["PA_ALKIMIUM", "ESSENTIASMELTER"],
+      "location": [4, 0],
       "stages": [
         {
           "text": "planarartifice.research.alkimium_applications.stage.1",
@@ -36,19 +30,10 @@
       "key": "PA_ALKIMIUM_CENTRIFUGE",
       "name": "planarartifice.research.alkimium_applications_centrifuge.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:alkimium_centrifuge"
-      ],
-      "meta": [
-        "REVERSE"
-      ],
-      "parents": [
-        "PA_ALKIMIUM_APPLICATIONS"
-      ],
-      "location": [
-        6,
-        0
-      ],
+      "icons": ["planarartifice:alkimium_centrifuge"],
+      "meta": ["REVERSE"],
+      "parents": ["PA_ALKIMIUM_APPLICATIONS"],
+      "location": [6, 0],
       "stages": [
         {
           "text": "planarartifice.research.alkimium_applications_centrifuge.stage.1",
@@ -73,17 +58,9 @@
         "planarartifice:alkimium_smelter_aux",
         "planarartifice:alkimium_smelter_vent"
       ],
-      "meta": [
-        "REVERSE"
-      ],
-      "parents": [
-        "PA_ALKIMIUM_APPLICATIONS",
-        "IMPROVEDSMELTING2"
-      ],
-      "location": [
-        5,
-        1
-      ],
+      "meta": ["REVERSE"],
+      "parents": ["PA_ALKIMIUM_APPLICATIONS", "IMPROVEDSMELTING2"],
+      "location": [5, 1],
       "stages": [
         {
           "text": "planarartifice.research.alkimium_applications_distillation.stage.1",
@@ -105,16 +82,9 @@
       "key": "PA_ALKIMIUM_GOGGLES",
       "name": "planarartifice.research.alkimium_applications_goggles.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:alkimium_goggles"
-      ],
-      "parents": [
-        "PA_ALKIMIUM_CENTRIFUGE"
-      ],
-      "location": [
-        8,
-        0
-      ],
+      "icons": ["planarartifice:alkimium_goggles"],
+      "parents": ["PA_ALKIMIUM_CENTRIFUGE"],
+      "location": [8, 0],
       "stages": [
         {
           "text": "planarartifice.research.alkimium_applications_goggles.stage.1",
@@ -135,20 +105,10 @@
       "key": "PA_ALKIMIUM_THAUMIUM_SMELTERY",
       "name": "planarartifice.research.alkimium_applications_thaumium.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:alkimium_smeltery_thaumium"
-      ],
-      "meta": [
-        "REVERSE"
-      ],
-      "parents": [
-        "PA_ALKIMIUM_APPLICATIONS",
-        "ESSENTIASMELTERTHAUMIUM"
-      ],
-      "location": [
-        5,
-        -1
-      ],
+      "icons": ["planarartifice:alkimium_smeltery_thaumium"],
+      "meta": ["REVERSE"],
+      "parents": ["PA_ALKIMIUM_APPLICATIONS", "ESSENTIASMELTERTHAUMIUM"],
+      "location": [5, -1],
       "stages": [
         {
           "text": "planarartifice.research.alkimium_applications_thaumium.stage.1",
@@ -171,43 +131,20 @@
       "key": "PA_ALKIMIUM_VOID_SMELTERY",
       "name": "planarartifice.research.alkimium_applications_void.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:alkimium_smeltery_void"
-      ],
-      "meta": [
-        "REVERSE"
-      ],
-      "parents": [
-        "PA_ALKIMIUM_THAUMIUM_SMELTERY",
-        "ESSENTIASMELTERVOID"
-      ],
-      "location": [
-        6,
-        -2
-      ],
+      "icons": ["planarartifice:alkimium_smeltery_void"],
+      "meta": ["REVERSE"],
+      "parents": ["PA_ALKIMIUM_THAUMIUM_SMELTERY", "ESSENTIASMELTERVOID"],
+      "location": [6, -2],
       "stages": [
         {
           "text": "planarartifice.research.alkimium_applications_void.stage.1",
-          "required_item": [
-            "planarartifice:alkimium_smeltery",
-            "thaumcraft:plate;3;3"
-          ],
-          "required_knowledge": [
-            "THEORY;ALCHEMY;3",
-            "OBSERVATION;ALCHEMY;3"
-          ]
+          "required_knowledge": ["THEORY;ALCHEMY;3", "OBSERVATION;ALCHEMY;3"]
         },
         {
           "text": "planarartifice.research.alkimium_applications_void.stage.2",
           "required_craft": [
             "planarartifice:alkimium_smeltery_void"
           ],
-          "recipes": [
-            "planarartifice:alkimium_smeltery_void"
-          ]
-        },
-        {
-          "text": "planarartifice.research.alkimium_applications_void.stage.3",
           "recipes": [
             "planarartifice:alkimium_smeltery_void"
           ]
@@ -218,17 +155,9 @@
       "key": "PA_ALKIMIUM",
       "name": "planarartifice.research.alkimium.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:alkimium_ingot"
-      ],
-      "parents": [
-        "PLANAR_ARTIFICE_BASE",
-        "METALLURGY@2"
-      ],
-      "location": [
-        2,
-        0
-      ],
+      "icons": ["planarartifice:alkimium_ingot"],
+      "parents": ["PLANAR_ARTIFICE_BASE", "METALLURGY@2"],
+      "location": [2, 0],
       "stages": [
         {
           "text": "planarartifice.research.alkimium.stage.1",
@@ -256,24 +185,10 @@
       "key": "PA_GOLEM_MAT_ALKIMIUM",
       "name": "planarartifice.research.golem_mat_alkimium.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:alkimium_plate"
-      ],
-      "meta": [
-        "HIDDEN",
-        "REVERSE",
-        "ROUND"
-      ],
-      "parents": [
-        "~PA_ALKIMIUM_DISTILLATION",
-        "~PA_ALKIMIUM_GOGGLES",
-        "MATSTUDTHAUMIUM",
-        "MINDCLOCKWORK"
-      ],
-      "location": [
-        9,
-        -1
-      ],
+      "icons": ["planarartifice:alkimium_plate"],
+      "meta": ["HIDDEN", "REVERSE", "ROUND"],
+      "parents": ["~PA_ALKIMIUM_DISTILLATION", "~PA_ALKIMIUM_GOGGLES", "MATSTUDTHAUMIUM", "MINDCLOCKWORK"],
+      "location": [9, -1],
       "stages": [
         {
           "text": "planarartifice.research.golem_mat_alkimium.stage.1"

@@ -16,8 +16,8 @@ tile.planarartifice:bismuth_block.name=Block of Bismuth
 tile.planarartifice:flawless_mirror.name=Flawless Magic Mirror
 tile.planarartifice:flawless_mirror_essentia.name=Flawless Essentia Mirror
 tile.planarartifice:glass_clear.name=Clear Glass
-tile.planarartifice:glass_dark.name=Dark Glass
 tile.planarartifice:glass_crystal.name=Crystal Glass
+tile.planarartifice:glass_dark.name=Dark Glass
 tile.planarartifice:glass_entity.name=Corporeal Glass
 tile.planarartifice:glass_ethereal.name=Ethereal Glass
 tile.planarartifice:glass_hardened.name=Hardened Glass
@@ -84,34 +84,33 @@ planarartifice.research.planar_artifice_base.stage.1=[WIP]
 
 # -- ALKIMIUM
 planarartifice.research.alkimium.title=Alkimium
-planarartifice.research.alkimium.stage.1=After using Alchemical Brass for nearly the whole duration of my studies, I feel like I could step things up, especially now after having put it to so many practical applications.<BR>Looking through a wide variety of items, I've noticed that Potions and many Alchemical blocks and items contain a very peculiar aspect not mentioned in the old scrolls and books of olden thaumaturges. With Thaumium using Praecantatio and Terra to enhance Iron beyond any mundane state, why not use Alkimia to enhance Brass a step further?
-planarartifice.research.alkimium.stage.2=I have dubbed this new substance Alkimium, and it serves to be more suited for alchemical items than plain brass.
+planarartifice.research.alkimium.stage.1=After using Alchemical Brass in so many practical applications, I feel like I could find a more improved material.<BR>Looking through a wide variety of items, I've noticed that Potions and many Alchemical blocks and items contain a very peculiar aspect not mentioned in the old scrolls and books of olden thaumaturges. With Thaumium using Praecantatio and Terra to enhance Iron beyond any mundane state, why not use Alkimia to enhance Brass a step further?
+planarartifice.research.alkimium.stage.2=I have dubbed this new substance Alkimium. Its non-reactive nature allows it to be more suited for alchemical items than plain brass.
 
 # -- ALKIMIUM: Alkimium Applications
 planarartifice.research.alkimium_applications.title=Alkimium Applications
-planarartifice.research.alkimium_applications.stage.1=One of the first concepts I've drawn up with this new metal in mind is an upgrade to the Alchemical Furnace, replacing the brass on the inside and out with Alkimium. I should experiment and see what happens.
-planarartifice.research.alkimium_applications.stage.2=Success! The Alkimium Essentia Smeltery, as I have cleverly dubbed it, has complete Alkimium internals, giving it 1.5x the capacity and a *slightly* faster speed. But whilst Essentia seems much more stable in the presence of Alkimium, I was unable to improve the efficiency of the Smeltery by more than 5%. Nevertheless, this property can be explored further.
+planarartifice.research.alkimium_applications.stage.1=One of the first concepts I've drawn up with this new metal in mind is an upgrade to the Alchemical Furnace, replacing the brass on the inside and out with Alkimium.
+planarartifice.research.alkimium_applications.stage.2=Success! The Alkimium Essentia Smeltery, as I have cleverly dubbed it, has complete Alkimium internals, giving it 1.5x the capacity and a slightly improved efficiency.<BR>While essentia seems much more stable in the presence of Alkimium, I was unable to improve the efficiency of the Smeltery by more than 5%. Interestingly, this improvement in efficiency does not decrease flux produced when smelting items.<BR>Nevertheless, this property can be explored further.
 
 # -- ALKIMIUM: Alkimium Applications - Centrifuge
 planarartifice.research.alkimium_applications_centrifuge.title=Alkimium Applications: Centrifuge
-planarartifice.research.alkimium_applications_centrifuge.stage.1=Another idea I had while utilizing Alkimium was for a Centrifuge that would always produce both halves of a compound aspect every time it performed a centrifuging operation.
-planarartifice.research.alkimium_applications_centrifuge.stage.2=This "Advanced" Centrifuge should prove useful when trying to centrifuge aspects down into a specific lower aspect, rather than making it a coin flip. Unfortunately, both results can dissipate into flux with a low chance.
+planarartifice.research.alkimium_applications_centrifuge.stage.1=Another idea I had for utilizing Alkimium was in a centrifuge. Surely its alchemical properties can improve the incredibly inefficient process of breaking down essentia.
+planarartifice.research.alkimium_applications_centrifuge.stage.2=This is beyond my wildest expectations. Not only is the Alkimium Centrifuge twice as fast as the normal centrifuge, it also has perfect essentia breakdown.<BR>The alkimium stabilizes the essentia just enough to allow both aspects to exist within the centrifuge chamber simultaneously. So long as they are extracted quickly, the machine produces no flux!
 
 # -- ALKIMIUM: Alkimium Applications - Goggles
 planarartifice.research.alkimium_applications_goggles.title=Alkimium Applications: Goggles
 planarartifice.research.alkimium_applications_goggles.stage.1=Alkimium has many potential applications. Perhaps it's time to touch up the Goggles of Revealing?
-planarartifice.research.alkimium_applications_goggles.stage.2=Infusing a pair of Goggles with Alkimium has attuned them to the actions of my Essentia tubing, and significantly increased it's strength and usability as armor. When looking at a tube, jar, or other Essentia-related device of any sort, it will show me how much suction the block currently has, on both the side looked at and the opposite side.
+planarartifice.research.alkimium_applications_goggles.stage.2=Infusing a pair of Goggles with Alkimium has attuned them to the actions of my Essentia tubing, and significantly increased it's strength and usability as armor.<BR>When crouching and looking at a tube, jar, or other Essentia-related device of any sort, it will show me how much suction the block currently has, on both the side looked at and the opposite side.
 
 # -- ALKIMIUM: Alkimium Applications - Thaumium
 planarartifice.research.alkimium_applications_thaumium.title=Alkimium Applications: Thaumium
-planarartifice.research.alkimium_applications_thaumium.stage.1=Just as I did with the Thaumium Brass Smeltery, I should be able to use Thaumium to increase the speed of the smeltery. However, Thaumium and Alkimium may have unexpected interactions. I will have to account for those.
-planarartifice.research.alkimium_applications_thaumium.stage.2=And it WORKS! It has 2.16x the speed of my basic Alkimium Smeltery, or 2.6x the basic Brass Smeltery, whilst keeping it's increased capacity. Thankfully, there are no destructive side-effects to this combo; however, they don't particularly react together at all.
+planarartifice.research.alkimium_applications_thaumium.stage.1=Just as I did with the Essentia Smeltery, I should be able to use alkimium to increase the speed of the Thaumium Smeltery.
+planarartifice.research.alkimium_applications_thaumium.stage.2=And it WORKS! Exactly like the Alkimium Essentia Smeltery, the alkimium reinforced thaumium smeltery has 1.5x the essentia capacity as well as a 5% increased efficiency.
 
 # -- ALKIMIUM: Alkimium Applications - Void Metal
 planarartifice.research.alkimium_applications_void.title=Alkimium Applications: Void Metal
-planarartifice.research.alkimium_applications_void.stage.1=Void Metal is so unlike anything else I've ever paired with Alkimium that I simply *must* test any and all reactions possible! Not just that; but the possibility of a perfect, fluxless smeltery just has to be explored!
-planarartifice.research.alkimium_applications_void.stage.2=Unfortunately, it didn't *quite* work first time round, instead forming a rather large explosion. That explosive reaction is both interesting and completely irrelevant; but I *think* I've fixed it!
-planarartifice.research.alkimium_applications_void.stage.3=Moving past that minor setback, I was indeed able to create a stable and functioning Void variant, with the speed of the Brass Thaumium Smeltery and the same 1.5x capacity of the other Alkimium ones; however, it's efficiency is stuck at 95%, despite my calculations - of which I triple checked - telling me otherwise. Something else is stopping me from creating a perfect smeltery - I shall have to look towards other means.
+planarartifice.research.alkimium_applications_void.stage.1=Void Metal is so unlike anything else I've ever paired with Alkimium that I simply must test any and all reactions possible!
+planarartifice.research.alkimium_applications_void.stage.2=I was indeed able to create a stable and functioning Void variant, with the speed of the Brass Thaumium Smeltery and the same 1.5x capacity of the other Alkimium ones; however, it's efficiency is stuck at 95%, despite my calculations, which I triple checked, telling me otherwise. Something else is stopping me from creating a perfect smeltery - I will have to look towards other means.
 
 # -- ALKIMIUM: Improved Alkimium Distillation
 planarartifice.research.alkimium_applications_distillation.title=Alkimium Applications: Distillation
@@ -124,7 +123,7 @@ planarartifice.research.golem_mat_alkimium.stage.1=After deeply studying this vi
 
 # -- BISMUTH
 planarartifice.research.bismuth.title=Bismuth
-planarartifice.research.bismuth.stage.1=When looking closely at aura - and it's reactions and interactions with portals - I can deduce, without a doubt, that aura is an interdimensional energy; that is to say, the vast majority of it doesn't exist within this dimension, or any other I can visit; rather, it slowly leaks in from seemingly random points. Neither do I know how, nor do I know why, but one thing I do know is that aura is 'attracted' to these points. <BR>By creating a material that mimics their aura attracting effects, I can create things far more useful than anything I have currently available. I call this material "Bismuth".
+planarartifice.research.bismuth.stage.1=[WIP]
 planarartifice.research.bismuth.stage.2=Bismuth is a material far more well-attuned to aura than any other item I have access to, by a long shot. It has much potential.<PAGE>§lAura Meter§r<DIV>The Aura Meter can tell me the current vis from anywhere in my inventory or when equipped, unlike the Thaumometer, which has to be held to function.<PAGE>§lBismuth Claymore§r<DIV>The Bismuth Claymore will convert 60% of experience dropped by slain mobs into vis aura. It also has a high amount of durability.
 
 # -- BISMUTH: Bismuth Caster's Gauntlet
