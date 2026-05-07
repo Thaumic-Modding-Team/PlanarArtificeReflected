@@ -82,9 +82,9 @@
       "key": "PA_PERMEABLE_GLASS",
       "name": "planarartifice.research.permeable_glass.title",
       "icons": [
+        "planarartifice:glass_non_living",
         "planarartifice:glass_entity",
-        "planarartifice:glass_ethereal",
-        "planarartifice:glass_non_living"
+        "planarartifice:glass_ethereal"
       ],
       "category": "PLANAR_ARTIFICE",
       "parents": ["PA_GLASSWORKING"],
@@ -104,9 +104,9 @@
         {
           "text": "planarartifice.research.permeable_glass.stage.2",
           "recipes": [
+            "planarartifice:glass_non_living",
             "planarartifice:glass_entity",
-            "planarartifice:glass_ethereal",
-            "planarartifice:glass_non_living"
+            "planarartifice:glass_ethereal"
           ]
         }
       ]

@@ -139,7 +139,7 @@ planarartifice.research.essentia_manipulation.stage.2=Eureka! I am finally free 
 # -- BISMUTH: Metal Transmutation
 planarartifice.research.metal_transmutation.title=Metal Transmutation
 planarartifice.research.metal_transmutation.stage.1=Bismuth is an interesting metal, It is malleable, inorganic, and seemingly unstable. I wonder if I could cause it to "crash" into other metals, such as gold...
-planarartifice.research.metal_transmutation.stage.2=This could revolutionize underground resources forever. I have figured out the way to "nudge" bismuth into other metals using part of the corresponding metal's essences.<BR>I must take note that this process is rather expensive, but makes use of excess essentia.
+planarartifice.research.metal_transmutation.stage.2=This could revolutionize underground resources forever. I have figured out a way to "nudge" bismuth into other metals using part of the corresponding metal's essences.<BR>I must take note that this process is rather expensive, but makes use of excess essentia.
 
 # -- BISMUTH: Reagent Transmutation
 planarartifice.research.reagent_transmutation.title=Reagent Transmutation
@@ -160,23 +160,23 @@ planarartifice.research.thaumic_apple.stage.2=Not only does it work, but I've al
 
 # -- GLASSWORK: Alchemical Glass Cutter
 planarartifice.research.alchemical_glass_cutter.title=Alchemical Glass Cutter
-planarartifice.research.alchemical_glass_cutter.stage.1=[WIP]
-planarartifice.research.alchemical_glass_cutter.stage.2=[WIP]
+planarartifice.research.alchemical_glass_cutter.stage.1=Glass cutters aren't the most expensive thing, but crafting new ones each time is frustrating. I wonder if there's a way to harness the arcane to break glass.
+planarartifice.research.alchemical_glass_cutter.stage.2=By simply imbuing an ordinary glass cutter with some amber and alkimium, I can create a new type of glass cutter that utilizes vis to break glass without ever wearing out.
 
 # -- GLASSWORK: Emissive Glass
 planarartifice.research.emissive_glass.title=Emissive Glass
-planarartifice.research.emissive_glass.stage.1=[WIP]
-planarartifice.research.emissive_glass.stage.2=[WIP]
+planarartifice.research.emissive_glass.stage.1=Utilizing my newfound knowledge of fusing essentia into glass, I'm thinking of creating new variants of glass that would be useful for contraptions.
+planarartifice.research.emissive_glass.stage.2=I've created a new set of useful glass variants that can be used for contraptions. I've noted them down in the next few pages.<PAGE>§lDark Glass§r<DIV>Using Tenebrae, I can create glass that completely blocks light.<PAGE>§lLight Glass§r<DIV>I can utilize Lux to make a new glass variant that provides strong light.<PAGE>§lRedstone Glass§r<DIV>Redstone Glass acts exactly like a Redstone Block with a redstone power of 15, it requires Potentia to construct.
 
 # -- GLASSWORK: Glassworking
 planarartifice.research.glassworking.title=Glassworking
-planarartifice.research.glassworking.stage.1=[WIP]
-planarartifice.research.glassworking.stage.2=[WIP]
+planarartifice.research.glassworking.stage.1=Glass has always fascinated me. It is a part of many arcane machinery, it is essential in buildings, and most of all, it's simply beautiful. While continuing with my research, an idea came into my mind.
+planarartifice.research.glassworking.stage.2=In addition to being a transparent material, glass is very good at containing and channeling essentia. I reckon it's why there's so many gadgets that require the use of glass. I've noted down on what I discovered so far in the next few pages.<BR>Additionally, I've crafted a primitive glass cutter to safely pick back up glass without breaking it.<PAGE>§lClear Glass§r<DIV>Using Sensus, I can make glass that is clearer and offers prettier views.<PAGE>§lCrystal Glass§r<DIV>Crystal Glass is made with Vitreus, it is almost entirely transparent and has no borders.<PAGE>§lHardened Glass§r<DIV>With Praemunio, I can completely fortify glass and make it very resistant against strong explosions.
 
 # -- GLASSWORK: Permeable Glass
 planarartifice.research.permeable_glass.title=Permeable Glass
-planarartifice.research.permeable_glass.stage.1=[WIP]
-planarartifice.research.permeable_glass.stage.2=[WIP]
+planarartifice.research.permeable_glass.stage.1=Utilizing my newfound knowledge of fusing essentia into glass, I'm thinking of creating new variants of glass that could be passed through under specific conditions.
+planarartifice.research.permeable_glass.stage.2=I've created a new set of useful glass variants that can allow certain entities to pass through them. I've noted them down in the next few pages.<PAGE>§lAzoic Glass§r<DIV>Azoic Glass only allows non-entities to pass through it, such as items and projectiles. It requires Fabrico to construct it.<PAGE>§lCorporeal Glass§r<DIV>Utilizing Spiritus, I can construct a glass that allows only living entities to pass through it.<PAGE>§lEthereal Glass§r<DIV>Ah, Ethereal Glass... This new glass type created with Praecantatio can be bound to multiple aspects.<BR>When I right-click a vis crystal of that particular aspect to the glass, only creatures with that aspect will be able to pass through it. If I add more aspects, only entities with matching aspects can pass through it. Sneaking and right-clicking will reset the bound aspects on the glass.
 
 # -- MIRROMIROUS: Belt of Suspension
 planarartifice.research.suspension_belt.title=Belt of Suspension
