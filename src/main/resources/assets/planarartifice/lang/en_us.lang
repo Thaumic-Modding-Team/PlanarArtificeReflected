@@ -80,7 +80,7 @@ tooltip.planarartifice:mirrored_jar.unlinked=Unlinked
 tc.research_category.PLANAR_ARTIFICE=Planar Artifice
 planarartifice.research.planar_artifice_base.title=Planar Artifice
 planarartifice.research.planar_artifice_base.title.subtitle=One with the planes
-planarartifice.research.planar_artifice_base.stage.1=[WIP]
+planarartifice.research.planar_artifice_base.stage.1=I have the potential to be more connected to the aura than I realize. Who knows what new resonant materials and powerful artifacts I could discover!
 
 # -- ALKIMIUM
 planarartifice.research.alkimium.title=Alkimium
@@ -114,8 +114,8 @@ planarartifice.research.alkimium_applications_void.stage.2=I was indeed able to 
 
 # -- ALKIMIUM: Improved Alkimium Distillation
 planarartifice.research.alkimium_applications_distillation.title=Alkimium Applications: Distillation
-planarartifice.research.alkimium_applications_distillation.stage.1=[WIP]
-planarartifice.research.alkimium_applications_distillation.stage.2=[WIP]
+planarartifice.research.alkimium_applications_distillation.stage.1=Standard distillation hardware is prone to clogging and leaking flux under high pressure. I suspect Alkimium components could solve this, using the metal's natural affinity for alchemy would ensure a smoother, more efficient flow.
+planarartifice.research.alkimium_applications_distillation.stage.2=Further research into Alkimium has allowed me to engineer new upgrades to the distillation process.<PAGE>§lAlkimium Slurry Pump§r<DIV>This upgraded slurry pump utilizes Alkimium to pull alchemical slurries and fluids at a higher velocity. It reduces the time required to move large volumes of liquid between tanks or into the centrifuge.<PAGE>§lAlkimium Venting Port§r<DIV>This upgraded venting port uses Alkimium to filter and stabilize vapors more effectively. The result is a cleaner exhaust with reduced flux output, allowing for safer operation.
 
 # -- ALKIMIUM: Material Studies - Alkimium
 planarartifice.research.golem_mat_alkimium.title=Material Studies: Alkimium
@@ -135,6 +135,11 @@ planarartifice.research.bismuth_caster.stage.2=By venting the instability throug
 planarartifice.research.essentia_manipulation.title=Essentia Manipulation
 planarartifice.research.essentia_manipulation.stage.1=The traditional method of preparing Salis Mundus is... functional, if primitive. Spending hours with a bowl and flint to crush vis crystals into a fine powder feels like a waste of a Thaumaturge’s potential. There has to be a more elegant way to extract the magical essence from these crystals.
 planarartifice.research.essentia_manipulation.stage.2=Eureka! I am finally free from the cumbersome method of individually crushing up vis crystals. by infusing a piece of Redstone Dust with arcane energy, I now have an easier way of making Salis Mundus.
+
+# -- BISMUTH: Flawless Foci
+planarartifice.research.flawless_foci.title=Flawless Foci
+planarartifice.research.flawless_foci.stage.1=Even a greater focus has its limits. As my spells grow in complexity, the crystalline matrix within the focus begins to show concerning signs that limit how much information can be stored at once.<BR>I need to find a way to eliminate all impurities from the focus. If I can create a focus that is physically and magically "flawless," I might be able to double the complexity it can handle.
+planarartifice.research.flawless_foci.stage.2=This focus possesses an internal architecture so precise that it can handle twice the amount of complexity compared to the now obsolete greater focus. Bismuth acts as a heat sink for magical feedback, allowing me to layer multiple high-tier effects without the risk of the focus shattering.
 
 # -- BISMUTH: Metal Transmutation
 planarartifice.research.metal_transmutation.title=Metal Transmutation
@@ -181,32 +186,27 @@ planarartifice.research.permeable_glass.stage.2=I've created a new set of useful
 # -- MIRROMIROUS: Belt of Suspension
 planarartifice.research.suspension_belt.title=Belt of Suspension
 planarartifice.research.suspension_belt.stage.1=The ability to fly is an incredible one. Whilst I have been able to reach significant heights with the Cloudstepper Ring, I'm still reliant on the ground for support. <BR>However, with my newfound knowledge of levitation, I may be able to enhance this to allow constant horizontal movement.
-planarartifice.research.suspension_belt.stage.2=The Belt of Suspension, when properly equipped, will allow me to disable downwards vertical movement simply by holding the jump button. All vertical movement can be stopped by holding the sneak key. While floating in this way, I can still move around horizontally. If I hold jump from the ground, I will end up floating one-and-a-quarter blocks above the ground. This is also compatible with the Boots of the Traveller and Cloudstepper Ring. Fall damage is also disabled whilst wearing this.
-
-# -- MIRROMIROUS: Flawless Foci
-planarartifice.research.flawless_foci.title=Flawless Foci
-planarartifice.research.flawless_foci.stage.1=[WIP]
-planarartifice.research.flawless_foci.stage.2=[WIP]
+planarartifice.research.suspension_belt.stage.2=The Belt of Suspension, when properly equipped, will allow me to disable downwards vertical movement simply by holding the jump button. All vertical movement can be stopped by holding the sneak key. While floating in this way, I can still move around horizontally.<PAGE>If I hold jump from the ground, I will end up floating one-and-a-quarter blocks above the ground. This is also compatible with the Boots of the Traveller and the Cloudstepper Ring. Fall damage is also disabled whilst wearing this.
 
 # -- MIRROMIROUS: Flawless Mirrors
 planarartifice.research.flawless_mirrors.title=Flawless Mirrors
-planarartifice.research.flawless_mirrors.stage.1=[WIP]
-planarartifice.research.flawless_mirrors.stage.2=[WIP]
+planarartifice.research.flawless_mirrors.stage.1=Standard mirrors are inefficient. They struggle with high-volume transport, moving items one by one and leaking flux due to the "friction" of passing matter through a small spatial tear. I need a way to widen the aperture and stabilize the connection.
+planarartifice.research.flawless_mirrors.stage.2=I have perfected the art of spatial translocation. These flawless mirrors represent a significant upgrade over the standard mirrors, removing the bottleneck of slow item and essentia transfer, while generating little to no flux in the area.<PAGE>§lFlawless Magic Mirror§r<DIV>The Flawless Magic Mirror can transport multiple stacks of items at once compared to the standard version, making it ideal for high-speed automated sorting systems. Because the opening is perfectly stabilized, it produces little to no flux during operation.<PAGE>§lFlawless Essentia Mirror§r<DIV>The Flawless Essentia Mirror allows for a massive increase in essentia flow compared to the standard version. Like the Flawless Magic Mirror, it operates with perfect efficiency, producing little to no flux.
 
 # -- MIRROMIROUS: Mirromirous Headband
 planarartifice.research.mirromirous_headband.title=Mirromirous Headband
-planarartifice.research.mirromirous_headband.stage.1=The original headband of curiosity has about run its course. As my knowledge continues to expand, the hunger for it grows as well.
-planarartifice.research.mirromirous_headband.stage.2=Using some of my new materials, I have managed to build an upgraded version of the headband. It is twice as effective, and is able to draw in even more experience.
+planarartifice.research.mirromirous_headband.stage.1=The original Headband of Curiosity has about run its course. As my knowledge continues to expand, the hunger for it grows as well.
+planarartifice.research.mirromirous_headband.stage.2=Using Bismuth, I have managed to build an upgraded version of the headband. It is twice as effective, and is able to draw in even more experience than its predecessor.
 
 # -- MIRROMIROUS: Mirrored Amulet
 planarartifice.research.mirrored_amulet.title=Mirrored Amulet
 planarartifice.research.mirrored_amulet.stage.1=Death, in this world, is an inconvenience. The further I travel, the more likely I am to have uncommon or difficult to find items, and the more likely I am to die. The further away I die, the harder it becomes to recover my items. A way to keep all of my items intact after death would be incredibly useful in essentially every situation.
-planarartifice.research.mirrored_amulet.stage.2=[WIP]
+planarartifice.research.mirrored_amulet.stage.2=The Mirrored Amulet will allow me to save my items through death. While I'll still die normally and potentially lose gained experience, the amulet keeps my items safe by transferring them to a bound magic mirror.<BR>To bind the amulet to a magic mirror, I have to hold the amulet, and then sneak and right-click the mirror. I have to keep in mind that the amulet WILL shatter after it has been used.
 
 # -- MIRROMIROUS: Mirrored Jar
 planarartifice.research.mirrored_jar.title=Mirrored Jar
-planarartifice.research.mirrored_jar.stage.1=[WIP]
-planarartifice.research.mirrored_jar.stage.2=[WIP]
+planarartifice.research.mirrored_jar.stage.1=The Essentia Mirror is excellent for moving essentia around for infusions, but I have the uncanny feeling that it has untapped potential. If two mirrors can allow essentia to move between two points in space, why must that space be limited to open air?<BR>I suspect that by integrating the folding space of a mirror directly into a storage vessel, I could create a shared 'pocket' of essentia. I need to find a way to alter a warded jar to survive the spatial strain of a localized rift.
+planarartifice.research.mirrored_jar.stage.2=I have successfully bridged the gap between storage and spatial travel. By placing an Essentia Mirror inside of a specially altered warded jar, the space inside of one jar is effectively linked to any other in its network.<BR>In order to link them, simply place one in the world, then sneak and right-click it with another jar. If a network already exists, the new jar will be added to the current group. Unlike mirrors, these networks can have more than two jars.<BR>The space inside of a network is shared and balanced between the jars it contains. Furthermore, the jars act as a collective; when one is filled, it will automatically distribute its contents evenly between all other jars in the network.
 
 # -- MIRROMIROUS: Planar Infusion Enchantment
 planarartifice.research.planar_infusion_enchantment.title=Planar Infusion Enchantment
