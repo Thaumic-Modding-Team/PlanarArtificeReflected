@@ -15,7 +15,27 @@ The addon is split up into four branching paths to take! Alkimium, Bismuth, Glas
 
 ## Glassworking
 
+- **Glass Cutter:** When a player right-clicks glass blocks with it, it will allow them to instantly harvest them.
+- **Alchemical Glass Cutter:** An upgrade to the Glass Cutter that makes it use vis charge instead.
+- **Clear Glass:** A clearer version of glass with no streaks.
+- **Crystal Glass:** A clearer version of glass with no streaks or borders.
+- **Hardened Glass:** A much more durable glass that can withstand explosions.
+- **Dark Glass:** Prevents light from going through it.
+- **Light Glass:** Bright glass that emits light.
+- **Redstone Glass:** Glass that acts like a redstone block and has a redstone power of 15.
+- **Azoic Glass:** Only allows non-entities to pass through it, such as items and projectiles.
+- **Corporeal Glass:** Only allows living entities to pass through it.
+- **Ethereal Glass:** Can be set with vis crystals to only allow mobs with the matching aspects go through it.
+
 ## Mirromirous
+
+- **Infusion Enchantment - Metaphize:** Experience dropped from slain creatures will instead be converted to aura vis. The amount coverted is 30% of experience per level (90% at max level).
+- **Infusion Enchantment - Mirrored:** Allows the tool to be linked to a magic mirror when sneaking and right-clicking one (doing it again will unbind it). All drops obtained with that tool will be transported to the mirror instead.
+- **Belt of Suspension:** When the player holds down the jump button with this belt equipped, it will let them hover in the air. If sneak is held, it will descend them and prevent them from moving vertically.
+- **Mirromirous Headband:** A stronger version of the Headband of Curiosity that is twice as effective.
+- **Mirrored Amulet:** When a player dies with this amulet equipped, it will transfer all their items to a bound magic mirror. Binding an amulet requires holding it, then sneak and right-clicking a mirror.
+- **Mirrored Jar:** These jars can be bound together into a network. When one of the jars gets filled with essentia or emptied, the other jars will as well.
+- **Flawless Mirrors:** Upgrades to the magic and essentia mirrors, flawless mirrors are much more effective and produces little to no flux (depending on config settings).
 
 ---
 
