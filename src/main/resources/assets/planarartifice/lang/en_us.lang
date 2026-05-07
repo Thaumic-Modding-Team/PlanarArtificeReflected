@@ -123,29 +123,28 @@ planarartifice.research.golem_mat_alkimium.stage.1=After deeply studying this vi
 
 # -- BISMUTH
 planarartifice.research.bismuth.title=Bismuth
-planarartifice.research.bismuth.stage.1=[WIP]
-planarartifice.research.bismuth.stage.2=Bismuth is a material far more well-attuned to aura than any other item I have access to, by a long shot. It has much potential.<PAGE>§lAura Meter§r<DIV>The Aura Meter can tell me the current vis from anywhere in my inventory or when equipped, unlike the Thaumometer, which has to be held to function.<PAGE>§lBismuth Claymore§r<DIV>The Bismuth Claymore will convert 60% of experience dropped by slain mobs into vis aura. It also has a high amount of durability.
+planarartifice.research.bismuth.stage.1=I've come across a peculiar phenomenon; certain metals exposed to high concentrations of vis begin to vibrate at a certain frequency. If I could stabilize this resonance, I might create a medium for magical conduction unlike anything seen in standard alchemy.<BR>I should study metals known for their purity and observe how they behave in high-vis environments.
+planarartifice.research.bismuth.stage.2=Bismuth is a metal far more well-attuned to vis than any other item I have access to by a long shot. It has much potential.<PAGE>§lAura Meter§r<DIV>The Aura Meter can tell me the current vis from anywhere in my inventory or when equipped, unlike the Thaumometer, which has to be held to function.<PAGE>§lBismuth Claymore§r<DIV>The Bismuth Claymore will convert 60% of experience dropped by slain mobs into vis aura. It also has a high amount of durability.
 
 # -- BISMUTH: Bismuth Caster's Gauntlet
 planarartifice.research.bismuth_caster.title=Bismuth Caster's Gauntlet
 planarartifice.research.bismuth_caster.stage.1=Bismuth's ability to pull in aura, seemingly without consequences, makes it useful for a huge variety of things. One obvious application is the Caster's Gauntlet; a higher affinity for aura means more effective foci.
-planarartifice.research.bismuth_caster.stage.2=Unfortunately, it would appear that Bismuth actually creates a small amount of instability whilst pulling in aura. My original model built up too much instability, and completely shattered. I'll need to find a way to remove this instability, potentially alongside the focus effect itself.
-planarartifice.research.bismuth_caster.stage.3=By venting the instability through the focus effect, I can use it to my advantage to increase the power of my effects. Bismuth's aura-pulling effect causes more aura to be consumed than necessary, increasing the cost alongside the power.
+planarartifice.research.bismuth_caster.stage.2=By venting the instability through the focus effect, I can use it to my advantage to increase the power of my effects. Bismuth's aura-pulling effect gives it a higher casting radius than most other gauntlets.
 
 # -- BISMUTH: Essentia Manipulation
 planarartifice.research.essentia_manipulation.title=Essentia Manipulation
-planarartifice.research.essentia_manipulation.stage.1=[WIP]
-planarartifice.research.essentia_manipulation.stage.2=Eureka! I am finally free from the cumbersome method of individually crushing up Vis Crystals. by infusing a piece of Redstone Dust with arcane energy, I now have an easier way of making salis mundus.
+planarartifice.research.essentia_manipulation.stage.1=The traditional method of preparing Salis Mundus is... functional, if primitive. Spending hours with a bowl and flint to crush vis crystals into a fine powder feels like a waste of a Thaumaturge’s potential. There has to be a more elegant way to extract the magical essence from these crystals.
+planarartifice.research.essentia_manipulation.stage.2=Eureka! I am finally free from the cumbersome method of individually crushing up vis crystals. by infusing a piece of Redstone Dust with arcane energy, I now have an easier way of making Salis Mundus.
 
 # -- BISMUTH: Metal Transmutation
 planarartifice.research.metal_transmutation.title=Metal Transmutation
 planarartifice.research.metal_transmutation.stage.1=Bismuth is an interesting metal, It is malleable, inorganic, and seemingly unstable. I wonder if I could cause it to "crash" into other metals, such as gold...
-planarartifice.research.metal_transmutation.stage.2=This could revolutionize underground resources forever. I have figured out the way to "nudge" the bismuth into other metals using part of the corresponding metal's essences.<BR>I must take note that this process is rather expensive, but makes use of excess essentia.
+planarartifice.research.metal_transmutation.stage.2=This could revolutionize underground resources forever. I have figured out the way to "nudge" bismuth into other metals using part of the corresponding metal's essences.<BR>I must take note that this process is rather expensive, but makes use of excess essentia.
 
 # -- BISMUTH: Reagent Transmutation
 planarartifice.research.reagent_transmutation.title=Reagent Transmutation
 planarartifice.research.reagent_transmutation.stage.1=There are still many items that are difficult or troublesome to obtain, and there are some items similar enough that I should be able to apply some simple alchemy to change between them.
-planarartifice.research.reagent_transmutation.stage.2=The alchemy surely wasn't "simple", but the hunger for knowledge always finds a way. I have managed to convert a common eye into one of the otherworldly beings, and extract the essence of gunpowders - creating a powder full of energy. That does not mean there is more I can do to this concept.
+planarartifice.research.reagent_transmutation.stage.2=The alchemy surely wasn't "simple", but the hunger for knowledge always finds a way. I have managed to convert a common eye into one of the otherworldly beings, and extract the essence of gunpowder - creating a powder full of energy. That does not mean there is more I can do to this concept.
 planarartifice.research.reagent_transmutation.stage.3=Gotcha - in additions to the previous recipes, I have managed to create a way to forge the hellish rod from mundane items and a nice stew of essentia. Although I'll have to find another way to turn it back to the rod forms, as it can only create powders. Although this research has lead me into an interesting direction - The rare ores of the world. The link between them are thin, I acknowledge that I am reaching for the stars here. But... could it be done?
 planarartifice.research.reagent_transmutation.stage.4=The answer was right in front of me all along. Now I have the ability to transmute between amber and quicksilver - unifying them into a singular matter.
 
