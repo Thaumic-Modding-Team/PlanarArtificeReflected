@@ -11,7 +11,22 @@ The addon is split up into four branching paths to take! Alkimium, Bismuth, Glas
 
 ## Alkimium
 
+- **Alkimium:** This new metal is enhanced with Alkimia. It is mainly used for upgrades and other recipes.
+- **Alkimium Applications:** Upgrades to essentia smelters, Auxiliary Slurry Pumps, Auxiliary Venting Ports, and Essentia Centrifuges. The upgraded versions are more efficient and produce less flux.
+- **Alkimium Goggles of Revealing:** Upgraded Goggles of Revealing with a higher vis discount and gives the ability to check essentia suction when sneaking and looking at tubes, jars, or other essentia related devices.
+- **Material Studies: Alkimium:** Gives access to create Alkimium golems. Alkimium gives a high amount of armor and retains traits from other metals, but in exchange for more fragility.
+
 ## Bismuth
+
+- **Reagent Transmutation:** Several new alchemy recipes that allow converting regeants to other reagents.
+- **Essentia Manipulation:** A much more efficient way of making Salis Mundus via alchemy.
+- **Bismuth:** This new metal is highly attuned to vis! It is used in several recipes.
+- **Aura Meter:** Shows the current vis in the chunk when it's equipped or anywhere in your inventory.
+- **Bismuth Claymore:** Comes pre-enchanted with Metaphize II.
+- **Starving Chest:** An upgraded Hungry Chest that will pull items to it. It can be upgraded at least three times.
+- **Thaumaturge's Fruit:** Enhanced golden and enchanted golden apples via alchemy.
+- **Bismuth Caster's Gauntlet:** A new caster's gauntlet that has a higher casting radius and an extra augment slot (requires Thaumic Augmentation)!
+- **Flawless Foci:** A higher gauntlet focus tier above advanced with over 100 complexity!
 
 ## Glassworking
 
