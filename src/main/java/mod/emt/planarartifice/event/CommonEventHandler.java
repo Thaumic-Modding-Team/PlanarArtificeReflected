@@ -6,6 +6,7 @@ import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.item.bauble.ItemMirroredAmulet;
 import mod.emt.planarartifice.registry.ModItemsPA;
 import mod.emt.planarartifice.tile.TileFlawlessMirror;
+import mod.emt.planarartifice.utils.helper.PlayerHelper;
 import mod.emt.planarartifice.utils.helper.ResearchHelper;
 import mod.emt.planarartifice.utils.helper.WorldHelper;
 import net.minecraft.entity.item.EntityItem;
@@ -94,17 +95,18 @@ public class CommonEventHandler {
             for(int slot = 0; slot < handler.getSlots(); slot++) {
                 ItemStack slotStack = handler.getStackInSlot(slot);
                 if(slotStack.getItem() instanceof ItemMirroredAmulet && ((ItemMirroredAmulet) slotStack.getItem()).hasLinkTagInfo(slotStack)) {
-                    PLAYER_AMULETS.put(player.getPersistentID(), slotStack.copy());
+                    PLAYER_AMULETS.put(PlayerHelper.getUUIDFromPlayer(player), slotStack.copy());
                     break;
                 }
             }
         }
     }
 
-    @SubscribeEvent(priority = EventPriority.HIGH)
+    @SubscribeEvent(priority = EventPriority.LOW)
     public static void onPlayerDrops(PlayerDropsEvent event) {
         EntityPlayer player = event.getEntityPlayer();
-        ItemStack amulet = PLAYER_AMULETS.getOrDefault(player.getPersistentID(), ItemStack.EMPTY);
+        UUID playerId = PlayerHelper.getUUIDFromPlayer(player);
+        ItemStack amulet = PLAYER_AMULETS.getOrDefault(playerId, ItemStack.EMPTY);
         if(!amulet.isEmpty() && amulet.getTagCompound() != null) {
             NBTTagCompound tag = amulet.getTagCompound();
             BlockPos pos = new BlockPos(tag.getInteger("linkX"), tag.getInteger("linkY"), tag.getInteger("linkZ"));
@@ -125,6 +127,6 @@ public class CommonEventHandler {
                 }
             }
         }
-        PLAYER_AMULETS.remove(player.getPersistentID());
+        PLAYER_AMULETS.remove(playerId);
     }
 }
