@@ -19,6 +19,12 @@
             "planarartifice:bismuth_caster"
           ]
         }
+      ],
+      "addenda": [
+        {
+          "text": "planarartifice.research.bismuth_caster.addenda.1",
+          "required_research": ["GAUNTLET_AUGMENTATION", "PA_BISMUTH_CASTER"]
+        }
       ]
     },
     {
@@ -139,17 +145,9 @@
       "key": "PA_REAGENT_TRANSMUTATION",
       "name": "planarartifice.research.reagent_transmutation.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "minecraft:ender_eye"
-      ],
-      "parents": [
-        "PLANAR_ARTIFICE_BASE",
-        "HEDGEALCHEMY"
-      ],
-      "location": [
-        0,
-        -2
-      ],
+      "icons": ["minecraft:ender_eye"],
+      "parents": ["PLANAR_ARTIFICE_BASE", "HEDGEALCHEMY"],
+      "location": [0, -2],
       "stages": [
         {
           "text": "planarartifice.research.reagent_transmutation.stage.1",
@@ -160,9 +158,7 @@
         },
         {
           "text": "planarartifice.research.reagent_transmutation.stage.2",
-          "required_item": [
-            "minecraft:blaze_rod;1"
-          ],
+          "required_item": ["minecraft:blaze_rod;1"],
           "recipes": [
             "planarartifice:rt_ender_eye",
             "planarartifice:rt_redstone"
@@ -170,10 +166,7 @@
         },
         {
           "text": "planarartifice.research.reagent_transmutation.stage.3",
-          "required_item": [
-            "thaumcraft:amber;1",
-            "thaumcraft:quicksilver;1"
-          ],
+          "required_item": ["thaumcraft:amber;1", "thaumcraft:quicksilver;1"],
           "recipes": [
             "planarartifice:rt_ender_eye",
             "planarartifice:rt_redstone",
