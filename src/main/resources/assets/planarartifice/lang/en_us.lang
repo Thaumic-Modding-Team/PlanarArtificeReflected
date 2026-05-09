@@ -181,7 +181,7 @@ planarartifice.research.glassworking.stage.2=In addition to being a transparent 
 
 # -- GLASSWORK: Permeable Glass
 planarartifice.research.permeable_glass.title=Permeable Glass
-planarartifice.research.permeable_glass.stage.1=Utilizing my newfound knowledge of fusing essentia into glass, I'm thinking of creating new variants of glass that could be passed through under specific conditions.
+planarartifice.research.permeable_glass.stage.1=Utilizing my newfound knowledge of fusing essentia into glass, I'm thinking of creating new variants that could be passed through under specific conditions.
 planarartifice.research.permeable_glass.stage.2=I've created a new set of useful glass variants that can allow certain entities to pass through them. I've noted them down in the next few pages.<PAGE>§lAzoic Glass§r<DIV>Azoic Glass only allows non-entities to pass through it, such as items or certain projectiles.<PAGE>§lCorporeal Glass§r<DIV>Utilizing Spiritus, I can construct a glass that allows only living entities to pass through.<PAGE>§lEthereal Glass§r<DIV>Ah, Ethereal Glass... This new glass type created with Praecantatio can be bound to multiple aspects.<BR>By right-clicking a vis crystal onto the glass, it becomes attuned to that aspect, only creatures with that aspect will be able to pass through it.<BR>Additional aspects further restrict creature passage, allowing me to customize the glass to only allow specific creatures to pass through.<BR>Sneaking and right-clicking with an empty hand will reset the bound aspects.
 
 # -- MIRROMIROUS: Belt of Suspension
