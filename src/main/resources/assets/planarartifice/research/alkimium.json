@@ -1,14 +1,43 @@
 {
   "entries": [
     {
+      "key": "PA_ALKIMIUM",
+      "name": "planarartifice.research.alkimium.title",
+      "category": "PLANAR_ARTIFICE",
+      "icons": ["planarartifice:alkimium_ingot"],
+      "parents": ["PLANAR_ARTIFICE_BASE", "METALLURGY@2", "ESSENTIASMELTER"],
+      "meta": ["HIDDEN"],
+      "location": [2, 0],
+      "stages": [
+        {
+          "text": "planarartifice.research.alkimium.stage.1",
+          "required_knowledge": [
+            "OBSERVATION;ALCHEMY;1",
+            "OBSERVATION;INFUSION;1"
+          ],
+          "recipes": [
+            "planarartifice:alkimium_ingot"
+          ],
+          "required_craft": [
+            "planarartifice:alkimium_ingot"
+          ]
+        },
+        {
+          "text": "planarartifice.research.alkimium.stage.2",
+          "recipes": [
+            "planarartifice:alkimium_ingot",
+            "planarartifice:alkimium_stuff"
+          ]
+        }
+      ]
+    },
+    {
       "key": "PA_ALKIMIUM_APPLICATIONS",
       "name": "planarartifice.research.alkimium_applications.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:alkimium_smeltery",
-        "planarartifice:alkimic_construct"
-      ],
+      "icons": ["planarartifice:alkimium_smeltery"],
       "parents": ["PA_ALKIMIUM", "ESSENTIASMELTER"],
+      "meta": ["HIDDEN"],
       "location": [4, 0],
       "stages": [
         {
@@ -31,8 +60,8 @@
       "name": "planarartifice.research.alkimium_applications_centrifuge.title",
       "category": "PLANAR_ARTIFICE",
       "icons": ["planarartifice:alkimium_centrifuge"],
-      "meta": ["REVERSE"],
-      "parents": ["PA_ALKIMIUM_APPLICATIONS"],
+      "meta": ["REVERSE", "HIDDEN"],
+      "parents": ["PA_ALKIMIUM_APPLICATIONS", "~CENTRIFUGE"],
       "location": [6, 0],
       "stages": [
         {
@@ -58,8 +87,8 @@
         "planarartifice:alkimium_smelter_aux",
         "planarartifice:alkimium_smelter_vent"
       ],
-      "meta": ["REVERSE"],
-      "parents": ["PA_ALKIMIUM_APPLICATIONS", "IMPROVEDSMELTING2"],
+      "meta": ["REVERSE", "HIDDEN"],
+      "parents": ["PA_ALKIMIUM_APPLICATIONS", "IMPROVEDSMELTING@2"],
       "location": [5, 1],
       "stages": [
         {
@@ -83,7 +112,8 @@
       "name": "planarartifice.research.alkimium_applications_goggles.title",
       "category": "PLANAR_ARTIFICE",
       "icons": ["planarartifice:alkimium_goggles"],
-      "parents": ["PA_ALKIMIUM_CENTRIFUGE"],
+      "parents": ["PA_ALKIMIUM_CENTRIFUGE", "~BASEARTIFICE"],
+      "meta": ["HIDDEN"],
       "location": [8, 0],
       "stages": [
         {
@@ -106,7 +136,7 @@
       "name": "planarartifice.research.alkimium_applications_thaumium.title",
       "category": "PLANAR_ARTIFICE",
       "icons": ["planarartifice:alkimium_smeltery_thaumium"],
-      "meta": ["REVERSE"],
+      "meta": ["REVERSE", "HIDDEN"],
       "parents": ["PA_ALKIMIUM_APPLICATIONS", "ESSENTIASMELTERTHAUMIUM"],
       "location": [5, -1],
       "stages": [
@@ -144,36 +174,6 @@
           "text": "planarartifice.research.alkimium_applications_void.stage.2",
           "recipes": [
             "planarartifice:alkimium_smeltery_void"
-          ]
-        }
-      ]
-    },
-    {
-      "key": "PA_ALKIMIUM",
-      "name": "planarartifice.research.alkimium.title",
-      "category": "PLANAR_ARTIFICE",
-      "icons": ["planarartifice:alkimium_ingot"],
-      "parents": ["PLANAR_ARTIFICE_BASE", "METALLURGY@2"],
-      "location": [2, 0],
-      "stages": [
-        {
-          "text": "planarartifice.research.alkimium.stage.1",
-          "required_knowledge": [
-            "OBSERVATION;ALCHEMY;1",
-            "OBSERVATION;INFUSION;1"
-          ],
-          "recipes": [
-            "planarartifice:alkimium_ingot"
-          ],
-          "required_craft": [
-            "planarartifice:alkimium_ingot"
-          ]
-        },
-        {
-          "text": "planarartifice.research.alkimium.stage.2",
-          "recipes": [
-            "planarartifice:alkimium_ingot",
-            "planarartifice:alkimium_stuff"
           ]
         }
       ]

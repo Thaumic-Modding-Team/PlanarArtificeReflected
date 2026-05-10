@@ -5,7 +5,7 @@
       "name": "planarartifice.research.alkimium_applications_adaminite.title",
       "category": "PLANAR_ARTIFICE",
       "icons": ["planarartifice:alkimium_smeltery_adaminite"],
-      "meta": ["REVERSE"],
+      "meta": ["REVERSE", "HIDDEN"],
       "parents": ["PA_ALKIMIUM_MITHRILLIUM_SMELTERY", "TAR_ADAMINITE_SMELTER"],
       "location": [8, -4],
       "stages": [
@@ -26,7 +26,7 @@
       "name": "planarartifice.research.alkimium_applications_mithminite.title",
       "category": "PLANAR_ARTIFICE",
       "icons": ["planarartifice:alkimium_smeltery_mithminite"],
-      "meta": ["REVERSE"],
+      "meta": ["REVERSE", "HIDDEN"],
       "parents": ["PA_ALKIMIUM_ADAMINITE_SMELTERY", "TAR_MITHMINITE_SMELTER"],
       "location": [9, -5],
       "stages": [
@@ -47,7 +47,7 @@
       "name": "planarartifice.research.alkimium_applications_mithrillium.title",
       "category": "PLANAR_ARTIFICE",
       "icons": ["planarartifice:alkimium_smeltery_mithrillium"],
-      "meta": ["REVERSE"],
+      "meta": ["REVERSE", "HIDDEN"],
       "parents": ["PA_ALKIMIUM_VOID_SMELTERY", "TAR_MITHRILLIUM_SMELTER"],
       "location": [7, -3],
       "stages": [

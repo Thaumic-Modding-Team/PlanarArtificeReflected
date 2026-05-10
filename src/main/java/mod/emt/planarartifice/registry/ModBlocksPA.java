@@ -100,9 +100,9 @@ public class ModBlocksPA {
         registry.register(ALKIMIUM_SMELTERY_VOID = new BlockSmelterPA("alkimium_smeltery_void", 10, 1.0f, 375));
 
         if(CompatHandlerPA.isThaumicAdditionsLoaded) {
-            registry.register(ALKIMIUM_SMELTERY_MITHRILLIUM = new BlockSmelterPA("alkimium_smeltery_mithrillium", 15, 1.0f, 1000));
-            registry.register(ALKIMIUM_SMELTERY_ADAMINITE = new BlockSmelterPA("alkimium_smeltery_adaminite", 10, 1.25f, 2000));
-            registry.register(ALKIMIUM_SMELTERY_MITHMINITE = new BlockSmelterPA("alkimium_smeltery_mithminite", 3, 1.5f, 4000));
+            registry.register(ALKIMIUM_SMELTERY_MITHRILLIUM = new BlockSmelterPA("alkimium_smeltery_mithrillium", 15, 1.15f, 1500));
+            registry.register(ALKIMIUM_SMELTERY_ADAMINITE = new BlockSmelterPA("alkimium_smeltery_adaminite", 10, 1.40f, 3000));
+            registry.register(ALKIMIUM_SMELTERY_MITHMINITE = new BlockSmelterPA("alkimium_smeltery_mithminite", 5, 1.75f, 6000));
         }
 
         registry.register(ALKIMIUM_CENTRIFUGE = new BlockCentrifugePA("alkimium_centrifuge"));
@@ -111,8 +111,6 @@ public class ModBlocksPA {
         registry.register(FLAWLESS_MIRROR = new BlockFlawlessMirror(TileFlawlessMirror.class, "flawless_mirror"));
         registry.register(FLAWLESS_MIRROR_ESSENTIA = new BlockFlawlessMirror(TileFlawlessMirrorEssentia.class, "flawless_mirror_essentia"));
         registry.register(MIRRORED_JAR = new BlockMirroredJar());
-
-
 
         registerTileEntities();
     }

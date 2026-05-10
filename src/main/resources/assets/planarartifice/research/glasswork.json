@@ -6,6 +6,7 @@
       "icons": ["planarartifice:glass_cutter_vis"],
       "category": "PLANAR_ARTIFICE",
       "parents": ["PA_GLASSWORKING", "~PA_ALKIMIUM", "~RECHARGEPEDESTAL", "~INFUSION"],
+      "meta": ["HIDDEN"],
       "location": [-4, 0],
       "stages": [
         {
@@ -30,7 +31,7 @@
         "planarartifice:glass_redstone"
       ],
       "category": "PLANAR_ARTIFICE",
-      "parents": ["PA_GLASSWORKING"],
+      "parents": ["PA_GLASSWORKING", "~BASEALCHEMY"],
       "meta": ["REVERSE"],
       "location": [-3, -1],
       "stages": [
@@ -87,7 +88,7 @@
         "planarartifice:glass_ethereal"
       ],
       "category": "PLANAR_ARTIFICE",
-      "parents": ["PA_GLASSWORKING"],
+      "parents": ["PA_GLASSWORKING","~BASEALCHEMY"],
       "meta": ["REVERSE"],
       "location": [-3, 1],
       "stages": [

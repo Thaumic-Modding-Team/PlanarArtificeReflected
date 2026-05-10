@@ -1,6 +1,7 @@
 package mod.emt.planarartifice.registry;
 
 import mod.emt.planarartifice.PlanarArtifice;
+import mod.emt.planarartifice.compat.CompatHandlerPA;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -182,15 +183,6 @@ public class ModRecipesPA {
                 " T ",
                 'B', "ingotBismuth",
                 'T', "ingotThaumium"));
-
-
-
-
-
-
-
-
-
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_clear"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_GLASSWORKING",
@@ -291,16 +283,6 @@ public class ModRecipesPA {
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
                 'C', ThaumcraftApiHelper.makeCrystal(Aspect.ENERGY)));
-
-
-
-
-
-
-
-
-
-
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_jar"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_MIRRORED_JAR",
@@ -314,6 +296,48 @@ public class ModRecipesPA {
                 'J', new ItemStack(BlocksTC.jarNormal),
                 'M', new ItemStack(BlocksTC.mirrorEssentia),
                 'S', "slimeball"));
+
+        if(CompatHandlerPA.isThaumicAdditionsLoaded) {
+            ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery_mithrillium"), new ShapedArcaneRecipe(
+                    defaultGroup,
+                    "PA_ALKIMIUM_MITHRILLIUM_SMELTERY",
+                    1100,
+                    new AspectList().add(Aspect.FIRE, 6).add(Aspect.WATER, 2),
+                    new ItemStack(ModBlocksPA.ALKIMIUM_SMELTERY_MITHRILLIUM),
+                    "ASA",
+                    "PCP",
+                    "PPP",
+                    'A', "plateAlkimium",
+                    'S', new ItemStack(ModBlocksPA.ALKIMIUM_SMELTERY_VOID),
+                    'P', "plateMithrillium",
+                    'C', new ItemStack(BlocksTC.metalAlchemicalAdvanced)));
+            ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery_adaminite"), new ShapedArcaneRecipe(
+                    defaultGroup,
+                    "PA_ALKIMIUM_ADAMINITE_SMELTERY",
+                    1300,
+                    new AspectList().add(Aspect.FIRE, 12).add(Aspect.WATER, 6),
+                    new ItemStack(ModBlocksPA.ALKIMIUM_SMELTERY_ADAMINITE),
+                    "ASA",
+                    "PCP",
+                    "PPP",
+                    'A', "plateAlkimium",
+                    'S', new ItemStack(ModBlocksPA.ALKIMIUM_SMELTERY_MITHRILLIUM),
+                    'P', "plateAdaminite",
+                    'C', new ItemStack(BlocksTC.metalAlchemicalAdvanced)));
+            ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "alkimium_smeltery_mithminite"), new ShapedArcaneRecipe(
+                    defaultGroup,
+                    "PA_ALKIMIUM_MITHMINITE_SMELTERY",
+                    1750,
+                    new AspectList().add(Aspect.FIRE, 24).add(Aspect.WATER, 12),
+                    new ItemStack(ModBlocksPA.ALKIMIUM_SMELTERY_MITHMINITE),
+                    "ASA",
+                    "PCP",
+                    "PPP",
+                    'A', "plateAlkimium",
+                    'S', new ItemStack(ModBlocksPA.ALKIMIUM_SMELTERY_ADAMINITE),
+                    'P', "plateMithminite",
+                    'C', new ItemStack(BlocksTC.metalAlchemicalAdvanced)));
+        }
     }
 
     private static void registerCrucibleRecipes() {

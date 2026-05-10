@@ -60,6 +60,7 @@
       "category": "PLANAR_ARTIFICE",
       "icons": ["thaumcraft:salis_mundus"],
       "parents": ["PA_REAGENT_TRANSMUTATION"],
+      "meta": ["HIDDEN"],
       "location": [1, -3],
       "stages": [
         {
@@ -78,19 +79,10 @@
       "key": "PA_FLAWLESS_FOCI",
       "name": "planarartifice.research.flawless_foci.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:flawless_focus"
-      ],
-      "parents": [
-        "PA_BISMUTH_CASTER",
-        "~PA_MIRRORED_AMULET",
-        "~PA_ALKIMIUM",
-        "FOCUSGREATER"
-      ],
-      "location": [
-        0,
-        -8
-      ],
+      "icons": ["planarartifice:flawless_focus"],
+      "parents": ["PA_BISMUTH_CASTER", "~PA_MIRRORED_AMULET", "~PA_ALKIMIUM", "FOCUSGREATER"],
+      "meta": ["HIDDEN"],
+      "location": [0, -8],
       "stages": [
         {
           "text": "planarartifice.research.flawless_foci.stage.1",
@@ -117,13 +109,9 @@
         "minecraft:gold_ingot",
         "thaumcraft:quicksilver"
       ],
-      "parents": [
-        "PA_BISMUTH"
-      ],
-      "location": [
-        -1,
-        -3
-      ],
+      "parents": ["PA_BISMUTH"],
+      "meta": ["HIDDEN"],
+      "location": [-1, -3],
       "stages": [
         {
           "text": "planarartifice.research.metal_transmutation.stage.1",
@@ -147,6 +135,7 @@
       "category": "PLANAR_ARTIFICE",
       "icons": ["minecraft:ender_eye"],
       "parents": ["PLANAR_ARTIFICE_BASE", "HEDGEALCHEMY"],
+      "meta": ["HIDDEN"],
       "location": [0, -2],
       "stages": [
         {
@@ -195,15 +184,9 @@
         "planarartifice:starving_chest_large",
         "planarartifice:starving_chest_huge"
       ],
-      "parents": [
-        "PA_BISMUTH",
-        "~HUNGRYCHEST",
-        "~INFUSION"
-      ],
-      "location": [
-        -1,
-        -5
-      ],
+      "parents": ["PA_BISMUTH", "~HUNGRYCHEST", "~INFUSION"],
+      "meta": ["HIDDEN"],
+      "location": [-1, -5],
       "stages": [
         {
           "text": "planarartifice.research.starving_chest.stage.1",
@@ -230,17 +213,10 @@
       "key": "PA_THAUMIC_APPLE",
       "name": "planarartifice.research.thaumic_apple.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:thaumaturges_fruit"
-      ],
-      "parents": [
-        "PA_BISMUTH",
-        "METALLURGY@3"
-      ],
-      "location": [
-        1,
-        -5
-      ],
+      "icons": ["planarartifice:thaumaturges_fruit"],
+      "parents": ["PA_BISMUTH", "METALLURGY@3"],
+      "meta": ["HIDDEN"],
+      "location": [1, -5],
       "stages": [
         {
           "text": "planarartifice.research.thaumic_apple.stage.1",

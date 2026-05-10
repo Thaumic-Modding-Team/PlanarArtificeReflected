@@ -8,24 +8,13 @@
         "planarartifice:flawless_mirror",
         "planarartifice:flawless_mirror_essentia"
       ],
-      "parents": [
-        "PA_MIRRORED_AMULET",
-        "~PA_ALKIMIUM",
-        "~PA_BISMUTH",
-        "MIRRORESSENTIA"
-      ],
-      "location": [
-        1,
-        5
-      ],
+      "parents": ["PA_MIRRORED_AMULET", "~PA_ALKIMIUM", "~PA_BISMUTH", "MIRRORESSENTIA"],
+      "meta": ["HIDDEN"],
+      "location": [1, 5],
       "stages": [
         {
           "text": "planarartifice.research.flawless_mirrors.stage.1",
-          "required_knowledge": [
-            "THEORY;ARTIFICE;2",
-            "OBSERVATION;AUROMANCY;1",
-            "OBSERVATION;INFUSION;1"
-          ]
+          "required_knowledge": ["THEORY;ARTIFICE;2", "OBSERVATION;AUROMANCY;1", "OBSERVATION;INFUSION;1"]
         },
         {
           "text": "planarartifice.research.flawless_mirrors.stage.2",
@@ -40,28 +29,14 @@
       "key": "PA_MIRROMIROUS_HEADBAND",
       "name": "planarartifice.research.mirromirous_headband.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:mirromirous_headband"
-      ],
-      "parents": [
-        "PA_PLANAR_INFUSION_ENCHANTMENT",
-        "~PA_BISMUTH",
-        "CURIOSITYBAND"
-      ],
-      "location": [
-        -1,
-        3
-      ],
+      "icons": ["planarartifice:mirromirous_headband"],
+      "parents": ["PA_PLANAR_INFUSION_ENCHANTMENT", "~PA_BISMUTH", "CURIOSITYBAND"],
+      "location": [-1, 3],
       "stages": [
         {
           "text": "planarartifice.research.mirromirous_headband.stage.1",
-          "required_item": [
-            "thaumcraft:curio;1;1"
-          ],
-          "required_knowledge": [
-            "THEORY;ARTIFICE;2",
-            "THEORY;INFUSION;2"
-          ]
+          "required_item": ["thaumcraft:curio;1;1"],
+          "required_knowledge": ["THEORY;ARTIFICE;2", "THEORY;INFUSION;2"]
         },
         {
           "text": "planarartifice.research.mirromirous_headband.stage.2",
@@ -75,25 +50,13 @@
       "key": "PA_MIRRORED_AMULET",
       "name": "planarartifice.research.mirrored_amulet.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:mirrored_amulet"
-      ],
-      "parents": [
-        "PA_PLANAR_INFUSION_ENCHANTMENT",
-        "~CRYSTALFARMER",
-        "~MIRROR"
-      ],
-      "location": [
-        0,
-        4
-      ],
+      "icons": ["planarartifice:mirrored_amulet"],
+      "parents": ["PA_PLANAR_INFUSION_ENCHANTMENT", "~MIRROR"],
+      "location": [0, 4],
       "stages": [
         {
           "text": "planarartifice.research.mirrored_amulet.stage.1",
-          "required_knowledge": [
-            "THEORY;ARTIFICE;1",
-            "THEORY;BASICS;1"
-          ]
+          "required_knowledge": ["THEORY;ARTIFICE;1", "THEORY;BASICS;1"]
         },
         {
           "text": "planarartifice.research.mirrored_amulet.stage.2",
@@ -107,28 +70,14 @@
       "key": "PA_MIRRORED_JAR",
       "name": "planarartifice.research.mirrored_jar.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:mirrored_jar"
-      ],
-      "parents": [
-        "PA_MIRRORED_AMULET",
-        "~PA_ALKIMIUM",
-        "~PA_BISMUTH",
-        "WARDEDJARS",
-        "MIRRORESSENTIA"
-      ],
-      "location": [
-        -1,
-        5
-      ],
+      "icons": ["planarartifice:mirrored_jar"],
+      "parents": ["PA_MIRRORED_AMULET", "~PA_ALKIMIUM", "~PA_BISMUTH", "WARDEDJARS", "MIRRORESSENTIA"],
+      "meta": ["HIDDEN"],
+      "location": [-1, 5],
       "stages": [
         {
           "text": "planarartifice.research.mirrored_jar.stage.1",
-          "required_knowledge": [
-            "THEORY;ARTIFICE;1",
-            "OBSERVATION;AUROMANCY;1",
-            "OBSERVATION;INFUSION;1"
-          ]
+          "required_knowledge": ["THEORY;ARTIFICE;1", "OBSERVATION;AUROMANCY;1", "OBSERVATION;INFUSION;1"]
         },
         {
           "text": "planarartifice.research.mirrored_jar.stage.2",
@@ -142,17 +91,9 @@
       "key": "PA_PLANAR_INFUSION_ENCHANTMENT",
       "name": "planarartifice.research.planar_infusion_enchantment.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:textures/research/r_inf_enchant.png"
-      ],
-      "parents": [
-        "PLANAR_ARTIFICE_BASE",
-        "INFUSIONENCHANTMENT"
-      ],
-      "location": [
-        0,
-        2
-      ],
+      "icons": ["planarartifice:textures/research/r_inf_enchant.png"],
+      "parents": ["PLANAR_ARTIFICE_BASE", "INFUSIONENCHANTMENT"],
+      "location": [0, 2],
       "stages": [
         {
           "text": "planarartifice.research.planar_infusion_enchantment.stage.1",
@@ -161,9 +102,7 @@
             "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:21s,lvl:1s}]}",
             "thaumcraft:hand_mirror"
           ],
-          "required_knowledge": [
-            "THEORY;INFUSION;2"
-          ]
+          "required_knowledge": ["THEORY;INFUSION;2"]
         },
         {
           "text": "planarartifice.research.planar_infusion_enchantment.stage.2",
@@ -179,26 +118,13 @@
       "key": "PA_SUSPENSION_BELT",
       "name": "planarartifice.research.suspension_belt.title",
       "category": "PLANAR_ARTIFICE",
-      "icons": [
-        "planarartifice:suspension_belt"
-      ],
-      "parents": [
-        "PA_PLANAR_INFUSION_ENCHANTMENT",
-        "~CLOUDRING",
-        "~CRYSTALFARMER",
-        "~LEVITATOR"
-      ],
-      "location": [
-        1,
-        3
-      ],
+      "icons": ["planarartifice:suspension_belt"],
+      "parents": ["PA_PLANAR_INFUSION_ENCHANTMENT", "~CLOUDRING", "~CRYSTALFARMER", "~LEVITATOR"],
+      "location": [1, 3],
       "stages": [
         {
           "text": "planarartifice.research.suspension_belt.stage.1",
-          "required_knowledge": [
-            "THEORY;ARTIFICE;1",
-            "THEORY;PLANARARTIFICE;1"
-          ]
+          "required_knowledge": ["THEORY;ARTIFICE;1", "THEORY;PLANARARTIFICE;1"]
         },
         {
           "text": "planarartifice.research.suspension_belt.stage.2",

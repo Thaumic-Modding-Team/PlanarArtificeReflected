@@ -216,15 +216,15 @@ planarartifice.research.planar_infusion_enchantment.stage.2=I have created a few
 
 # -- MOD INTEGRATION: Alkimium Applications - Adaminite
 planarartifice.research.alkimium_applications_adaminite.title=Alkimium Applications: Adaminite
-planarartifice.research.alkimium_applications_adaminite.stage.1=[WIP]
-planarartifice.research.alkimium_applications_adaminite.stage.2=[WIP]
+planarartifice.research.alkimium_applications_adaminite.stage.1=I should stop and be happy with what I have achieved, but I can't help but want to go further.<BR>Surely I am reaching the limit of what alkimum is capable of?
+planarartifice.research.alkimium_applications_adaminite.stage.2=This is fascinating. It appears that metals with even higher processing efficiencies are significantly improved by their proximity to alkimium.<BR>The Alkimium Adaminite Smelter has a 50% increased essentia slurry capacity, a 30% faster processing speed, and a massive 20% increase to essentia production.
 
 # -- MOD INTEGRATION: Alkimium Applications - Mithminite
 planarartifice.research.alkimium_applications_mithminite.title=Alkimium Applications: Mithminite
-planarartifice.research.alkimium_applications_mithminite.stage.1=[WIP]
-planarartifice.research.alkimium_applications_mithminite.stage.2=[WIP]
+planarartifice.research.alkimium_applications_mithminite.stage.1=I know I complained of the cost of the mithminite smelter, but I can't help but wonder if it could be improved even further.<BR>Since it has already cost this much to make the original device, surely a little more expense couldn't hurt...
+planarartifice.research.alkimium_applications_mithminite.stage.2=This is truly my magnum opis. The compared to the mithminite smelter, the alkimium reinforced mithminite smelter has 1.5x the essentia capacity, two times the transfer speed, and produces 60% more essentia than the original item contained.<BR>This can only be describes as a machine that approaches the realm of the gods as it practically creates something from nothing.
 
 # -- MOD INTEGRATION: Alkimium Applications - Mithrillium
 planarartifice.research.alkimium_applications_mithrillium.title=Alkimium Applications: Mithrillium
-planarartifice.research.alkimium_applications_mithrillium.stage.1=[WIP]
-planarartifice.research.alkimium_applications_mithrillium.stage.2=[WIP]
+planarartifice.research.alkimium_applications_mithrillium.stage.1=The Mithrillium Smeltery may have near-perfect breakdown, but it still relies on brass and iron internals for its processing.<BR>Surely alkimium can improve my designs yet again?
+planarartifice.research.alkimium_applications_mithrillium.stage.2=Truly fascinating. Whereas my previous attempts had resulted in very minor efficiency gains of approximately 5%, this new applying alkimium to mithrillium has a 15% increased efficiency!<BR>Along with the 50% higher capacity and faster processing speed, this marks one of the most successful devices I have created to this date.
