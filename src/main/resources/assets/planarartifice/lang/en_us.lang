@@ -213,3 +213,18 @@ planarartifice.research.mirrored_jar.stage.2=I have successfully bridged the gap
 planarartifice.research.planar_infusion_enchantment.title=Planar Infusion Enchantment
 planarartifice.research.planar_infusion_enchantment.stage.1=My thaumaturgy has come a long way since I originally invented infusion enchantments, and I now have access to a wider variety of materials and expertise. Many interesting ideas and concepts have come to my mind, which should hopefully be useful to me.
 planarartifice.research.planar_infusion_enchantment.stage.2=I have created a few new infusion enchantments. Much like the original ones, some enchantments can be applied multiple times to the same item, but each rank has an increased essentia cost when crafted.<BR>Each different infusion enchantment on the item also increases the cost by 33% and has an increased chance of giving it the Warping property.<PAGE>§oMetaphize§r<DIV>Experience dropped from slain creatures will instead be converted into aura vis.<BR>The amount converted is 30% of experience per level (90% at max level).<DIV>§oRanks§r: 1-3<BR>§oTarget§r: weapon<PAGE>§oMirrored§r<DIV>Tools with this infusion can be linked to magic mirrors by sneak right-clicking a mirror with the tool in hand.<BR>Once an tool is linked, all drops obtained with that tool (from breaking blocks or slaying creatures) are transported directly to the linked mirror.<BR>The tool can be unlinked by sneak right-clicking on the linked mirror.<DIV>§oRanks§r: none<BR>§oTarget§r: axe, hoe, shovel, pickaxe, weapon
+
+# -- MOD INTEGRATION: Alkimium Applications - Adaminite
+planarartifice.research.alkimium_applications_adaminite.title=Alkimium Applications: Adaminite
+planarartifice.research.alkimium_applications_adaminite.stage.1=[WIP]
+planarartifice.research.alkimium_applications_adaminite.stage.2=[WIP]
+
+# -- MOD INTEGRATION: Alkimium Applications - Mithminite
+planarartifice.research.alkimium_applications_mithminite.title=Alkimium Applications: Mithminite
+planarartifice.research.alkimium_applications_mithminite.stage.1=[WIP]
+planarartifice.research.alkimium_applications_mithminite.stage.2=[WIP]
+
+# -- MOD INTEGRATION: Alkimium Applications - Mithrillium
+planarartifice.research.alkimium_applications_mithrillium.title=Alkimium Applications: Mithrillium
+planarartifice.research.alkimium_applications_mithrillium.stage.1=[WIP]
+planarartifice.research.alkimium_applications_mithrillium.stage.2=[WIP]
