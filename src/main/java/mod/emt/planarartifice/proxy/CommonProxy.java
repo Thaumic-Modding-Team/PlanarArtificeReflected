@@ -59,5 +59,9 @@ public class CommonProxy {
         ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/bismuth"));
         ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/glasswork"));
         ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/mirromirous"));
+
+        if(CompatHandlerPA.isThaumicAdditionsLoaded) {
+            ThaumcraftApi.registerResearchLocation(new ResourceLocation(PlanarArtifice.MOD_ID, "research/mod_integration/thaumic_additions"));
+        }
     }
 }
