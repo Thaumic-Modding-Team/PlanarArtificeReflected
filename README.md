@@ -52,6 +52,12 @@ The addon is split up into four branching paths to take! Alkimium, Bismuth, Glas
 - **Mirrored Jar:** These jars can be bound together into a network. When one of the jars gets filled with essentia or emptied, the other jars will as well.
 - **Flawless Mirrors:** Upgrades to the magic and essentia mirrors, flawless mirrors are much more effective and produces little to no flux (depending on config settings).
 
+## 🔁 Mod Integration
+- **[Thaumic Additions: Reconstructed](https://www.curseforge.com/minecraft/mc-mods/thaumic-additions)**
+  - Mithrillium, Adaminite, and Mithminite Smelteries can be upgraded with Alkimium.
+- **[Thaumic Augmentation](https://www.curseforge.com/minecraft/mc-mods/thaumic-augmentation)**
+  - The Bismuth Caster's Gauntlet can access gauntlet augments (upwards to over 4 slots!). 
+
 ---
 
 ## 🙏 Special Thanks
