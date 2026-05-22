@@ -1,4 +1,8 @@
 # Changelog
+## 2.0.1
+### Fixed
+- Fixed the creative tab using an earlier name of the mod
+
 ## 2.0.0
 ### Added
 - Added Enchanted Thaumaturge's Fruit, an upgraded Enchanted Golden Apple.
