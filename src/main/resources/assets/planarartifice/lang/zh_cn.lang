@@ -1,0 +1,230 @@
+itemGroup.PlanarArtificeTab=镜面艺术：反射
+
+# Blocks
+tile.planarartifice:alkimic_construct.name=炼化构材
+tile.planarartifice:alkimium_block.name=炼化块
+tile.planarartifice:alkimium_centrifuge.name=炼化源质离心机
+tile.planarartifice:alkimium_smelter_aux.name=炼化附属粘浆泵
+tile.planarartifice:alkimium_smelter_vent.name=炼化辅助排放口
+tile.planarartifice:alkimium_smeltery.name=炼化源质冶炼厂
+tile.planarartifice:alkimium_smeltery_adaminite.name=炼化精金冶炼厂
+tile.planarartifice:alkimium_smeltery_mithminite.name=炼化秘金冶炼厂
+tile.planarartifice:alkimium_smeltery_mithrillium.name=炼化秘银冶炼厂
+tile.planarartifice:alkimium_smeltery_thaumium.name=炼化神秘冶炼厂
+tile.planarartifice:alkimium_smeltery_void.name=炼化虚空金属冶炼厂
+tile.planarartifice:bismuth_block.name=铋块
+tile.planarartifice:flawless_mirror.name=无瑕魔镜
+tile.planarartifice:flawless_mirror_essentia.name=无瑕源质之镜
+tile.planarartifice:glass_clear.name=澄澈玻璃
+tile.planarartifice:glass_crystal.name=水晶玻璃
+tile.planarartifice:glass_dark.name=暗黑玻璃
+tile.planarartifice:glass_entity.name=形质玻璃
+tile.planarartifice:glass_ethereal.name=以太玻璃
+tile.planarartifice:glass_hardened.name=硬化玻璃
+tile.planarartifice:glass_light.name=辉光玻璃
+tile.planarartifice:glass_non_living.name=无生玻璃
+tile.planarartifice:glass_redstone.name=红石玻璃
+tile.planarartifice:mirrored_jar.name=镜像罐子
+tile.planarartifice:starving_chest_small.name=无餍箱子
+tile.planarartifice:starving_chest_medium.name=饥饿无餍箱子
+tile.planarartifice:starving_chest_large.name=枵腹无餍箱子
+tile.planarartifice:starving_chest_huge.name=贪噬无餍箱子
+
+# Chat
+chat.planarartifice:mirror.already_linked=那面镜子已存在有效的链接目标。
+chat.planarartifice:mirrored_jar.failed.already_linked=镜像罐子之间已经相互链接了。
+chat.planarartifice:mirrored_jar.failed.exceeds_capacity=源质过多，无法将这两个罐子链接起来。
+chat.planarartifice:mirrored_jar.failed.incompatible_aspects=镜像罐子的要素不匹配。
+chat.planarartifice:mirrored_jar.failed=镜像罐子必须清空后才能建立新的链接。
+chat.planarartifice:mirrored_jar.success=镜像罐子链接成功！
+
+# Golems
+golem.material.pa_alkimium=炼化金属
+golem.material.text.pa_alkimium=这种傀儡由炼化金属制成。它轻便、防火、防爆，防御力和攻击力比黄铜傀儡更高，但也更为脆弱。
+
+# Items
+item.planarartifice:alkimium_goggles.name=炼化揭示之护目镜
+item.planarartifice:alkimium_ingot.name=炼化锭
+item.planarartifice:alkimium_nugget.name=炼化粒
+item.planarartifice:alkimium_plate.name=炼化板
+item.planarartifice:aura_meter.name=灵气计量仪
+item.planarartifice:bismuth_caster.name=铋质法师护手
+item.planarartifice:bismuth_claymore.name=铋阔剑
+item.planarartifice:bismuth_ingot.name=铋锭
+item.planarartifice:bismuth_nugget.name=铋粒
+item.planarartifice:bismuth_plate.name=铋板
+item.planarartifice:flawless_focus.name=空白无瑕核心
+item.planarartifice:glass_cutter.name=玻璃切割刀
+item.planarartifice:glass_cutter_vis.name=炼金玻璃切割刀
+item.planarartifice:mirromirous_headband.name=镜映发带
+item.planarartifice:mirrored_amulet.name=镜像护身符
+item.planarartifice:planar_orb.name=镜面宝珠
+item.planarartifice:suspension_belt.name=悬浮腰带
+item.planarartifice:thaumaturges_fruit.name=神秘使之果
+item.planarartifice:thaumaturges_fruit_enchanted.name=附魔神秘使之果
+
+# Infusion Enchantments
+enchantment.infusion.MIRRORED.linked=§6镜像§f（§b已链接§f）
+enchantment.infusion.MIRRORED.linked.dim=维度：%s
+enchantment.infusion.MIRRORED.linked.pos=坐标：x:%d, y:%d, z:%d
+enchantment.infusion.MIRRORED.unlinked=§6镜像§f（§7未链接§f）
+enchantment.infusion.METAPHIZE=元质转化
+
+# Tooltips
+tooltip.planarartifice:glass_cutter.info=右键点击可瞬间采集玻璃方块。
+tooltip.planarartifice:mirrored_jar.info=网络UUID：
+tooltip.planarartifice:mirrored_jar.linked=已链接
+tooltip.planarartifice:mirrored_jar.unlinked=未链接
+
+# Research
+tc.research_category.PLANAR_ARTIFICE=镜面艺术
+planarartifice.research.planar_artifice_base.title=镜面艺术
+planarartifice.research.planar_artifice_base.title.subtitle=与镜面合一
+planarartifice.research.planar_artifice_base.stage.1=我与灵气场的联系可能比想象中更加紧密。谁知道我能发现什么新的共振材料和强大造物呢！
+
+# -- ALKIMIUM
+planarartifice.research.alkimium.title=炼化金属
+planarartifice.research.alkimium.stage.1=在大量应用炼金黄铜之后，我觉得一定存在着更好的材料。<BR>仔细研究大量物品后，我发现药水以及许多炼金方块和物品中都含有一种极为奇特的要素，古代神秘使的古卷与典籍中从未提及这一点。<BR>既然能运用Praecantatio与Terra要素，将铁强化为超越凡俗的神秘金属，那为何不借助Alkimia要素，进一步强化黄铜呢？
+planarartifice.research.alkimium.stage.2=我将这种新物质命名为炼化金属。它的惰性使其比炼金黄铜更适合用于制作炼金物品。
+
+# -- ALKIMIUM: Alkimium Applications
+planarartifice.research.alkimium_applications.title=炼化金属的应用
+planarartifice.research.alkimium_applications.stage.1=针对这种新金属，我首先构思的方案之一就是升级炼金炉，用炼化金属替换其内部大量的黄铜构件。
+planarartifice.research.alkimium_applications.stage.2=成功了！我巧妙地将它命名为炼化源质冶炼厂，它采用炼化金属内部构件，容量提升至黄铜版本的1.5倍，效率也略有提高。<BR>尽管当炼化金属存在时，源质似乎稳定得多，但我也只能将冶炼炉的效率提高5%。有趣的是，这种效率提升并未减少熔炼物品时产生的咒波。
+
+# -- ALKIMIUM: Alkimium Applications - Centrifuge
+planarartifice.research.alkimium_applications_centrifuge.title=炼化金属的应用：离心机
+planarartifice.research.alkimium_applications_centrifuge.stage.1=我对炼化金属应用的另一个设想，是将其用于离心机。它那炼金特性必定能改进分解源质这一过程的极低效率。
+planarartifice.research.alkimium_applications_centrifuge.stage.2=效果远超我最大胆的预期。炼化离心机不仅速度是普通离心机的两倍，还能完美分解源质。<BR>炼化金属恰好能够稳定源质，使两种要素得以同时共存于离心机腔内。只要尽快将其抽出，机器就完全不会产生咒波！
+
+# -- ALKIMIUM: Alkimium Applications - Goggles
+planarartifice.research.alkimium_applications_goggles.title=炼化金属的应用：护目镜
+planarartifice.research.alkimium_applications_goggles.stage.1=炼化金属有许多潜在用途。也许是时候改良一下揭示之护目镜了？
+planarartifice.research.alkimium_applications_goggles.stage.2=注入炼化金属后，护目镜的防护能力得到了显著提升。<BR>此外，在潜行时注视源质管道或容器，会显示目标设备的详细信息。
+
+# -- ALKIMIUM: Alkimium Applications - Thaumium
+planarartifice.research.alkimium_applications_thaumium.title=炼化金属的应用：神秘金属
+planarartifice.research.alkimium_applications_thaumium.stage.1=和源质冶炼厂一样，我应该能用炼化金属来提高神秘源质冶炼厂的速度。
+planarartifice.research.alkimium_applications_thaumium.stage.2=成功了！与炼化源质冶炼厂完全一致，经炼化金属强化的神秘源质冶炼厂拥有1.5倍的源质容量，同时效率提升了5%。
+
+# -- ALKIMIUM: Alkimium Applications - Void Metal
+planarartifice.research.alkimium_applications_void.title=炼化金属的应用：虚空金属
+planarartifice.research.alkimium_applications_void.stage.1=虚空金属与我以往用来搭配炼化金属的任何材料都截然不同，我非得测试所有可能的反应不可！
+planarartifice.research.alkimium_applications_void.stage.2=我成功制造出了一种稳定可用的虚空冶炼厂变体，速度与黄铜源质冶炼厂相当，并拥有与其他炼化源质冶炼厂相同的1.5倍容量。然而，其效率只有95%。<BR>某种未知的相互作用让我未能打造出完美的冶炼厂。
+
+# -- ALKIMIUM: Improved Alkimium Distillation
+planarartifice.research.alkimium_applications_distillation.title=炼化金属的应用：蒸馏
+planarartifice.research.alkimium_applications_distillation.stage.1=标准的蒸馏设备在高压下容易堵塞并泄漏咒波。<BR>我推测，炼化金属与炼金术的天然亲和力能确保更顺畅高效的流动，因此可以借助其组件来解决这一问题。
+planarartifice.research.alkimium_applications_distillation.stage.2=通过对炼化金属的进一步研究，我得以设计出蒸馏处理的升级方案。<PAGE>§l炼化粘浆泵§r<DIV>这种升级型的粘浆泵利用炼化金属来以更高速度泵送炼金黏浆与流体。<BR>它缩短了蒸馏大量源质所需的时间，并显著加快了蒸馏器的传输速度。<PAGE>§l炼化排放口§r<DIV>这种升级型的排放口利用炼化金属来更有效地过滤与稳定蒸气。<BR>这使得排放的废气更为清洁，产生的咒波更少。
+
+# -- ALKIMIUM: Material Studies - Alkimium
+planarartifice.research.golem_mat_alkimium.title=材料研究：炼化金属
+planarartifice.research.golem_mat_alkimium.stage.1=在深入研究这种充满活力的绿色金属后，似乎用炼化金属打造的傀儡行动会更加迅捷……<BR>它们的护甲值也是黄铜傀儡的两倍，同时仍保留着来自这种更强金属的特性。<BR>不过，它们的脆弱性也不容忽视。
+
+# -- BISMUTH
+planarartifice.research.bismuth.title=铋
+planarartifice.research.bismuth.stage.1=我偶然间发现了一种奇特的现象。当暴露于高浓度的魔力之中，某些金属会开始与自然灵气场产生同步共振。<BR>若能稳定这种共振，我或许能创造出一种前所未有的魔法传导介质。
+planarartifice.research.bismuth.stage.2=铋金属与魔力共鸣的能力，远比我接触过的任何材料都要强。<PAGE>§l灵气计量仪§r<DIV>当装备或在物品栏中携带时，灵气计量仪会显示当前区域的魔力与咒波数值，与我透过魔导透镜所见的类似。<PAGE>§l铋阔剑§r<DIV>这把以铋打造的铋阔剑，能与周围的灵气场产生共振，消耗怪物掉落的全部经验，并将其中的60%转化为魔力。
+
+# -- BISMUTH: Bismuth Caster's Gauntlet
+planarartifice.research.bismuth_caster.title=铋质法师护手
+planarartifice.research.bismuth_caster.stage.1=铋汲取灵气场的能力貌似毫无副作用，这一特性使其适用于多种用途。法师护手便是其中显而易见的一项应用：更高的灵气场亲和力，意味着更强大的核心效能。
+planarartifice.research.bismuth_caster.stage.2=大部分法师护手只能从临近区域汲取魔力，而铋质法师护手则能以我为中心，将魔力汲取范围扩大至5x5区块。<BR>汲取范围的显著扩大并非没有代价。<BR>根据我的计算，任何通过铋质护手引导的法术，其魔力消耗都会增加约20%。
+planarartifice.research.bismuth_caster.addenda.1=除了更强的灵气场共鸣性能，铋质护手的延展性似乎也远胜于其他材料，神秘金属或虚空金属版本的护手只能容纳三个增强组件，但它最多可容纳四个。
+
+# -- BISMUTH: Essentia Manipulation
+planarartifice.research.essentia_manipulation.title=源质操控
+planarartifice.research.essentia_manipulation.stage.1=制备世界盐的传统方法……虽能奏效，但太过原始。耗费数小时用碗和燧石将魔力水晶碾成细粉，简直是在浪费神秘使的潜能。<BR>一定有更精妙的方法，来从这些水晶中提取魔法精华。
+planarartifice.research.essentia_manipulation.stage.2=成功了！我终于从逐一碾碎魔力水晶的繁琐流程中解脱出来了。<BR>通过用奥术能量灌注红石粉，我现在掌握了一种更简便的世界盐制法。
+
+# -- BISMUTH: Flawless Foci
+planarartifice.research.flawless_foci.title=无瑕核心
+planarartifice.research.flawless_foci.stage.1=即便是大师核心也存在极限。随着我的法术日益复杂，核心内部的结晶基质开始显现一些令人担忧的迹象，这种情况限制了核心单次可储存的信息量。<BR>我需要找到一种消除核心中所有杂质的方法。如果能制造出一个在物理和魔法层面上都“完美无瑕”的核心，或许就能提升其能驾驭的复杂度。
+planarartifice.research.flawless_foci.stage.2=这个核心的内部架构极其精密，相比现已过时的大师核心，它能驾驭的复杂度翻了一番。<BR>铋充当了魔法反馈的散热器，使我能够叠加多个高阶效果，而无需担心核心碎裂。
+
+# -- BISMUTH: Metal Transmutation
+planarartifice.research.metal_transmutation.title=金属嬗变
+planarartifice.research.metal_transmutation.stage.1=铋这种金属着实有趣，它具有延展性，属于无机物，而且似乎不太稳定。我想知道，能否通过某些手段操控它，使其变得类似于黄金等其他金属……
+planarartifice.research.metal_transmutation.stage.2=这将永远改变地下资源的格局。我找到了一种利用对应金属的部分精华，将铋“微调”为另一种金属的方法。<BR>不得不说，这个过程相当昂贵，但在复制稀缺资源时应该会大有用处。
+
+# -- BISMUTH: Reagent Transmutation
+planarartifice.research.reagent_transmutation.title=试剂嬗变
+planarartifice.research.reagent_transmutation.stage.1=还有许多物品入手困难或颇为麻烦，但对于那些足够相似的，或许只需一点浅显的炼金术，就能让它们彼此转换。
+planarartifice.research.reagent_transmutation.stage.2=好吧，这炼金术可一点都不“浅显”，但对知识的渴求总能找到出路。<BR>我发现了一种将普通蜘蛛眼转化为异界的末影之眼的方法。此外，我还找到了一种将potentia要素注入火药，使其转化为红石的方法。
+planarartifice.research.reagent_transmutation.stage.3=除之前的配方外，我还成功创造了一种用火药制造烈焰粉的办法。虽然还无法制造烈焰棒，但稳定的粉末供应定能派上用场。<BR>不过，这项研究把我引向了一个有趣的方向——世界中的那些稀有矿石。它们之间的联系很微弱，我也知道这想法有些异想天开。但……万一能成呢？
+planarartifice.research.reagent_transmutation.stage.4=答案一直就在我眼前。现在，我已拥有在琥珀与水银之间进行嬗变的能力——将它们统归为同一种物质。
+
+# -- BISMUTH: Starving Chest
+planarartifice.research.starving_chest.title=无餍箱子
+planarartifice.research.starving_chest.stage.1=饕餮箱子已足以应对我的种种需求。然而其作用范围有限，可能导致物品无法被收集。<BR>或许研究这些元素会有助于我解决这个难题……
+planarartifice.research.starving_chest.stage.2=饥饿吞噬万物。利用最近发现的这种能扭曲维度的元素，我创造出了饕餮箱子的强化版本。<BR>通过在箱子周围制造一个涡流并增强其吸力，我创造出了一个能够吸来附近物品的箱子。<BR>这一过程重复的次数越多，箱子的作用半径似乎就越大。然而，它最多只能承受4次迭代，之后箱子就会变得极不稳定，向内坍缩。
+
+# -- BISMUTH: Thaumaturge's Fruit
+planarartifice.research.thaumic_apple.title=神秘使之果
+planarartifice.research.thaumic_apple.stage.1=我已拟定计划，尝试以神秘学的方式强化金苹果的效果。用坩埚来制作应该相当简单；只需测试一下它的实用性。
+planarartifice.research.thaumic_apple.stage.2=方案不仅奏效了，我还弄清楚了如何强化那种极为罕见的附魔变种。现在，每当我得到一个金苹果，就能用炼金术进一步强化它。
+
+# -- GLASSWORK: Alchemical Glass Cutter
+planarartifice.research.alchemical_glass_cutter.title=炼金玻璃切割刀
+planarartifice.research.alchemical_glass_cutter.stage.1=玻璃切割刀虽然算不上什么贵重玩意，但总是得做新的也让人心烦。我想，能不能借助奥术的力量，做出一把更称手的工具。
+planarartifice.research.alchemical_glass_cutter.stage.2=只要给普通的玻璃切割刀注入一些琥珀和炼化金属，我就能做出一种全新的切割刀，靠魔力来切割玻璃，而且永远不会磨损。
+
+# -- GLASSWORK: Emissive Glass
+planarartifice.research.emissive_glass.title=发光玻璃
+planarartifice.research.emissive_glass.stage.1=我已经学会如何将源质融入玻璃，顺着这个思路，我想创造一些能用在装置上的新变种。
+planarartifice.research.emissive_glass.stage.2=我做出了一套能用在装置上的新玻璃变种，已经记在后面几页了。<PAGE>§l暗黑玻璃§r<DIV>借助Tenebrae要素，我可以做出完全不透光的玻璃。<PAGE>§l辉光玻璃§r<DIV>我可以用Lux要素造出一种能提供强光的新式玻璃。<PAGE>§l红石玻璃§r<DIV>借助Potentia要素，我可以做出一种性质和红石块完全一样的玻璃，始终发出15级的红石信号。
+
+# -- GLASSWORK: Glassworking
+planarartifice.research.glassworking.title=玻璃加工
+planarartifice.research.glassworking.stage.1=玻璃总是让我着迷。它是许多奥术机械的一部分，是建筑中不可或缺的材料，更重要的是，它本身就很美。继续研究时，我脑中冒出了一个念头。
+planarartifice.research.glassworking.stage.2=除了透明，玻璃还特别擅长容纳和引导源质。我猜这就是有那么多小器具要用到玻璃的原因。我把目前的发现记在了后面几页。<BR>我还设计了一把简陋的玻璃切割刀，无须破坏便可以完好无损地把玻璃取回来。<PAGE>§l澄澈玻璃§r<DIV>利用Sensus要素，我可以让玻璃变得更加通透，呈现更美的景色。<PAGE>§l水晶玻璃§r<DIV>借助Vitreus要素，我可以造出一种近乎完全透明的玻璃。<PAGE>§l硬化玻璃§r<DIV>用Praemunio要素强化后，我能让玻璃变得几乎和黑曜石一样坚固。
+
+# -- GLASSWORK: Permeable Glass
+planarartifice.research.permeable_glass.title=可透玻璃
+planarartifice.research.permeable_glass.stage.1=我已经学会如何将源质融入玻璃，顺着这个思路，我想创造一些在特定条件下可以被穿过的新变种。
+planarartifice.research.permeable_glass.stage.2=我造出了一批很有用的玻璃变种，可以只允许某些实体穿过。我把它们记录在了后面几页。<PAGE>§l无生玻璃§r<DIV>无生玻璃只允许非实体通过，例如物品或某些弹射物。<PAGE>§l形质玻璃§r<DIV>利用Spiritus要素，我可以构造出只允许活物穿过的玻璃。<PAGE>§l以太玻璃§r<DIV>啊，以太玻璃……这种用Praecantatio要素造出的新型玻璃，可以与多种要素绑定。<BR>用魔力水晶碎片右键点击玻璃，它就会与那种要素调谐，只有带有该要素的生物才能穿过。<BR>绑定更多要素可以进一步限制通行，这样我就能把玻璃定制到只放行特定的生物。<BR>潜行时空手右键点击，可以重置绑定的所有要素。
+
+# -- MIRROMIROUS: Belt of Suspension
+planarartifice.research.suspension_belt.title=悬浮腰带
+planarartifice.research.suspension_belt.stage.1=飞行的能力令人难以置信。虽然靠着云霄指环，我已经能升到相当高的地方，但终究还离不开地面的支撑。<BR>不过，凭借我对悬浮的新理解，或许可以强化它，让我能持续地水平移动。
+planarartifice.research.suspension_belt.stage.2=装备悬浮腰带时，我能够彻底摆脱重力。<BR>按住跳跃键，腰带便会让我悬停在半空，自由移动，只是速度略慢。悬浮时潜行可以降低高度。<BR>此外，这条腰带似乎还能完全免疫摔落伤害。
+
+# -- MIRROMIROUS: Flawless Mirrors
+planarartifice.research.flawless_mirrors.title=无瑕之镜
+planarartifice.research.flawless_mirrors.stage.1=普通的镜子效率低下。它们难以胜任大批量传输，只能一个一个地转移物品，还会因物质穿过微小空间裂隙时的“摩擦”而泄漏咒波。我需要找到拓宽开口、稳定连接的办法。
+planarartifice.research.flawless_mirrors.stage.2=我已完善了空间转移的技艺。这些无瑕之镜相较普通镜子是巨大的飞跃，不再有物品和源质传输缓慢的瓶颈，而且几乎不会在区域内产生咒波。<PAGE>§l无瑕魔镜§r<DIV>无瑕魔镜能整组地传送物品，传输速度远超其低级的同类，非常适合高速自动化与分类系统。因其开口完美稳定，运行时几乎不产生咒波。<PAGE>§l无瑕源质之镜§r<DIV>无瑕源质之镜的源质流量远超普通版本。与无瑕魔镜一样，它的运转完美高效，几乎不产生咒波。
+
+# -- MIRROMIROUS: Mirromirous Headband
+planarartifice.research.mirromirous_headband.title=镜映发带
+planarartifice.research.mirromirous_headband.stage.1=最初的求知发带差不多已经发挥到了极限。随着知识的不断增长，我对知识的渴求也与日俱增。
+planarartifice.research.mirromirous_headband.stage.2=借助铋，我成功造出了升级版的发带。它的效率翻了一倍，吸收的经验也要多得多。
+
+# -- MIRROMIROUS: Mirrored Amulet
+planarartifice.research.mirrored_amulet.title=镜像护身符
+planarartifice.research.mirrored_amulet.stage.1=在这个世界，死亡总是件麻烦事。走得越远，就越容易带着一些稀有难寻的物品。死的地方越远，取回物品就越困难。要是能有办法在死后完好无损地收回所有物品，就太好了。
+planarartifice.research.mirrored_amulet.stage.2=镜像护身符能在我死后保住物品。虽然我还是会死，丢失获得的经验，但护身符会将我的物品传送到一面绑定的魔镜中，保它们周全。<BR>要将护身符与魔镜绑定，只需手持护身符，潜行并右键点击那面镜子即可。
+
+# -- MIRROMIROUS: Mirrored Jar
+planarartifice.research.mirrored_jar.title=镜像罐子
+planarartifice.research.mirrored_jar.stage.1=源质之镜的源质转移功能在注魔时表现非常出色，但我总觉得它还有未开发的潜力。如果两面镜子能让源质在空间两点间移动，那这个空间为什么非得局限在开阔空间中呢？<BR>我推测，要是把镜子折叠空间的特性直接融入储存容器，就能创造出一个共享的源质“口袋”。我得找到办法，让源质罐子能承受住局部裂隙的空间应力。
+planarartifice.research.mirrored_jar.stage.2=我成功在存储与空间传输之间架起了桥梁。将一面源质之镜放入特殊调制的源质罐子，这个罐子的内部空间便能与同一网络中的其他罐子有效连接。<BR>连接它们的方法很简单：将一个罐子放在世界中，然后用另一个罐子潜行右键点击它。<BR>如果存在已有网络，新罐子会加入当前分组。和镜子不同，这些网络可以容纳两个以上的罐子。
+
+# -- MIRROMIROUS: Planar Infusion Enchantment
+planarartifice.research.planar_infusion_enchantment.title=镜面注魔魔咒
+planarartifice.research.planar_infusion_enchantment.stage.1=自我最初发明注魔魔咒以来，我的神秘学已进步许多，如今更是积累了更为丰富的材料与技艺。如今也能接触到更多种类的材料和技艺。许多有趣的想法与概念在我脑中涌现，但愿它们能派上用场。
+planarartifice.research.planar_infusion_enchantment.stage.2=我创造了几种新的注魔魔咒。和最初的那些一样，部分魔咒可以多次施加到同一物品上，但每提升一级，消耗的源质都会增加。<BR>物品上每有一种不同的注魔魔咒，源质消耗还会再增加33%，并且物品获得扭曲属性的概率也会提高。<PAGE>§o元质转化§r<DIV>击杀生物掉落的经验会转化为灵气魔力。<BR>每一级魔咒能转化30%的经验（满级为90%）。<DIV>§o等级§r：1-3<BR>§o目标§r：武器<PAGE>§o镜像§r<DIV>附有该注魔的工具可以与魔镜绑定：手持工具潜行右键镜子即可。<BR>工具绑定后，用它获得的所有掉落物（无论是破坏方块还是杀死生物）都会被直接送到绑定的镜子里。<BR>潜行右键点击已绑定的镜子，可以解除绑定。<DIV>§o等级§r：无<BR>§o目标§r：斧、锄、锹、镐、武器
+
+# -- MOD INTEGRATION: Alkimium Applications - Adaminite
+planarartifice.research.alkimium_applications_adaminite.title=炼化金属的应用：精金
+planarartifice.research.alkimium_applications_adaminite.stage.1=我该停一停，为已有的成就感到高兴才是，可我忍不住想走得更远。<BR>炼化金属的潜力，真的已经到极限了吗？
+planarartifice.research.alkimium_applications_adaminite.stage.2=这太迷人了。看来，加工效率本就更高的金属，在与炼化金属结合后还能进一步提升。<BR>炼化精金冶炼厂的源质黏浆容量提升了50%，处理速度加快了30%，源质产量更是大幅提高了20%。
+
+# -- MOD INTEGRATION: Alkimium Applications - Mithminite
+planarartifice.research.alkimium_applications_mithminite.title=炼化金属的应用：秘金
+planarartifice.research.alkimium_applications_mithminite.stage.1=我知道自己抱怨过秘金源质冶炼厂的成本，但还是忍不住想，它能不能再进一步。<BR>反正造那台设备已经花了这么多，再多花一点也不为过吧……
+planarartifice.research.alkimium_applications_mithminite.stage.2=这真是我的巅峰之作。与秘金源质冶炼厂相比，经炼化金属强化的秘金源质冶炼厂拥有1.5倍的源质容量，2倍的传输速度，产出的源质比原物品所含的要多出60%。<BR>这台机器简直可以说逼近了神的领域，近乎凭空造物。
+
+# -- MOD INTEGRATION: Alkimium Applications - Mithrillium
+planarartifice.research.alkimium_applications_mithrillium.title=炼化金属的应用：秘银
+planarartifice.research.alkimium_applications_mithrillium.stage.1=秘银源质冶炼厂的分解近乎完美，可它的处理仍然依靠内部的黄铜和铁部件。<BR>炼化金属一定还能再次改进我的设计吧？
+planarartifice.research.alkimium_applications_mithrillium.stage.2=确实不可思议。之前的尝试只带来了约5%的微小效率增幅，而这座升级后的冶炼厂效率提升了15%！<BR>再加上高出50%的容量与更快的处理速度，这堪称我迄今最成功的装置之一。
