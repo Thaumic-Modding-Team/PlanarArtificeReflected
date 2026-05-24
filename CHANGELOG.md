@@ -1,5 +1,7 @@
 # Changelog
 ## 2.0.1
+### Added
+- Added `zh_cn.lang` courtesy of ZHAY10086
 ### Fixed
 - Fixed the creative tab using an earlier name of the mod
 
