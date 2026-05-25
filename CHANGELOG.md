@@ -1,4 +1,7 @@
 # Changelog
+## 2.0.2
+### Added
+- Added back Planar Artifice's original aspects (Spatio, Tempus, Tinctura) back as config options for modpack developers to utilize.
 ## 2.0.1
 ### Added
 - Added `zh_cn.lang` courtesy of ZHAY10086

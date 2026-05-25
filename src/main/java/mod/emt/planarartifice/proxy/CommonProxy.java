@@ -2,8 +2,10 @@ package mod.emt.planarartifice.proxy;
 
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.compat.CompatHandlerPA;
+import mod.emt.planarartifice.config.ConfigHandlerPA;
 import mod.emt.planarartifice.item.bauble.ItemAuraMeter;
 import mod.emt.planarartifice.network.NetworkHandler;
+import mod.emt.planarartifice.registry.ModAspectsPA;
 import mod.emt.planarartifice.registry.ModGuiHandlerPA;
 import mod.emt.planarartifice.registry.ModItemsPA;
 import mod.emt.planarartifice.registry.ModRecipesPA;
@@ -28,6 +30,16 @@ public class CommonProxy {
         this.registerResearch();
         ModRecipesPA.registerOreDicts();
         CompatHandlerPA.init();
+
+        if(ConfigHandlerPA.aspects.spatioAspect) {
+            ModAspectsPA.registerSpatio();
+        }
+        if(ConfigHandlerPA.aspects.tempusAspect) {
+            ModAspectsPA.registerTempus();
+        }
+        if(ConfigHandlerPA.aspects.tincturaAspect) {
+            ModAspectsPA.registerTinctura();
+        }
 
         ItemAuraMeter.GUI_ITEMS.add(ItemsTC.sanityChecker);
         ItemAuraMeter.GUI_ITEMS.add(ItemsTC.thaumometer);

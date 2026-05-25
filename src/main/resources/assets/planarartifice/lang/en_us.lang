@@ -1,5 +1,10 @@
 itemGroup.PlanarArtificeTab=Planar Artifice: Reflected
 
+# Aspects
+tc.aspect.spatio=Space, Dimensions
+tc.aspect.tempus=Time
+tc.aspect.tinctura=Colors, Art, Creativity, Expressiveness
+
 # Blocks
 tile.planarartifice:alkimic_construct.name=Alkimic Construct
 tile.planarartifice:alkimium_block.name=Block of Alkimium
