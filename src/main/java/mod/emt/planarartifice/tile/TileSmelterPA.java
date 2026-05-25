@@ -34,7 +34,7 @@ public class TileSmelterPA extends AbstractTileEssentiaSmelter implements IHeata
         int fluxProduced = 0;
         float efficiency = this.getBaseEfficiency() - 0.05f;
         if(efficiency < 1.0f) {
-            fluxProduced = (int) (itemEssentia * efficiency);
+            fluxProduced = (int) (itemEssentia * (1.0 - efficiency));
             if(fluxProduced % 2 == 1 && this.world.rand.nextFloat() <= efficiency) {
                 fluxProduced++;
             }
