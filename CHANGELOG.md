@@ -1,4 +1,8 @@
 # Changelog
+## 2.0.3
+### Fixed
+- Fixed flux pollution being inverted on all Alkimium essentia smelteries.
+---
 ## 2.0.2
 ### Added
 - Added back Planar Artifice's original aspects (Spatio, Tempus, Tinctura) back as config options for modpack developers to utilize.
@@ -7,7 +11,7 @@
 ### Added
 - Added `zh_cn.lang` courtesy of ZHAY10086
 ### Fixed
-- Fixed the creative tab using an earlier name of the mod
+- Fixed the creative tab using an earlier name of the mod.
 ---
 ## 2.0.0
 ### Added
