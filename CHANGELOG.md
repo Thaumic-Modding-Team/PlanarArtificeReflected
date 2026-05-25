@@ -2,12 +2,13 @@
 ## 2.0.2
 ### Added
 - Added back Planar Artifice's original aspects (Spatio, Tempus, Tinctura) back as config options for modpack developers to utilize.
+---
 ## 2.0.1
 ### Added
 - Added `zh_cn.lang` courtesy of ZHAY10086
 ### Fixed
 - Fixed the creative tab using an earlier name of the mod
-
+---
 ## 2.0.0
 ### Added
 - Added Enchanted Thaumaturge's Fruit, an upgraded Enchanted Golden Apple.
@@ -15,7 +16,6 @@
 - Added Flawless Essentia Mirror, an Essentia Mirror with significantly reduce flux pollution.
 - Added Infusion Enchant: Mirrored, link a weapon or tool to a Magic Mirror to instantly transport any dropped items to that mirror.
 - Added Mirrored Jars, essentia jars that can be linked to share aspect contents
-
 ### Changed
 - Cut most Bush Alchemy recipes, reducing overlap with other Thaumcraft addons. Use Thaumic Wonders Unofficial for similar features.
 - Rewrote Alkimium Essentia Centrifuge, 3x faster than the Essentia Centrifuge, Primal Aspects pass through the centrifuge without jamming the system, and centrifuge converts and transfers all essentia obtained during the breakdown.
@@ -27,7 +27,6 @@
 - Rewrote Bismuth Claymore, sword has reduced stats but comes pre-enchanted with Metaphize II.
 - Rewrote Glass Cutters, instantly harvests most glass blocks on interact.
 - Rewrote Mirrored Amulet, transfers any items dropped on death to the linked Magic Mirror.
-
 ### Removed
 - Removed Alchemical Scribing Tools, use New Crimson Revelations for a similar feature.
 - Removed Condensed Crystal Cluster
