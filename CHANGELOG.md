@@ -1,4 +1,8 @@
 # Changelog
+## 2.0.4
+### Added
+- Added `zh_cn.lang` courtesy of ZHAY10086
+---
 ## 2.0.3
 ### Fixed
 - Fixed flux pollution being inverted on all Alkimium essentia smelteries.
