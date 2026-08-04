@@ -1,4 +1,8 @@
 # Changelog
+## 2.0.5
+### Added
+- Added `ru_ru.lang` courtesy of leskovetz
+---
 ## 2.0.4
 ### Added
 - Added `zh_cn.lang` courtesy of ZHAY10086
