@@ -149,10 +149,12 @@ public class GuiHudHandlerPA extends Gui {
 
                     if(transport.getEssentiaType(face) != null) {
                         displayStrings.add(I18n.format("tc.resonator1", TextFormatting.RESET + "" + transport.getEssentiaAmount(face), transport.getEssentiaType(face).getName()));
-                    } else if(tile instanceof IAspectContainer && ((IAspectContainer) tile).getAspects().size() > 0) {
+                    } else if(tile instanceof IAspectContainer) {
                         IAspectContainer container = (IAspectContainer) tile;
-                        for(Aspect aspect : container.getAspects().getAspectsSortedByName()) {
-                            displayStrings.add(I18n.format(I18n.format("tc.resonator1", TextFormatting.RESET + "" + container.getAspects().getAmount(aspect), aspect.getName())));
+                        if(container.getAspects() != null && container.getAspects().size() > 0) {
+                            for (Aspect aspect : container.getAspects().getAspectsSortedByName()) {
+                                displayStrings.add(I18n.format(I18n.format("tc.resonator1", TextFormatting.RESET + "" + container.getAspects().getAmount(aspect), aspect.getName())));
+                            }
                         }
                     }
 

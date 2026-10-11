@@ -2,6 +2,7 @@
 ## 2.0.1
 ### Fixed
 - Fixed Flawless Mirrors consuming multiple items when interacting with other flawless mirrors in-world
+- Fixed crash when using Alkimum Goggles to view essentia information for some machines and devices
 
 ---
 
