@@ -64,7 +64,6 @@ public class WorldSaveDataPA extends WorldSavedData {
 
     @Override
     public @NotNull NBTTagCompound writeToNBT(NBTTagCompound compound) {
-        this.cleanJarData();
         NBTTagCompound jarTagData = new NBTTagCompound();
         this.jarData.forEach((key, data) -> jarTagData.setTag(key.toString(), data.serializeNBT()));
         compound.setTag("jarData", jarTagData);
