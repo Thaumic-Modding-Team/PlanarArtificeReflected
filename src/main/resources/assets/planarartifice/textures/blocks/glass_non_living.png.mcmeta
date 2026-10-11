@@ -1,0 +1,10 @@
+{
+    "ctm":{
+        "ctm_version": 1,
+        "type":"CTM",
+        "layer":"CUTOUT",
+        "textures":[
+            "planarartifice:blocks/glass_non_living_ctm"
+        ]
+    }
+}

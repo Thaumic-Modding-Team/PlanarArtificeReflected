@@ -1,13 +1,33 @@
 # Changelog
-## 2.0.1
+## 2.0.6
 ### Fixed
 - Fixed Flawless Mirrors consuming multiple items when interacting with other flawless mirrors in-world
 - Fixed crash when using Alkimum Goggles to view essentia information for some machines and devices
 - Fixed Mirrored Jars creating infinite essentia loops when fully emptying
 - Fixed Alkimium Essentia Smelters using inverted logic when calculating flux production
-
 ---
-
+## 2.0.5
+### Added
+- Added `ru_ru.lang` courtesy of leskovetz
+---
+## 2.0.4
+### Added
+- Added `zh_cn.lang` courtesy of ZHAY10086
+---
+## 2.0.3
+### Fixed
+- Fixed flux pollution being inverted on all Alkimium essentia smelteries.
+---
+## 2.0.2
+### Added
+- Added back Planar Artifice's original aspects (Spatio, Tempus, Tinctura) back as config options for modpack developers to utilize.
+---
+## 2.0.1
+### Added
+- Added `zh_cn.lang` courtesy of ZHAY10086
+### Fixed
+- Fixed the creative tab using an earlier name of the mod.
+---
 ## 2.0.0
 ### Added
 - Added Enchanted Thaumaturge's Fruit, an upgraded Enchanted Golden Apple.

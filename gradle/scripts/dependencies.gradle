@@ -36,6 +36,7 @@ dependencies {
     compileOnly 'org.jetbrains:annotations:24.1.0'
 
     // Example of deobfuscating a dependency
+    implementation rfg.deobf('curse.maven:ctm-267602:2915363')
     implementation rfg.deobf('curse.maven:had-enough-items-557549:4543375')
     implementation rfg.deobf('curse.maven:thaumic-jei-285492:2705304')
 

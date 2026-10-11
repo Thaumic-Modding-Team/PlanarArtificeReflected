@@ -9,10 +9,26 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Config(modid = PlanarArtifice.MOD_ID)
 public class ConfigHandlerPA {
+    @Config.Name("Aspects")
+    public static AspectCategory aspects = new AspectCategory();
     @Config.Name("Flawless Magic Mirror")
     public static MirrorCategory flawlessMirror = new MirrorCategory();
     @Config.Name("Flawless Essentia Mirror")
     public static MirrorCategory flawlessMirrorEssentia = new MirrorCategory();
+
+    public static class AspectCategory {
+        @Config.Name("Aspect: Spatio")
+        @Config.Comment("Enables the 'Spatio' aspect. CraftTweaker or GroovyScript is required to utilize it in recipes or other sources.")
+        public boolean spatioAspect = false;
+
+        @Config.Name("Aspect: Tempus")
+        @Config.Comment("Enables the 'Tempus' aspect. CraftTweaker or GroovyScript is required to utilize it in recipes or other sources.")
+        public boolean tempusAspect = false;
+
+        @Config.Name("Aspect: Tinctura")
+        @Config.Comment("Enables the 'Tinctura' aspect. CraftTweaker or GroovyScript is required to utilize it in recipes or other sources.")
+        public boolean tincturaAspect = false;
+    }
 
     public static class MirrorCategory {
         @Config.RangeInt(min = 0, max = 600)
