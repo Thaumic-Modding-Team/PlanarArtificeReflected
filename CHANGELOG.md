@@ -1,4 +1,10 @@
 # Changelog
+## 2.0.1
+### Fixed
+- Fixed Flawless Mirrors consuming multiple items when interacting with other flawless mirrors in-world
+
+---
+
 ## 2.0.0
 ### Added
 - Added Enchanted Thaumaturge's Fruit, an upgraded Enchanted Golden Apple.

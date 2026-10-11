@@ -22,6 +22,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.items.ItemHandlerHelper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import thaumcraft.common.lib.SoundsTC;
@@ -57,26 +58,16 @@ public class ItemBlockFlawlessMirror extends ItemBlockPA {
             } else {
                 if (!world.isRemote) {
                     if (player.isCreative()) {
-                        heldStack = heldStack.copy();
-                        heldStack.setCount(1);
+                        heldStack = ItemHandlerHelper.copyStackWithSize(heldStack, 1);
                     } else {
                         heldStack = heldStack.splitStack(1);
                     }
-                    heldStack.setCount(1);
                     heldStack.setTagInfo("linkX", new NBTTagInt(pos.getX()));
                     heldStack.setTagInfo("linkY", new NBTTagInt(pos.getY()));
                     heldStack.setTagInfo("linkZ", new NBTTagInt(pos.getZ()));
                     heldStack.setTagInfo("linkDim", new NBTTagInt(world.provider.getDimension()));
 
-                    if (!player.inventory.addItemStackToInventory(heldStack)) {
-                        world.spawnEntity(new EntityItem(world, player.posX, player.posY, player.posZ, heldStack));
-                    }
-
-                    if (!player.capabilities.isCreativeMode) {
-                        player.getHeldItem(hand).shrink(1);
-                    }
-
-                    player.inventoryContainer.detectAndSendChanges();
+                    ItemHandlerHelper.giveItemToPlayer(player, heldStack, player.inventory.currentItem);
                 } else {
                     world.playSound(player, pos, SoundsTC.jar, SoundCategory.BLOCKS, 1.0F, 2.0F);
                 }
