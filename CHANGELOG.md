@@ -1,18 +1,16 @@
 # Changelog
-## 2.0.6
+## 2.0.5
+### Added
+- Added `ru_ru.lang` courtesy of leskovetz
 ### Fixed
 - Fixed Flawless Mirrors consuming multiple items when interacting with other flawless mirrors in-world
 - Fixed crash when using Alkimum Goggles to view essentia information for some machines and devices
 - Fixed Mirrored Jars creating infinite essentia loops when fully emptying
 - Fixed Alkimium Essentia Smelters using inverted logic when calculating flux production
 ---
-## 2.0.5
-### Added
-- Added `ru_ru.lang` courtesy of leskovetz
----
 ## 2.0.4
 ### Added
-- Added `zh_cn.lang` courtesy of ZHAY10086
+- Updated `zh_cn.lang` courtesy of ZHAY10086
 ---
 ## 2.0.3
 ### Fixed
