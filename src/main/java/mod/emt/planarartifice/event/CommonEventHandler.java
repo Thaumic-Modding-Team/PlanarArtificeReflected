@@ -2,12 +2,12 @@ package mod.emt.planarartifice.event;
 
 import baubles.api.BaublesApi;
 import baubles.api.cap.IBaublesItemHandler;
+import com.invadermonky.thaumicapi.utils.helpers.ResearchHelper;
 import mod.emt.planarartifice.PlanarArtifice;
 import mod.emt.planarartifice.item.bauble.ItemMirroredAmulet;
 import mod.emt.planarartifice.registry.ModItemsPA;
 import mod.emt.planarartifice.tile.TileFlawlessMirror;
 import mod.emt.planarartifice.utils.helper.PlayerHelper;
-import mod.emt.planarartifice.utils.helper.ResearchHelper;
 import mod.emt.planarartifice.utils.helper.WorldHelper;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.item.EntityXPOrb;
