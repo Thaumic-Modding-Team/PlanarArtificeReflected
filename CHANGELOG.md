@@ -1,4 +1,8 @@
 # Changelog
+## 2.0.6
+### Fixed
+- Fixed special glass recipes ignoring vis crystal type
+---
 ## 2.0.5
 ### Added
 - Added `ru_ru.lang` courtesy of leskovetz

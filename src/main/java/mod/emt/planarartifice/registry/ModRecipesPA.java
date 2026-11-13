@@ -193,7 +193,7 @@ public class ModRecipesPA {
                 "GCG",
                 "GGG",
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.SENSES)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.SENSES))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_crystal"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_GLASSWORKING",
@@ -204,7 +204,7 @@ public class ModRecipesPA {
                 "GCG",
                 "GGG",
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.CRYSTAL)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.CRYSTAL))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_dark"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_EMISSIVE_GLASS",
@@ -215,7 +215,7 @@ public class ModRecipesPA {
                 "GCG",
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.DARKNESS)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.DARKNESS))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_entity"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_PERMEABLE_GLASS",
@@ -226,7 +226,7 @@ public class ModRecipesPA {
                 "GCG",
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.SOUL)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.SOUL))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_ethereal"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_PERMEABLE_GLASS",
@@ -237,7 +237,7 @@ public class ModRecipesPA {
                 "GCG",
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.MAGIC)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.MAGIC))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_hardened"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_GLASSWORKING",
@@ -249,7 +249,7 @@ public class ModRecipesPA {
                 "OGO",
                 'O', new OreIngredient("obsidian"),
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.PROTECT)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.PROTECT))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_light"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_EMISSIVE_GLASS",
@@ -260,7 +260,7 @@ public class ModRecipesPA {
                 "GCG",
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.LIGHT)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.LIGHT))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_non_living"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_PERMEABLE_GLASS",
@@ -271,7 +271,7 @@ public class ModRecipesPA {
                 "GCG",
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.CRAFT)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.CRAFT))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "glass_redstone"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_EMISSIVE_GLASS",
@@ -282,7 +282,7 @@ public class ModRecipesPA {
                 "GCG",
                 "CGC",
                 'G', new OreIngredient("blockGlass"),
-                'C', ThaumcraftApiHelper.makeCrystal(Aspect.ENERGY)));
+                'C', new IngredientNBTTC(ThaumcraftApiHelper.makeCrystal(Aspect.ENERGY))));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(PlanarArtifice.MOD_ID, "mirrored_jar"), new ShapedArcaneRecipe(
                 defaultGroup,
                 "PA_MIRRORED_JAR",
